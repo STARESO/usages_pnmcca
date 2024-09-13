@@ -199,6 +199,8 @@ compilation_comptage <- function(counting_type) {
   # Log any mistakes encountered
   mistakes <- mistakes_log(counting_type, error_logs)
   
+  error_logs <<- error_logs
+  
   if (mistakes != 0) {
     message(
       paste0(
