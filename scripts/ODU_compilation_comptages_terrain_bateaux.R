@@ -1,6 +1,6 @@
-###                                                                      ###
-### --- Observatoire Des Usages - Compilation Fiches terrain Bateaux --- ###
-###                                                                      ###
+#
+# --- Observatoire Des Usages - Compilation des fiches de comptage terrain
+#
 
 # Initialization ----
 
@@ -21,140 +21,226 @@ library("stringi")
 
 # Data transformation
 library("chron")
+library("lubridate")
 
-## Custom function imports ----
+## Paths & custom verification functions imports ----
+source("R/paths.R")
 source("R/verification_functions.R")
 
 ## Data imports ----
 
-### Reference of sector names ----
-ref_secteurs <- read.csv(
-  paste0(
-    "data/raw/cartographie/Sec_nav_maj_2023_Corrigée/Sec _nav_maj_2023.csv"
-  ),
-  sep = ";"
-)
-
-# Create a new sector name with no accents on letters
-ref_secteurs <- ref_secteurs %>%
-  mutate(Secteur_simple = stri_trans_general(Secteur, "Latin-ASCII")) %>%
-  select("id",
-         "Secteur",
-         "Secteur_simple",
-         "Code_sec",
-         "Communes",
-         "Code_INSEE",
-         "Com_Corse")
-
-
 ### Boat counting files import as one common file ----
 
-bateaux_path <- "data/raw/comptages_terrain/Bateaux/"
-
-# Get all file names of the working directory for boat counting
-file_names <- list.files(bateaux_path)
-
-# Remove all temporary files
-file_names <- file_names[!grepl("~", file_names)]
-
-# Loop on all the sheets of the first file. All sheet names will go in site column, and
-# All the data is concatenated with the same structure as fillMergedCells = TRUE and startRow = 3
-
-wrong_named_dates <- c()
-wrong_named_files <- c()
-
-# Initialize the data
-comptage_bateaux <- data.frame()
-
-# Looping on all the file names
-for (file_name in file_names) {
-  # If the file name is not in the good format, add the file name to the wrong_named_files vector
-  # File is right if named this way :
-  # PNMCCA_usages_plaisance_comptage_terrain_bateaux_" + "YYYY-MM-DD" + ".xlsx"
+compilation_comptage <- function(counting_type) {
+  message(paste("Compilation des données de comptage", counting_type))
   
-  file_name_coherence <- file_coherence("bateaux", file_name)
+  # Path of data for the given counting type
+  path_counting_type <- paths[[paste0("comptage_", counting_type)]]
   
-  if (file_name_coherence) {
-    # Extract the date in YYYY-MM-DD format from the file name
-    date_comptage <- str_extract_all(file_name, "\\d{4}-\\d{2}-\\d{2}")[[1]]
+  # Get all file names for the given counting type
+  file_names <- list.files(path_counting_type) %>%
+    .[!grepl("~", .)]  # Remove temporary files
+  
+  # Get the reference metadata for the given counting type
+  metadata_reference <- read_metadata(counting_type)
+  
+  # Initialize error logs
+  error_logs <- list( 
+    wrong_named_files = c(),
+    wrong_named_dates = c(),
+    wrong_named_sheets = c(),
+    wrong_named_sheets_files = c(),
+    suggested_names_sheets = c(),
+    wrong_amount_of_sheets_files = c(),
+    error_sheet_not_in_meta = c(),
+    error_sheet_not_in_meta_files = c(),
+    error_meta_not_in_sheets = c(),
+    error_meta_not_in_sheets_files = c(),
+    wrong_column_amount = c(),
+    right_column_amount = c(),
+    wrong_column_amount_files = c(),
+    wrong_column_amount_sheets = c(),
+    wrong_variable_names = c(),
+    right_variable_names = c(),
+    wrong_variable_names_position = c(),
+    wrong_variable_names_files = c(),
+    wrong_variable_names_sheet = c()
+  )
+  
+  # Initialize output data frame
+  comptage_terrain <- data.frame()
+  
+  # Loop through all files
+  for (file_name in file_names) {
     
-    
-    # If the date is not in the file name, add the file name to the wrong_named_dates vector
-    if (is.na(date_comptage[1])) {
-      wrong_named_dates <- c(wrong_named_dates, file_name)
-      warning(paste("The file", file_name, "has no well written date in the name.",
-                    "Please rewrite it in a YYYY-MM-DD format."))
-      
-      # If the date exist, loop over the sheets
-    } else {
-      file_path <- paste0(bateaux_path, file_name)
-      
-      
-      for (sheet in excel_sheets(file_path)) {
-        
-        # Read the file for the specific file and sheet
-        data_sheet <- read.xlsx(
-          xlsxFile = file_path,
-          sheet = sheet,
-          sep.names = "_",
-          fillMergedCells = TRUE,
-          startRow = 3
-        )
-  
-        
-        if (dim(data_sheet)[2] != 10) {
-          warning(
-            paste0(
-              'Sheet "',
-              sheet, '" in file "', file_name,
-              '" has not the right number of columns. It has ',
-              dim(data_sheet)[2],
-              ' columns instead of 10. It was therefore skipped. Please correct.'
-            )
-          )
-          next
-          
-        } else {
-          # Add the sector and date column
-          data_sheet <- data_sheet %>%
-            mutate(Secteur = rep(sheet, dim(.)[1]),
-                   Date = rep(date_comptage, dim(.)[1]))
-          
-          #  Concatenate the data
-          comptage_bateaux <- rbind(comptage_bateaux, data_sheet)
-          
-        }
-        
-        
-      }
-      
+    # Check file name coherence
+    if (!file_coherence(file_name, counting_type)) {
+      error_logs$wrong_named_files <- c(error_logs$wrong_named_files, file_name)
+      next
     }
     
+    # Extract date from the file name
+    date_comptage <- str_extract_all(file_name, "\\d{4}-\\d{2}-\\d{2}")[[1]]
+    if (is.na(date_comptage[1])) {
+      error_logs$wrong_named_dates <- c(error_logs$wrong_named_dates, file_name)
+      next
+    }
+    
+    file_path <- paste0(path_counting_type, file_name)
+    
+    # Get the list of sheets and place metadata sheets first
+    list_of_sheets <- excel_sheets(file_path) %>%
+      {c(.[grepl("metadata", .)], .[!grepl("metadata", .)])}
+    
+    # Loop through sheets
+    for (sheet in list_of_sheets) {
+      if (sheet == "metadata_comptages") {
+        # Handle metadata sheet
+        metadata_comptage <- read.xlsx(file_path, sheet = sheet) %>%
+          mutate(Date = janitor::excel_numeric_to_date(Date))
+        
+        # Check number of sheets matches metadata sectors
+        if (length(metadata_comptage$Secteur) != length(setdiff(list_of_sheets, "metadata_comptages"))) {
+          error_logs$wrong_amount_of_sheets_files <- c(error_logs$wrong_amount_of_sheets_files, file_name)
+          break # Move to next file if sheet count is wrong
+        } 
+        
+        # Check if all metadata sectors exist as sheets
+        meta_not_in_sheet <- !(metadata_comptage$Secteur %in%
+                                 list_of_sheets[!grepl("metadata", list_of_sheets)])
+        
+        if (sum(meta_not_in_sheet) != 0) {
+          error_logs$error_meta_not_in_sheets <- c(error_logs$error_meta_not_in_sheets,
+                                                   metadata_comptage$Secteur[meta_not_in_sheet])
+          error_logs$error_meta_not_in_sheets_files <- c(error_logs$error_meta_not_in_sheets_files,
+                                                         rep(file_name, sum(meta_not_in_sheet)))
+          break # Move to next file if metadata mismatch
+        }
+        
+      } else {
+        
+        # Handle meteo sheets
+        if (counting_type == "meteo") {
+          if (sheet != "Meteo") {
+            error_logs$wrong_named_sheets <- c(error_logs$wrong_named_sheets, sheet)
+            error_logs$suggested_names_sheets <- c(error_logs$suggested_names_sheets, "Meteo")
+            error_logs$wrong_named_sheets_files <- c(error_logs$wrong_named_sheets_files, file_name)
+            next
+          }
+          
+        } else {
+          # Check sector names for non-meteo files
+          sector_check <- sector_coherence(sheet)
+          
+          # Log wrong sector name and suggest closest match
+          if (!sector_check$presence) {
+            error_logs$wrong_named_sheets <- c(error_logs$wrong_named_sheets, sheet)
+            error_logs$suggested_names_sheets <- c(error_logs$suggested_names_sheets, sector_check$closest_match)
+            error_logs$wrong_named_sheets_files <- c(error_logs$wrong_named_sheets_files, file_name)
+            next 
+          }
+          
+          # Check if the sheet exists in metadata_comptage
+          if (!sheet %in% metadata_comptage$Secteur) {
+            error_logs$error_sheet_not_in_meta <- c(error_logs$error_sheet_not_in_meta, sheet)
+            error_logs$error_sheet_not_in_meta_files <- c(error_logs$error_sheet_not_in_meta_files, file_name)
+            next
+          }
+        }
+        
+        # Read the first two rows of the sheet for header validation
+        data_sheet_header <- read.xlsx(
+          xlsxFile = file_path,
+          sheet = sheet,
+          sep.names = " ",
+          fillMergedCells = TRUE,
+          colNames = FALSE
+        ) %>%
+          .[1:2, ]
+        
+        # Verify headers and log errors
+        verif_header <- verify_sheet_header(data_sheet_header, metadata_reference, file_name, sheet, error_logs)
+        error_logs <- verif_header[[2]]  # Update the error logs
+        
+        # Skip the sheet if header verification failed
+        if (verif_header[[1]]) {
+          next
+        }
+        
+        # Import data using double header structure if applicable
+        if ("champ2" %in% names(metadata_reference)) {
+          data_sheet <- double_header_import(file_path, sheet)
+        } else {
+          data_sheet <- read.xlsx(file_path, sheet = sheet, sep.names = " ", fillMergedCells = TRUE)
+        }
+        
+        # Clean up column names and format them
+        data_sheet <- data_sheet %>%
+          rename_with(~ str_replace_all(., " ", "_"), everything()) %>%
+          rename_with(~ stringr::str_to_lower(.), everything())
+        
+        # Add sector and date columns
+        if (counting_type != "meteo") {
+          data_sheet <- data_sheet %>%
+            mutate(
+              secteur = rep(sheet, nrow(.)),
+              date = rep(date_comptage, nrow(.))
+            )
+        }
+        
+        # Concatenate the data
+        comptage_terrain <- rbind(comptage_terrain, data_sheet)
+        
+      } # End of non-metadata sheets
+    }  # End of sheets loop
+    
+  }  # End of files loop
+  
+  # Log any mistakes encountered
+  mistakes <- mistakes_log(counting_type, error_logs)
+  
+  if (mistakes != 0) {
+    message(
+      paste0(
+        "Il y a ",
+        mistakes,
+        " erreurs recontrées lors de la compilation.\n",
+        "Veuillez consulter le fichier log pour plus d'informations."
+      )
+    )
   } else {
-    wrong_named_files <- c(wrong_named_files, file_name)
-    warning(paste0('The file "', file_name, '" has no well written name. Please rewrite it in the format :',
-                  '"PNMCCA_usages_plaisance_comptage_terrain_bateaux_YYYY-MM-DD.xlsx"'))
+    message("Aucune erreur rencontrée lors de la compilation.")
   }
   
+  message(paste("Données de comptage", counting_type, "compilées."))
   
+  return(comptage_terrain)
 }
 
 
-comptage_bateaux <- comptage_bateaux %>%
-  select("Date", "Secteur", everything()) %>%
-  # Remove all the accents in the column names
-  rename_with(.fn = function(x) { stri_trans_general(x, "Latin-ASCII") }, .cols = everything()) %>%
-  # If column name contains ">" or "<", replace all the _ by nothing
-  rename_with(.fn = function(x) { gsub("_", "", x) }, .cols = contains(c(">", "<"))) 
 
+compilation_plage <- compilation_comptage("plage")
+compilation_plaisance <- compilation_comptage("plaisance")
+compilation_meteo <- compilation_comptage("meteo")
+compilation_activites <- compilation_comptage("activites_loisirs")
 
-comptage_bateaux <- comptage_bateaux %>%
-  mutate(Horaire = times(Horaire),
-         Date = as.Date(Date)) 
+compilation_plage <- post_compilation(compilation_plage, counting_type = "plage")
+compilation_plaisance <- post_compilation(compilation_plaisance, counting_type = "plaisance")
+compilation_meteo <- post_compilation(compilation_meteo, counting_type = "meteo")
+compilation_activites <- post_compilation(compilation_activites, counting_type = "activites_loisirs")
 
-# Give classes of all columns in dplyr format
-column_classes <- lapply(comptage_bateaux, class)
+skimr::skim(compilation_plage)
+skimr::skim(compilation_plaisance)
 
-# Output comptage bateaux in processed data as csv and RDS
-write.csv(comptage_bateaux, "data/processed/csv/comptages_bateaux.csv")
-saveRDS(comptage_bateaux, "data/processed/rds/comptages_bateaux.rds")
+# Save data as rds and csv ----
+
+saveRDS(compilation_plaisance,
+        paste0(paths$processed_plaisance, ".rds"))
+saveRDS(compilation_plage, paste0(paths$processed_plage, ".rds"))
+
+write.csv(compilation_plaisance,
+          paste0(paths$processed_plaisance, ".csv"),
+          row.names = FALSE)
+write.csv(compilation_plage,
+          paste0(paths$processed_plage, ".csv"),
+          row.names = FALSE)

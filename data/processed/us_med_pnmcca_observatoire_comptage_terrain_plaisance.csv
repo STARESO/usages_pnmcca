@@ -1,0 +1,591 @@
+"date","annee","mois","secteur","horaire","type","L<8m","8m<L<18m","18m<L<24m","24m<L<45m","L>45m","mouillage_sur_bouee","navigation","observations"
+2020-07-29,2020,"juillet","Saleccia",09:00:00,"Moteur",2,10,2,1,0,NA,NA,NA
+2020-07-29,2020,"juillet","Saleccia",09:00:00,"Voilier",0,22,0,0,0,NA,NA,NA
+2020-07-29,2020,"juillet","Saleccia",12:00:00,"Moteur",23,5,6,2,0,NA,NA,"2 JETS"
+2020-07-29,2020,"juillet","Saleccia",12:00:00,"Voilier",0,15,0,0,0,NA,NA,NA
+2020-07-29,2020,"juillet","Saleccia",15:00:00,"Moteur",33,9,5,3,0,NA,NA,NA
+2020-07-29,2020,"juillet","Saleccia",15:00:00,"Voilier",0,25,3,2,1,NA,NA,NA
+2020-07-29,2020,"juillet","Saleccia",17:00:00,"Moteur",30,14,3,2,0,NA,NA,NA
+2020-07-29,2020,"juillet","Saleccia",17:00:00,"Voilier",1,25,2,1,1,NA,NA,NA
+2020-07-29,2020,"juillet","Lotu",09:00:00,"Moteur",3,1,0,0,0,NA,NA,NA
+2020-07-29,2020,"juillet","Lotu",09:00:00,"Voilier",0,3,0,0,0,NA,NA,NA
+2020-07-29,2020,"juillet","Lotu",12:00:00,"Moteur",3,4,0,0,0,NA,NA,NA
+2020-07-29,2020,"juillet","Lotu",12:00:00,"Voilier",0,6,0,0,0,NA,NA,NA
+2020-07-29,2020,"juillet","Lotu",15:00:00,"Moteur",6,5,0,0,0,NA,NA,NA
+2020-07-29,2020,"juillet","Lotu",15:00:00,"Voilier",0,8,0,0,0,NA,NA,NA
+2020-07-29,2020,"juillet","Lotu",17:00:00,"Moteur",5,4,0,0,0,NA,NA,NA
+2020-07-29,2020,"juillet","Lotu",17:00:00,"Voilier",0,6,0,0,0,NA,NA,NA
+2020-07-29,2020,"juillet","Mezzanu",09:00:00,"Moteur",0,3,0,0,0,NA,NA,NA
+2020-07-29,2020,"juillet","Mezzanu",09:00:00,"Voilier",0,7,1,0,0,NA,NA,NA
+2020-07-29,2020,"juillet","Mezzanu",12:00:00,"Moteur",10,11,0,2,0,NA,NA,NA
+2020-07-29,2020,"juillet","Mezzanu",12:00:00,"Voilier",0,1,0,0,0,NA,NA,NA
+2020-07-29,2020,"juillet","Mezzanu",15:00:00,"Moteur",10,12,3,2,0,NA,NA,NA
+2020-07-29,2020,"juillet","Mezzanu",15:00:00,"Voilier",0,5,0,1,0,NA,NA,NA
+2020-07-29,2020,"juillet","Mezzanu",17:00:00,"Moteur",19,11,2,3,0,NA,NA,NA
+2020-07-29,2020,"juillet","Mezzanu",17:00:00,"Voilier",0,3,0,1,0,NA,NA,NA
+2020-07-29,2020,"juillet","Fiume Santu",09:00:00,"Moteur",1,3,0,0,0,NA,NA,NA
+2020-07-29,2020,"juillet","Fiume Santu",09:00:00,"Voilier",0,4,0,0,0,NA,NA,NA
+2020-07-29,2020,"juillet","Fiume Santu",12:00:00,"Moteur",3,12,0,0,0,NA,NA,NA
+2020-07-29,2020,"juillet","Fiume Santu",12:00:00,"Voilier",0,4,0,0,0,NA,NA,NA
+2020-07-29,2020,"juillet","Fiume Santu",15:00:00,"Moteur",15,8,0,0,0,NA,NA,NA
+2020-07-29,2020,"juillet","Fiume Santu",15:00:00,"Voilier",0,2,0,0,0,NA,NA,NA
+2020-07-29,2020,"juillet","Fiume Santu",17:00:00,"Moteur",15,4,0,0,0,NA,NA,NA
+2020-07-29,2020,"juillet","Fiume Santu",17:00:00,"Voilier",0,2,0,0,0,NA,NA,NA
+2020-08-13,2020,"août","Saleccia",09:00:00,"Moteur",7,12,6,1,0,NA,NA,"Comptage de 9h30 à 9h45"
+2020-08-13,2020,"août","Saleccia",09:00:00,"Voilier",13,30,4,1,0,NA,NA,"Comptage de 9h30 à 9h45"
+2020-08-13,2020,"août","Saleccia",12:00:00,"Moteur",71,23,0,0,0,NA,NA,NA
+2020-08-13,2020,"août","Saleccia",12:00:00,"Voilier",4,42,0,0,0,NA,NA,NA
+2020-08-13,2020,"août","Saleccia",15:00:00,"Moteur",51,41,0,0,0,NA,NA,NA
+2020-08-13,2020,"août","Saleccia",15:00:00,"Voilier",4,38,0,0,0,NA,NA,NA
+2020-08-13,2020,"août","Saleccia",17:00:00,"Moteur",14,12,0,0,0,NA,NA,"Comptage à 17h15"
+2020-08-13,2020,"août","Saleccia",17:00:00,"Voilier",1,12,0,0,0,NA,NA,"Comptage à 17h15"
+2020-08-13,2020,"août","Lotu",09:00:00,"Moteur",1,1,0,0,0,NA,NA,"comptage 9h50"
+2020-08-13,2020,"août","Lotu",09:00:00,"Voilier",2,10,0,0,0,NA,NA,"comptage 9h50"
+2020-08-13,2020,"août","Lotu",12:00:00,"Moteur",14,4,0,0,0,NA,NA,"comptage 12h35"
+2020-08-13,2020,"août","Lotu",12:00:00,"Voilier",3,13,0,0,0,NA,NA,"comptage 12h35"
+2020-08-13,2020,"août","Lotu",15:00:00,"Moteur",11,9,0,0,0,NA,NA,"comptage 15h35&#10; vent est"
+2020-08-13,2020,"août","Lotu",15:00:00,"Voilier",3,13,0,0,0,NA,NA,"comptage 15h35&#10; vent est"
+2020-08-13,2020,"août","Lotu",17:00:00,"Moteur",43,36,1,0,0,NA,NA,"17h10"
+2020-08-13,2020,"août","Lotu",17:00:00,"Voilier",4,42,0,0,0,NA,NA,"17h10"
+2020-08-13,2020,"août","Mezzanu",09:00:00,"Moteur",5,0,1,0,0,NA,NA,"9h55"
+2020-08-13,2020,"août","Mezzanu",09:00:00,"Voilier",0,8,0,0,0,NA,NA,"9h55"
+2020-08-13,2020,"août","Mezzanu",12:00:00,"Moteur",23,3,0,0,0,NA,NA,"12h45"
+2020-08-13,2020,"août","Mezzanu",12:00:00,"Voilier",0,12,0,0,0,NA,NA,"12h45"
+2020-08-13,2020,"août","Mezzanu",15:00:00,"Moteur",38,6,1,0,0,NA,NA,"15h45"
+2020-08-13,2020,"août","Mezzanu",15:00:00,"Voilier",0,7,0,0,0,NA,NA,"15h45"
+2020-08-13,2020,"août","Mezzanu",17:00:00,"Moteur",25,10,0,0,0,NA,NA,"17h10"
+2020-08-13,2020,"août","Mezzanu",17:00:00,"Voilier",0,11,0,0,0,NA,NA,"17h10"
+2020-08-13,2020,"août","Fiume Santu",09:00:00,"Moteur",7,6,0,0,0,NA,NA,"10h15"
+2020-08-13,2020,"août","Fiume Santu",09:00:00,"Voilier",0,7,0,0,0,NA,NA,"10h15"
+2020-08-13,2020,"août","Fiume Santu",12:00:00,"Moteur",12,13,0,0,0,NA,NA,"12h55"
+2020-08-13,2020,"août","Fiume Santu",12:00:00,"Voilier",0,8,0,0,0,NA,NA,"12h55"
+2020-08-13,2020,"août","Fiume Santu",15:00:00,"Moteur",17,10,0,0,0,NA,NA,"16h10"
+2020-08-13,2020,"août","Fiume Santu",15:00:00,"Voilier",0,7,0,0,0,NA,NA,"16h10"
+2020-08-13,2020,"août","Fiume Santu",17:00:00,"Moteur",16,9,0,0,0,NA,NA,NA
+2020-08-13,2020,"août","Fiume Santu",17:00:00,"Voilier",0,7,0,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Saleccia",09:00:00,"Moteur",1,0,0,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Saleccia",09:00:00,"Voilier",0,1,0,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Saleccia",12:00:00,"Moteur",16,5,0,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Saleccia",12:00:00,"Voilier",0,5,1,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Saleccia",15:00:00,"Moteur",19,4,0,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Saleccia",15:00:00,"Voilier",0,6,1,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Saleccia",17:00:00,"Moteur",13,3,0,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Saleccia",17:00:00,"Voilier",0,8,0,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Lotu",09:00:00,"Moteur",2,0,0,0,0,NA,NA,"4 mot <8 m en pêche"
+2020-09-09,2020,"septembre","Lotu",09:00:00,"Voilier",0,0,0,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Lotu",12:00:00,"Moteur",8,1,0,0,0,NA,NA,"1 Jet + 1 paddle"
+2020-09-09,2020,"septembre","Lotu",12:00:00,"Voilier",0,3,0,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Lotu",15:00:00,"Moteur",10,0,0,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Lotu",15:00:00,"Voilier",0,3,0,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Lotu",17:00:00,"Moteur",7,0,1,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Lotu",17:00:00,"Voilier",0,1,0,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Mezzanu",09:00:00,"Moteur",1,0,0,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Mezzanu",09:00:00,"Voilier",0,0,0,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Mezzanu",12:00:00,"Moteur",4,1,NA,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Mezzanu",12:00:00,"Voilier",0,1,1,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Mezzanu",15:00:00,"Moteur",4,0,0,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Mezzanu",15:00:00,"Voilier",0,2,0,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Mezzanu",17:00:00,"Moteur",9,1,0,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Mezzanu",17:00:00,"Voilier",0,0,0,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Fiume Santu",09:00:00,"Moteur",0,2,0,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Fiume Santu",09:00:00,"Voilier",0,5,0,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Fiume Santu",12:00:00,"Moteur",9,2,0,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Fiume Santu",12:00:00,"Voilier",0,3,0,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Fiume Santu",15:00:00,"Moteur",18,6,0,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Fiume Santu",15:00:00,"Voilier",0,2,0,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Fiume Santu",17:00:00,"Moteur",18,3,0,0,0,NA,NA,NA
+2020-09-09,2020,"septembre","Fiume Santu",17:00:00,"Voilier",0,3,0,0,0,NA,NA,NA
+2021-06-16,2021,"juin","Saleccia",09:00:00,"Moteur",0,0,0,0,0,0,0,NA
+2021-06-16,2021,"juin","Saleccia",09:00:00,"Voilier",0,0,0,0,0,0,1,NA
+2021-06-16,2021,"juin","Saleccia",12:00:00,"Moteur",8,0,0,0,0,0,1,NA
+2021-06-16,2021,"juin","Saleccia",12:00:00,"Voilier",0,6,0,1,0,0,0,NA
+2021-06-16,2021,"juin","Saleccia",15:00:00,"Moteur",12,0,2,1,0,0,2,NA
+2021-06-16,2021,"juin","Saleccia",15:00:00,"Voilier",0,7,0,0,0,0,0,NA
+2021-06-16,2021,"juin","Saleccia",17:00:00,"Moteur",8,3,1,0,0,0,2,NA
+2021-06-16,2021,"juin","Saleccia",17:00:00,"Voilier",0,7,0,0,0,0,0,NA
+2021-06-16,2021,"juin","Lotu",09:00:00,"Moteur",5,0,0,0,0,0,1,NA
+2021-06-16,2021,"juin","Lotu",09:00:00,"Voilier",0,1,0,0,0,0,0,NA
+2021-06-16,2021,"juin","Lotu",12:00:00,"Moteur",6,0,1,0,0,0,1,NA
+2021-06-16,2021,"juin","Lotu",12:00:00,"Voilier",0,0,2,0,0,0,1,NA
+2021-06-16,2021,"juin","Lotu",15:00:00,"Moteur",8,2,0,0,0,0,0,NA
+2021-06-16,2021,"juin","Lotu",15:00:00,"Voilier",0,2,0,0,0,0,0,NA
+2021-06-16,2021,"juin","Lotu",17:00:00,"Moteur",0,4,0,0,0,0,1,NA
+2021-06-16,2021,"juin","Lotu",17:00:00,"Voilier",0,2,0,0,0,0,0,NA
+2021-06-16,2021,"juin","Mezzanu",09:00:00,"Moteur",2,1,0,0,0,0,1,NA
+2021-06-16,2021,"juin","Mezzanu",09:00:00,"Voilier",0,0,1,0,0,0,0,NA
+2021-06-16,2021,"juin","Mezzanu",12:00:00,"Moteur",1,1,0,0,0,0,3,NA
+2021-06-16,2021,"juin","Mezzanu",12:00:00,"Voilier",0,2,0,0,0,0,1,NA
+2021-06-16,2021,"juin","Mezzanu",15:00:00,"Moteur",1,1,0,0,0,0,0,NA
+2021-06-16,2021,"juin","Mezzanu",15:00:00,"Voilier",0,3,0,0,0,0,0,NA
+2021-06-16,2021,"juin","Mezzanu",17:00:00,"Moteur",7,2,0,0,0,0,0,NA
+2021-06-16,2021,"juin","Mezzanu",17:00:00,"Voilier",0,3,0,0,0,0,0,NA
+2021-06-16,2021,"juin","Fiume Santu",09:00:00,"Moteur",6,5,0,0,0,0,0,NA
+2021-06-16,2021,"juin","Fiume Santu",09:00:00,"Voilier",0,2,0,0,0,0,0,NA
+2021-06-16,2021,"juin","Fiume Santu",12:00:00,"Moteur",0,0,0,0,0,0,2,NA
+2021-06-16,2021,"juin","Fiume Santu",12:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2021-06-16,2021,"juin","Fiume Santu",15:00:00,"Moteur",8,4,1,0,0,0,1,"1 ancre en face du Puntalle (Mortella), en dehors de la limite de l'arrêté"
+2021-06-16,2021,"juin","Fiume Santu",15:00:00,"Voilier",0,7,1,0,0,0,3,NA
+2021-06-16,2021,"juin","Fiume Santu",17:00:00,"Moteur",8,5,0,0,0,0,0,NA
+2021-06-16,2021,"juin","Fiume Santu",17:00:00,"Voilier",0,6,0,0,0,0,0,NA
+2021-07-28,2021,"juillet","Saleccia",09:00:00,"Moteur",2,4,0,0,0,0,2,"dpl = NUCS"
+2021-07-28,2021,"juillet","Saleccia",09:00:00,"Voilier",0,26,1,0,0,0,4,NA
+2021-07-28,2021,"juillet","Saleccia",12:00:00,"Moteur",57,16,0,0,0,0,5,NA
+2021-07-28,2021,"juillet","Saleccia",12:00:00,"Voilier",0,22,0,0,0,0,1,NA
+2021-07-28,2021,"juillet","Saleccia",15:00:00,"Moteur",62,18,1,1,0,0,7,NA
+2021-07-28,2021,"juillet","Saleccia",15:00:00,"Voilier",1,2,0,0,0,0,1,NA
+2021-07-28,2021,"juillet","Saleccia",17:00:00,"Moteur",NA,NA,NA,NA,NA,NA,NA,NA
+2021-07-28,2021,"juillet","Saleccia",17:00:00,"Voilier",NA,NA,NA,NA,NA,NA,NA,NA
+2021-07-28,2021,"juillet","Lotu",09:00:00,"Moteur",0,3,1,0,1,0,10,"dpl = NUCS&#10;Nav 67 m ancré en zone interdite -> déplacé suite à l'intervention des agents"
+2021-07-28,2021,"juillet","Lotu",09:00:00,"Voilier",0,11,0,0,0,0,3,NA
+2021-07-28,2021,"juillet","Lotu",12:00:00,"Moteur",10,5,0,0,0,0,11,"Nav 67 m positionné en dehors de la limite de l'arrêté"
+2021-07-28,2021,"juillet","Lotu",12:00:00,"Voilier",0,6,0,0,0,0,4,NA
+2021-07-28,2021,"juillet","Lotu",15:00:00,"Moteur",NA,NA,NA,NA,NA,NA,NA,NA
+2021-07-28,2021,"juillet","Lotu",15:00:00,"Voilier",NA,NA,NA,NA,NA,NA,NA,NA
+2021-07-28,2021,"juillet","Lotu",17:00:00,"Moteur",19,6,1,0,0,0,6,"Nav 67 m positionné en dehors de la limite de l'arrêté"
+2021-07-28,2021,"juillet","Lotu",17:00:00,"Voilier",0,9,0,0,0,0,0,NA
+2021-07-28,2021,"juillet","Mezzanu",09:00:00,"Moteur",5,1,1,1,0,0,15,NA
+2021-07-28,2021,"juillet","Mezzanu",09:00:00,"Voilier",0,3,0,1,0,0,3,NA
+2021-07-28,2021,"juillet","Mezzanu",12:00:00,"Moteur",19,4,0,0,0,0,7,NA
+2021-07-28,2021,"juillet","Mezzanu",12:00:00,"Voilier",0,6,3,1,0,0,3,NA
+2021-07-28,2021,"juillet","Mezzanu",15:00:00,"Moteur",NA,NA,NA,NA,NA,NA,NA,NA
+2021-07-28,2021,"juillet","Mezzanu",15:00:00,"Voilier",NA,NA,NA,NA,NA,NA,NA,NA
+2021-07-28,2021,"juillet","Mezzanu",17:00:00,"Moteur",22,8,0,1,0,0,11,NA
+2021-07-28,2021,"juillet","Mezzanu",17:00:00,"Voilier",1,11,1,2,0,0,2,NA
+2021-07-28,2021,"juillet","Fiume Santu",09:00:00,"Moteur",8,10,0,0,0,0,21,NA
+2021-07-28,2021,"juillet","Fiume Santu",09:00:00,"Voilier",0,7,0,0,0,0,5,NA
+2021-07-28,2021,"juillet","Fiume Santu",12:00:00,"Moteur",14,13,1,0,0,0,7,NA
+2021-07-28,2021,"juillet","Fiume Santu",12:00:00,"Voilier",0,3,0,0,0,0,2,NA
+2021-07-28,2021,"juillet","Fiume Santu",15:00:00,"Moteur",NA,NA,NA,NA,NA,NA,NA,NA
+2021-07-28,2021,"juillet","Fiume Santu",15:00:00,"Voilier",NA,NA,NA,NA,NA,NA,NA,NA
+2021-07-28,2021,"juillet","Fiume Santu",17:00:00,"Moteur",19,6,0,0,0,0,23,NA
+2021-07-28,2021,"juillet","Fiume Santu",17:00:00,"Voilier",0,3,0,0,0,0,8,NA
+2021-08-18,2021,"août","Saleccia",09:00:00,"Moteur",2,2,0,0,0,0,0,"DPL = NUC"
+2021-08-18,2021,"août","Saleccia",09:00:00,"Voilier",0,8,0,0,0,0,1,NA
+2021-08-18,2021,"août","Saleccia",12:00:00,"Moteur",48,8,1,2,0,0,6,NA
+2021-08-18,2021,"août","Saleccia",12:00:00,"Voilier",0,22,3,0,0,0,6,NA
+2021-08-18,2021,"août","Saleccia",15:00:00,"Moteur",44,8,2,0,0,0,6,NA
+2021-08-18,2021,"août","Saleccia",15:00:00,"Voilier",0,20,1,0,0,0,0,NA
+2021-08-18,2021,"août","Saleccia",17:00:00,"Moteur",20,5,0,0,0,0,2,NA
+2021-08-18,2021,"août","Saleccia",17:00:00,"Voilier",0,22,2,0,0,0,3,NA
+2021-08-18,2021,"août","Lotu",09:00:00,"Moteur",0,0,0,0,0,0,6,NA
+2021-08-18,2021,"août","Lotu",09:00:00,"Voilier",0,9,0,0,0,0,0,NA
+2021-08-18,2021,"août","Lotu",12:00:00,"Moteur",11,7,0,2,0,0,10,"2 moteurs 24 m-45m contrôlés par les agents car à l'intérieur de la limite, mais ancre à l'extérieur. Attention, c'est la position du bateau qui fait foi, ils auraient donc du bouger"
+2021-08-18,2021,"août","Lotu",12:00:00,"Voilier",0,5,0,0,0,0,1,NA
+2021-08-18,2021,"août","Lotu",15:00:00,"Moteur",20,8,0,1,0,0,8,"1 M >45 m (bateau ""Plan B"" croisière de luxe) en dehors de la limite&#10;+ 1 seul M sur les deux 24 m-45m contrôlés par les agents car à l'intérieur de la limite, mais ancre à l'extérieur. Attention, c'est la position du bateau qui fait foi, ils auraient donc du bouger"
+2021-08-18,2021,"août","Lotu",15:00:00,"Voilier",0,7,0,0,0,0,0,NA
+2021-08-18,2021,"août","Lotu",17:00:00,"Moteur",16,15,0,0,0,0,3,"1 M >45 m (bateau ""Plan B"" croisière de luxe) en dehors de la limite"
+2021-08-18,2021,"août","Lotu",17:00:00,"Voilier",0,6,0,0,0,0,0,NA
+2021-08-18,2021,"août","Mezzanu",09:00:00,"Moteur",1,0,0,0,0,0,4,NA
+2021-08-18,2021,"août","Mezzanu",09:00:00,"Voilier",0,3,0,0,0,0,0,NA
+2021-08-18,2021,"août","Mezzanu",12:00:00,"Moteur",20,9,0,0,0,0,5,NA
+2021-08-18,2021,"août","Mezzanu",12:00:00,"Voilier",1,2,1,0,0,0,0,NA
+2021-08-18,2021,"août","Mezzanu",15:00:00,"Moteur",15,12,3,2,0,0,1,NA
+2021-08-18,2021,"août","Mezzanu",15:00:00,"Voilier",1,7,0,0,0,0,2,NA
+2021-08-18,2021,"août","Mezzanu",17:00:00,"Moteur",16,16,3,1,0,0,0,NA
+2021-08-18,2021,"août","Mezzanu",17:00:00,"Voilier",0,0,0,0,0,0,2,NA
+2021-08-18,2021,"août","Fiume Santu",09:00:00,"Moteur",6,1,0,0,0,0,10,NA
+2021-08-18,2021,"août","Fiume Santu",09:00:00,"Voilier",0,5,0,0,0,0,0,NA
+2021-08-18,2021,"août","Fiume Santu",12:00:00,"Moteur",25,8,0,0,0,0,15,NA
+2021-08-18,2021,"août","Fiume Santu",12:00:00,"Voilier",0,5,0,0,0,0,0,NA
+2021-08-18,2021,"août","Fiume Santu",15:00:00,"Moteur",38,11,0,0,0,0,0,NA
+2021-08-18,2021,"août","Fiume Santu",15:00:00,"Voilier",0,11,1,0,0,0,0,NA
+2021-08-18,2021,"août","Fiume Santu",17:00:00,"Moteur",27,16,0,0,0,0,4,NA
+2021-08-18,2021,"août","Fiume Santu",17:00:00,"Voilier",0,6,0,0,0,0,2,NA
+2021-09-02,2021,"septembre","Saleccia",09:00:00,"Moteur",2,0,0,0,0,0,2,NA
+2021-09-02,2021,"septembre","Saleccia",09:00:00,"Voilier",0,1,0,0,0,0,0,NA
+2021-09-02,2021,"septembre","Saleccia",12:00:00,"Moteur",13,1,0,0,0,0,5,NA
+2021-09-02,2021,"septembre","Saleccia",12:00:00,"Voilier",0,3,1,0,0,0,0,NA
+2021-09-02,2021,"septembre","Saleccia",15:00:00,"Moteur",13,1,0,0,0,0,2,NA
+2021-09-02,2021,"septembre","Saleccia",15:00:00,"Voilier",0,3,2,0,0,0,0,NA
+2021-09-02,2021,"septembre","Saleccia",17:00:00,"Moteur",5,1,0,0,0,0,1,NA
+2021-09-02,2021,"septembre","Saleccia",17:00:00,"Voilier",1,1,0,0,0,0,2,NA
+2021-09-02,2021,"septembre","Lotu",09:00:00,"Moteur",0,0,0,0,0,0,2,NA
+2021-09-02,2021,"septembre","Lotu",09:00:00,"Voilier",0,2,0,0,0,0,0,NA
+2021-09-02,2021,"septembre","Lotu",12:00:00,"Moteur",3,0,0,0,0,0,0,NA
+2021-09-02,2021,"septembre","Lotu",12:00:00,"Voilier",0,1,0,0,0,0,0,NA
+2021-09-02,2021,"septembre","Lotu",15:00:00,"Moteur",4,2,0,0,0,0,2,NA
+2021-09-02,2021,"septembre","Lotu",15:00:00,"Voilier",0,2,0,0,0,0,0,NA
+2021-09-02,2021,"septembre","Lotu",17:00:00,"Moteur",3,1,0,0,0,0,1,NA
+2021-09-02,2021,"septembre","Lotu",17:00:00,"Voilier",0,1,0,0,0,0,0,NA
+2021-09-02,2021,"septembre","Mezzanu",09:00:00,"Moteur",1,1,0,0,0,0,0,NA
+2021-09-02,2021,"septembre","Mezzanu",09:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2021-09-02,2021,"septembre","Mezzanu",12:00:00,"Moteur",3,2,0,0,0,0,1,NA
+2021-09-02,2021,"septembre","Mezzanu",12:00:00,"Voilier",0,7,0,0,0,0,1,NA
+2021-09-02,2021,"septembre","Mezzanu",15:00:00,"Moteur",13,2,0,0,0,0,0,NA
+2021-09-02,2021,"septembre","Mezzanu",15:00:00,"Voilier",0,9,0,0,0,0,0,NA
+2021-09-02,2021,"septembre","Mezzanu",17:00:00,"Moteur",7,2,0,0,0,0,0,NA
+2021-09-02,2021,"septembre","Mezzanu",17:00:00,"Voilier",0,7,0,0,0,0,0,NA
+2021-09-02,2021,"septembre","Fiume Santu",09:00:00,"Moteur",0,2,0,0,0,0,4,NA
+2021-09-02,2021,"septembre","Fiume Santu",09:00:00,"Voilier",0,4,0,0,0,0,2,NA
+2021-09-02,2021,"septembre","Fiume Santu",12:00:00,"Moteur",5,4,0,0,0,0,4,NA
+2021-09-02,2021,"septembre","Fiume Santu",12:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2021-09-02,2021,"septembre","Fiume Santu",15:00:00,"Moteur",5,2,0,0,0,0,5,NA
+2021-09-02,2021,"septembre","Fiume Santu",15:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2021-09-02,2021,"septembre","Fiume Santu",17:00:00,"Moteur",3,3,0,0,0,0,0,NA
+2021-09-02,2021,"septembre","Fiume Santu",17:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2022-06-21,2022,"juin","Saleccia",09:00:00,"Moteur",3,1,0,0,0,0,3,"1 < 8 m au travail au mouillage (TSMC surement pour pose balisage Saleccia)"
+2022-06-21,2022,"juin","Saleccia",09:00:00,"Voilier",0,10,0,1,0,0,4,NA
+2022-06-21,2022,"juin","Saleccia",12:00:00,"Moteur",8,5,0,0,0,0,5,NA
+2022-06-21,2022,"juin","Saleccia",12:00:00,"Voilier",0,10,0,0,0,0,3,NA
+2022-06-21,2022,"juin","Saleccia",15:00:00,"Moteur",16,3,4,2,0,0,0,NA
+2022-06-21,2022,"juin","Saleccia",15:00:00,"Voilier",0,12,2,0,0,0,0,NA
+2022-06-21,2022,"juin","Saleccia",17:00:00,"Moteur",5,4,0,1,0,0,2,NA
+2022-06-21,2022,"juin","Saleccia",17:00:00,"Voilier",0,10,0,1,0,0,0,NA
+2022-06-21,2022,"juin","Lotu",09:00:00,"Moteur",1,1,0,0,0,0,4,NA
+2022-06-21,2022,"juin","Lotu",09:00:00,"Voilier",0,1,0,0,0,0,0,NA
+2022-06-21,2022,"juin","Lotu",12:00:00,"Moteur",4,1,0,0,0,0,4,NA
+2022-06-21,2022,"juin","Lotu",12:00:00,"Voilier",0,3,0,0,0,0,1,NA
+2022-06-21,2022,"juin","Lotu",15:00:00,"Moteur",2,1,0,0,0,0,0,NA
+2022-06-21,2022,"juin","Lotu",15:00:00,"Voilier",0,3,0,0,0,0,0,NA
+2022-06-21,2022,"juin","Lotu",17:00:00,"Moteur",5,3,0,0,0,0,6,NA
+2022-06-21,2022,"juin","Lotu",17:00:00,"Voilier",0,2,0,0,0,0,2,NA
+2022-06-21,2022,"juin","Mezzanu",09:00:00,"Moteur",1,2,0,0,0,0,2,NA
+2022-06-21,2022,"juin","Mezzanu",09:00:00,"Voilier",0,6,0,0,0,0,2,NA
+2022-06-21,2022,"juin","Mezzanu",12:00:00,"Moteur",2,1,0,0,0,0,5,NA
+2022-06-21,2022,"juin","Mezzanu",12:00:00,"Voilier",0,3,0,0,0,0,3,NA
+2022-06-21,2022,"juin","Mezzanu",15:00:00,"Moteur",3,2,0,0,0,0,0,NA
+2022-06-21,2022,"juin","Mezzanu",15:00:00,"Voilier",0,7,0,0,0,0,0,NA
+2022-06-21,2022,"juin","Mezzanu",17:00:00,"Moteur",1,5,0,0,0,0,4,NA
+2022-06-21,2022,"juin","Mezzanu",17:00:00,"Voilier",0,7,0,0,0,0,1,NA
+2022-06-21,2022,"juin","Fiume Santu",09:00:00,"Moteur",8,2,1,0,0,0,5,NA
+2022-06-21,2022,"juin","Fiume Santu",09:00:00,"Voilier",0,6,0,0,0,0,0,NA
+2022-06-21,2022,"juin","Fiume Santu",12:00:00,"Moteur",0,4,0,0,0,0,2,NA
+2022-06-21,2022,"juin","Fiume Santu",12:00:00,"Voilier",0,4,0,0,0,0,4,NA
+2022-06-21,2022,"juin","Fiume Santu",15:00:00,"Moteur",4,7,0,0,0,0,0,NA
+2022-06-21,2022,"juin","Fiume Santu",15:00:00,"Voilier",1,4,0,0,0,0,2,NA
+2022-06-21,2022,"juin","Fiume Santu",17:00:00,"Moteur",10,6,0,0,0,0,4,NA
+2022-06-21,2022,"juin","Fiume Santu",17:00:00,"Voilier",0,7,0,0,0,0,0,NA
+2022-07-28,2022,"juillet","Saleccia",09:00:00,"Moteur",2,0,0,0,0,0,0,NA
+2022-07-28,2022,"juillet","Saleccia",09:00:00,"Voilier",44,1,1,0,0,0,4,NA
+2022-07-28,2022,"juillet","Saleccia",12:00:00,"Moteur",0,10,1,0,0,0,14,NA
+2022-07-28,2022,"juillet","Saleccia",12:00:00,"Voilier",0,8,1,0,0,0,0,NA
+2022-07-28,2022,"juillet","Saleccia",15:00:00,"Moteur",0,0,0,0,0,0,7,NA
+2022-07-28,2022,"juillet","Saleccia",15:00:00,"Voilier",0,0,0,0,0,0,3,NA
+2022-07-28,2022,"juillet","Saleccia",17:00:00,"Moteur",28,12,1,1,0,0,5,NA
+2022-07-28,2022,"juillet","Saleccia",17:00:00,"Voilier",0,8,2,0,0,0,4,NA
+2022-07-28,2022,"juillet","Lotu",09:00:00,"Moteur",0,0,0,0,0,0,6,NA
+2022-07-28,2022,"juillet","Lotu",09:00:00,"Voilier",0,4,0,0,0,0,2,NA
+2022-07-28,2022,"juillet","Lotu",12:00:00,"Moteur",9,1,0,0,0,0,6,NA
+2022-07-28,2022,"juillet","Lotu",12:00:00,"Voilier",0,3,1,0,0,0,3,NA
+2022-07-28,2022,"juillet","Lotu",15:00:00,"Moteur",0,0,0,0,0,0,5,NA
+2022-07-28,2022,"juillet","Lotu",15:00:00,"Voilier",0,0,0,0,0,0,4,NA
+2022-07-28,2022,"juillet","Lotu",17:00:00,"Moteur",18,6,0,0,0,0,14,NA
+2022-07-28,2022,"juillet","Lotu",17:00:00,"Voilier",0,2,0,0,0,0,3,NA
+2022-07-28,2022,"juillet","Mezzanu",09:00:00,"Moteur",0,0,0,1,0,0,6,NA
+2022-07-28,2022,"juillet","Mezzanu",09:00:00,"Voilier",0,2,0,0,0,0,2,NA
+2022-07-28,2022,"juillet","Mezzanu",12:00:00,"Moteur",20,4,1,2,0,0,3,NA
+2022-07-28,2022,"juillet","Mezzanu",12:00:00,"Voilier",0,12,1,0,0,0,4,NA
+2022-07-28,2022,"juillet","Mezzanu",15:00:00,"Moteur",0,0,0,0,0,0,11,NA
+2022-07-28,2022,"juillet","Mezzanu",15:00:00,"Voilier",0,0,0,0,0,0,6,NA
+2022-07-28,2022,"juillet","Mezzanu",17:00:00,"Moteur",25,11,1,2,0,0,6,NA
+2022-07-28,2022,"juillet","Mezzanu",17:00:00,"Voilier",0,10,2,0,0,0,2,NA
+2022-07-28,2022,"juillet","Fiume Santu",09:00:00,"Moteur",4,3,0,0,0,0,8,NA
+2022-07-28,2022,"juillet","Fiume Santu",09:00:00,"Voilier",0,5,0,0,0,0,7,NA
+2022-07-28,2022,"juillet","Fiume Santu",12:00:00,"Moteur",15,6,0,0,0,0,14,NA
+2022-07-28,2022,"juillet","Fiume Santu",12:00:00,"Voilier",0,3,0,0,0,0,2,NA
+2022-07-28,2022,"juillet","Fiume Santu",15:00:00,"Moteur",0,0,0,0,0,0,8,NA
+2022-07-28,2022,"juillet","Fiume Santu",15:00:00,"Voilier",0,0,0,0,0,0,2,NA
+2022-07-28,2022,"juillet","Fiume Santu",17:00:00,"Moteur",24,20,0,0,0,0,4,NA
+2022-07-28,2022,"juillet","Fiume Santu",17:00:00,"Voilier",0,5,0,0,0,0,5,NA
+2022-08-10,2022,"août","Saleccia",09:00:00,"Moteur",3,2,2,1,0,0,6,NA
+2022-08-10,2022,"août","Saleccia",09:00:00,"Voilier",0,15,0,0,0,0,2,NA
+2022-08-10,2022,"août","Saleccia",12:00:00,"Moteur",59,21,6,2,0,0,1,NA
+2022-08-10,2022,"août","Saleccia",12:00:00,"Voilier",0,34,0,0,0,0,6,NA
+2022-08-10,2022,"août","Saleccia",15:00:00,"Moteur",43,11,4,2,0,0,0,NA
+2022-08-10,2022,"août","Saleccia",15:00:00,"Voilier",2,30,1,0,0,0,0,NA
+2022-08-10,2022,"août","Saleccia",17:00:00,"Moteur",NA,NA,NA,NA,NA,NA,NA,NA
+2022-08-10,2022,"août","Saleccia",17:00:00,"Voilier",NA,NA,NA,NA,NA,NA,NA,NA
+2022-08-10,2022,"août","Lotu",09:00:00,"Moteur",0,3,0,0,0,0,14,NA
+2022-08-10,2022,"août","Lotu",09:00:00,"Voilier",0,2,0,0,0,0,11,NA
+2022-08-10,2022,"août","Lotu",12:00:00,"Moteur",9,2,0,0,0,0,4,NA
+2022-08-10,2022,"août","Lotu",12:00:00,"Voilier",0,5,0,0,0,0,5,NA
+2022-08-10,2022,"août","Lotu",15:00:00,"Moteur",13,4,0,0,0,0,0,NA
+2022-08-10,2022,"août","Lotu",15:00:00,"Voilier",0,8,0,0,0,0,0,NA
+2022-08-10,2022,"août","Lotu",17:00:00,"Moteur",NA,NA,NA,NA,NA,NA,NA,NA
+2022-08-10,2022,"août","Lotu",17:00:00,"Voilier",NA,NA,NA,NA,NA,NA,NA,NA
+2022-08-10,2022,"août","Mezzanu",09:00:00,"Moteur",6,2,0,1,0,0,15,NA
+2022-08-10,2022,"août","Mezzanu",09:00:00,"Voilier",0,4,0,0,0,0,2,NA
+2022-08-10,2022,"août","Mezzanu",12:00:00,"Moteur",22,18,4,1,0,0,2,NA
+2022-08-10,2022,"août","Mezzanu",12:00:00,"Voilier",0,17,0,0,0,0,1,NA
+2022-08-10,2022,"août","Mezzanu",15:00:00,"Moteur",33,23,1,3,0,0,0,NA
+2022-08-10,2022,"août","Mezzanu",15:00:00,"Voilier",1,12,0,2,0,0,0,NA
+2022-08-10,2022,"août","Mezzanu",17:00:00,"Moteur",NA,NA,NA,NA,NA,NA,NA,NA
+2022-08-10,2022,"août","Mezzanu",17:00:00,"Voilier",NA,NA,NA,NA,NA,NA,NA,NA
+2022-08-10,2022,"août","Fiume Santu",09:00:00,"Moteur",9,19,0,0,0,0,19,NA
+2022-08-10,2022,"août","Fiume Santu",09:00:00,"Voilier",0,8,0,0,0,0,3,NA
+2022-08-10,2022,"août","Fiume Santu",12:00:00,"Moteur",16,27,1,0,0,0,6,NA
+2022-08-10,2022,"août","Fiume Santu",12:00:00,"Voilier",0,6,0,0,0,0,0,NA
+2022-08-10,2022,"août","Fiume Santu",15:00:00,"Moteur",NA,NA,NA,NA,NA,NA,NA,"Comptage partiel echouage"
+2022-08-10,2022,"août","Fiume Santu",15:00:00,"Voilier",NA,NA,NA,NA,NA,NA,NA,"Comptage partiel echouage"
+2022-08-10,2022,"août","Fiume Santu",17:00:00,"Moteur",NA,NA,NA,NA,NA,NA,NA,NA
+2022-08-10,2022,"août","Fiume Santu",17:00:00,"Voilier",NA,NA,NA,NA,NA,NA,NA,NA
+2022-09-12,2022,"septembre","Saleccia",09:00:00,"Moteur",0,1,0,1,0,0,2,NA
+2022-09-12,2022,"septembre","Saleccia",09:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2022-09-12,2022,"septembre","Saleccia",12:00:00,"Moteur",12,1,0,1,0,0,3,NA
+2022-09-12,2022,"septembre","Saleccia",12:00:00,"Voilier",0,0,0,0,0,0,2,NA
+2022-09-12,2022,"septembre","Saleccia",15:00:00,"Moteur",8,5,3,0,0,0,4,NA
+2022-09-12,2022,"septembre","Saleccia",15:00:00,"Voilier",0,5,0,0,0,0,3,NA
+2022-09-12,2022,"septembre","Saleccia",17:00:00,"Moteur",0,4,2,1,0,0,1,NA
+2022-09-12,2022,"septembre","Saleccia",17:00:00,"Voilier",0,3,0,0,0,0,1,NA
+2022-09-12,2022,"septembre","Lotu",09:00:00,"Moteur",0,1,0,0,0,0,5,NA
+2022-09-12,2022,"septembre","Lotu",09:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2022-09-12,2022,"septembre","Lotu",12:00:00,"Moteur",5,2,0,0,0,0,2,NA
+2022-09-12,2022,"septembre","Lotu",12:00:00,"Voilier",0,0,0,0,0,0,2,NA
+2022-09-12,2022,"septembre","Lotu",15:00:00,"Moteur",3,4,0,0,0,0,6,NA
+2022-09-12,2022,"septembre","Lotu",15:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2022-09-12,2022,"septembre","Lotu",17:00:00,"Moteur",5,1,0,0,0,0,4,NA
+2022-09-12,2022,"septembre","Lotu",17:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2022-09-12,2022,"septembre","Mezzanu",09:00:00,"Moteur",0,0,0,1,0,0,3,NA
+2022-09-12,2022,"septembre","Mezzanu",09:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2022-09-12,2022,"septembre","Mezzanu",12:00:00,"Moteur",12,2,0,1,0,0,4,NA
+2022-09-12,2022,"septembre","Mezzanu",12:00:00,"Voilier",0,4,0,0,0,0,2,NA
+2022-09-12,2022,"septembre","Mezzanu",15:00:00,"Moteur",6,5,1,1,0,0,0,NA
+2022-09-12,2022,"septembre","Mezzanu",15:00:00,"Voilier",0,2,1,0,0,0,1,NA
+2022-09-12,2022,"septembre","Mezzanu",17:00:00,"Moteur",12,2,1,1,0,0,6,NA
+2022-09-12,2022,"septembre","Mezzanu",17:00:00,"Voilier",0,2,0,0,0,0,3,NA
+2022-09-12,2022,"septembre","Fiume Santu",09:00:00,"Moteur",1,1,0,0,0,0,4,NA
+2022-09-12,2022,"septembre","Fiume Santu",09:00:00,"Voilier",0,5,0,0,0,0,1,NA
+2022-09-12,2022,"septembre","Fiume Santu",12:00:00,"Moteur",4,2,0,0,0,0,11,NA
+2022-09-12,2022,"septembre","Fiume Santu",12:00:00,"Voilier",0,3,0,0,0,0,2,NA
+2022-09-12,2022,"septembre","Fiume Santu",15:00:00,"Moteur",7,4,0,0,0,0,3,NA
+2022-09-12,2022,"septembre","Fiume Santu",15:00:00,"Voilier",0,4,0,0,0,0,1,NA
+2022-09-12,2022,"septembre","Fiume Santu",17:00:00,"Moteur",10,4,0,0,0,0,3,NA
+2022-09-12,2022,"septembre","Fiume Santu",17:00:00,"Voilier",0,3,0,0,0,0,2,NA
+2023-06-23,2023,"juin","Saleccia",09:00:00,"Moteur",0,0,0,0,0,0,0,NA
+2023-06-23,2023,"juin","Saleccia",09:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-06-23,2023,"juin","Saleccia",12:00:00,"Moteur",1,0,0,0,0,0,0,NA
+2023-06-23,2023,"juin","Saleccia",12:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-06-23,2023,"juin","Saleccia",15:00:00,"Moteur",0,0,0,0,0,0,1,NA
+2023-06-23,2023,"juin","Saleccia",15:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-06-23,2023,"juin","Saleccia",17:00:00,"Moteur",0,1,0,0,0,0,0,NA
+2023-06-23,2023,"juin","Saleccia",17:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-06-23,2023,"juin","Lotu",09:00:00,"Moteur",0,0,0,0,0,0,2,NA
+2023-06-23,2023,"juin","Lotu",09:00:00,"Voilier",0,1,0,0,0,0,0,NA
+2023-06-23,2023,"juin","Lotu",12:00:00,"Moteur",1,0,0,0,0,0,3,NA
+2023-06-23,2023,"juin","Lotu",12:00:00,"Voilier",0,3,0,0,0,0,0,NA
+2023-06-23,2023,"juin","Lotu",15:00:00,"Moteur",1,4,1,0,0,0,2,NA
+2023-06-23,2023,"juin","Lotu",15:00:00,"Voilier",0,5,2,1,0,0,1,NA
+2023-06-23,2023,"juin","Lotu",17:00:00,"Moteur",2,1,1,0,0,0,1,NA
+2023-06-23,2023,"juin","Lotu",17:00:00,"Voilier",0,3,1,0,0,0,0,NA
+2023-06-23,2023,"juin","Mezzanu",09:00:00,"Moteur",0,0,0,0,0,0,0,NA
+2023-06-23,2023,"juin","Mezzanu",09:00:00,"Voilier",0,2,0,0,0,0,1,NA
+2023-06-23,2023,"juin","Mezzanu",12:00:00,"Moteur",3,0,0,0,0,0,0,NA
+2023-06-23,2023,"juin","Mezzanu",12:00:00,"Voilier",0,2,0,0,0,0,0,NA
+2023-06-23,2023,"juin","Mezzanu",15:00:00,"Moteur",1,0,0,0,0,0,0,NA
+2023-06-23,2023,"juin","Mezzanu",15:00:00,"Voilier",0,1,0,0,0,0,1,NA
+2023-06-23,2023,"juin","Mezzanu",17:00:00,"Moteur",0,0,0,0,0,0,3,NA
+2023-06-23,2023,"juin","Mezzanu",17:00:00,"Voilier",0,1,0,0,0,0,0,NA
+2023-06-23,2023,"juin","Fiume Santu",09:00:00,"Moteur",6,3,0,0,0,0,1,NA
+2023-06-23,2023,"juin","Fiume Santu",09:00:00,"Voilier",1,4,0,0,0,0,0,NA
+2023-06-23,2023,"juin","Fiume Santu",12:00:00,"Moteur",8,5,0,0,0,0,3,NA
+2023-06-23,2023,"juin","Fiume Santu",12:00:00,"Voilier",1,6,0,0,0,0,0,NA
+2023-06-23,2023,"juin","Fiume Santu",15:00:00,"Moteur",6,7,0,0,0,0,9,NA
+2023-06-23,2023,"juin","Fiume Santu",15:00:00,"Voilier",0,6,0,0,0,0,0,NA
+2023-06-23,2023,"juin","Fiume Santu",17:00:00,"Moteur",8,7,0,0,0,0,3,NA
+2023-06-23,2023,"juin","Fiume Santu",17:00:00,"Voilier",0,7,0,0,0,0,0,NA
+2023-06-23,2023,"juin","A Torra di Murtella",09:00:00,"Moteur",0,1,0,0,0,0,3,NA
+2023-06-23,2023,"juin","A Torra di Murtella",09:00:00,"Voilier",1,2,0,0,0,0,2,NA
+2023-06-23,2023,"juin","A Torra di Murtella",12:00:00,"Moteur",5,2,0,0,0,0,0,NA
+2023-06-23,2023,"juin","A Torra di Murtella",12:00:00,"Voilier",0,7,0,0,0,0,1,NA
+2023-06-23,2023,"juin","A Torra di Murtella",15:00:00,"Moteur",2,1,0,0,0,0,5,NA
+2023-06-23,2023,"juin","A Torra di Murtella",15:00:00,"Voilier",1,6,0,0,0,0,0,NA
+2023-06-23,2023,"juin","A Torra di Murtella",17:00:00,"Moteur",0,5,0,0,0,0,1,NA
+2023-06-23,2023,"juin","A Torra di Murtella",17:00:00,"Voilier",0,5,0,0,0,0,0,NA
+2023-06-23,2023,"juin","Ghignu",09:00:00,"Moteur",0,0,0,0,0,0,0,NA
+2023-06-23,2023,"juin","Ghignu",09:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-06-23,2023,"juin","Ghignu",12:00:00,"Moteur",0,4,0,0,0,2,3,NA
+2023-06-23,2023,"juin","Ghignu",12:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-06-23,2023,"juin","Ghignu",15:00:00,"Moteur",1,1,0,0,0,1,2,NA
+2023-06-23,2023,"juin","Ghignu",15:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-06-23,2023,"juin","Ghignu",17:00:00,"Moteur",0,1,0,0,0,0,0,NA
+2023-06-23,2023,"juin","Ghignu",17:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-06-23,2023,"juin","Malfalcu",09:00:00,"Moteur",0,1,0,0,0,0,0,NA
+2023-06-23,2023,"juin","Malfalcu",09:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-06-23,2023,"juin","Malfalcu",12:00:00,"Moteur",0,1,0,0,0,0,1,NA
+2023-06-23,2023,"juin","Malfalcu",12:00:00,"Voilier",0,0,0,0,0,0,1,NA
+2023-06-23,2023,"juin","Malfalcu",15:00:00,"Moteur",0,2,0,0,0,0,0,NA
+2023-06-23,2023,"juin","Malfalcu",15:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-06-23,2023,"juin","Malfalcu",17:00:00,"Moteur",NA,NA,NA,NA,NA,NA,NA,NA
+2023-06-23,2023,"juin","Malfalcu",17:00:00,"Voilier",NA,NA,NA,NA,NA,NA,NA,NA
+2023-06-23,2023,"juin","U Travu",09:00:00,"Moteur",0,0,0,0,0,0,1,NA
+2023-06-23,2023,"juin","U Travu",09:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-06-23,2023,"juin","U Travu",12:00:00,"Moteur",1,0,0,0,0,0,0,NA
+2023-06-23,2023,"juin","U Travu",12:00:00,"Voilier",0,0,0,0,0,0,1,NA
+2023-06-23,2023,"juin","U Travu",15:00:00,"Moteur",3,1,0,0,0,0,1,NA
+2023-06-23,2023,"juin","U Travu",15:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-06-23,2023,"juin","U Travu",17:00:00,"Moteur",NA,NA,NA,NA,NA,NA,NA,NA
+2023-06-23,2023,"juin","U Travu",17:00:00,"Voilier",NA,NA,NA,NA,NA,NA,NA,NA
+2023-07-08,2023,"juillet","Saleccia",09:00:00,"Moteur",2,0,0,0,0,0,8,NA
+2023-07-08,2023,"juillet","Saleccia",09:00:00,"Voilier",0,5,2,0,0,0,0,NA
+2023-07-08,2023,"juillet","Saleccia",12:00:00,"Moteur",33,12,0,0,0,0,15,NA
+2023-07-08,2023,"juillet","Saleccia",12:00:00,"Voilier",0,2,0,0,0,0,0,NA
+2023-07-08,2023,"juillet","Saleccia",15:00:00,"Moteur",34,10,3,1,0,0,13,NA
+2023-07-08,2023,"juillet","Saleccia",15:00:00,"Voilier",0,11,0,0,0,0,5,NA
+2023-07-08,2023,"juillet","Saleccia",17:00:00,"Moteur",15,11,4,0,0,0,8,NA
+2023-07-08,2023,"juillet","Saleccia",17:00:00,"Voilier",1,10,0,0,0,0,1,NA
+2023-07-08,2023,"juillet","Lotu",09:00:00,"Moteur",2,1,0,0,0,0,12,NA
+2023-07-08,2023,"juillet","Lotu",09:00:00,"Voilier",0,2,0,0,0,0,0,NA
+2023-07-08,2023,"juillet","Lotu",12:00:00,"Moteur",6,2,0,0,0,0,4,NA
+2023-07-08,2023,"juillet","Lotu",12:00:00,"Voilier",0,3,0,0,0,0,2,NA
+2023-07-08,2023,"juillet","Lotu",15:00:00,"Moteur",15,4,0,0,0,0,4,NA
+2023-07-08,2023,"juillet","Lotu",15:00:00,"Voilier",0,0,0,0,0,0,1,NA
+2023-07-08,2023,"juillet","Lotu",17:00:00,"Moteur",9,3,0,0,0,0,11,NA
+2023-07-08,2023,"juillet","Lotu",17:00:00,"Voilier",0,4,0,0,0,0,0,NA
+2023-07-08,2023,"juillet","Mezzanu",09:00:00,"Moteur",5,2,0,0,0,0,5,NA
+2023-07-08,2023,"juillet","Mezzanu",09:00:00,"Voilier",0,5,0,0,0,0,1,NA
+2023-07-08,2023,"juillet","Mezzanu",12:00:00,"Moteur",21,6,0,0,0,0,8,NA
+2023-07-08,2023,"juillet","Mezzanu",12:00:00,"Voilier",1,7,0,0,0,0,3,NA
+2023-07-08,2023,"juillet","Mezzanu",15:00:00,"Moteur",24,5,0,1,0,0,0,NA
+2023-07-08,2023,"juillet","Mezzanu",15:00:00,"Voilier",0,7,0,0,0,0,0,NA
+2023-07-08,2023,"juillet","Mezzanu",17:00:00,"Moteur",26,7,0,1,0,0,7,NA
+2023-07-08,2023,"juillet","Mezzanu",17:00:00,"Voilier",0,7,0,0,0,0,0,NA
+2023-07-08,2023,"juillet","Fiume Santu",09:00:00,"Moteur",6,1,0,0,0,0,8,NA
+2023-07-08,2023,"juillet","Fiume Santu",09:00:00,"Voilier",0,1,0,0,0,0,0,NA
+2023-07-08,2023,"juillet","Fiume Santu",12:00:00,"Moteur",15,2,0,0,0,0,6,NA
+2023-07-08,2023,"juillet","Fiume Santu",12:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-07-08,2023,"juillet","Fiume Santu",15:00:00,"Moteur",18,4,0,0,0,0,6,NA
+2023-07-08,2023,"juillet","Fiume Santu",15:00:00,"Voilier",1,5,0,0,0,0,0,NA
+2023-07-08,2023,"juillet","Fiume Santu",17:00:00,"Moteur",19,2,0,0,0,0,11,NA
+2023-07-08,2023,"juillet","Fiume Santu",17:00:00,"Voilier",0,2,0,0,0,0,1,NA
+2023-07-08,2023,"juillet","A Torra di Murtella",09:00:00,"Moteur",0,0,0,0,0,0,14,NA
+2023-07-08,2023,"juillet","A Torra di Murtella",09:00:00,"Voilier",2,2,0,0,0,0,0,NA
+2023-07-08,2023,"juillet","A Torra di Murtella",12:00:00,"Moteur",5,0,0,0,0,0,8,NA
+2023-07-08,2023,"juillet","A Torra di Murtella",12:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-07-08,2023,"juillet","A Torra di Murtella",15:00:00,"Moteur",12,0,0,0,0,0,9,NA
+2023-07-08,2023,"juillet","A Torra di Murtella",15:00:00,"Voilier",0,2,0,0,0,0,2,NA
+2023-07-08,2023,"juillet","A Torra di Murtella",17:00:00,"Moteur",9,0,0,0,0,0,15,NA
+2023-07-08,2023,"juillet","A Torra di Murtella",17:00:00,"Voilier",0,2,0,0,0,0,3,NA
+2023-07-08,2023,"juillet","Ghignu",09:00:00,"Moteur",2,0,0,0,0,0,0,NA
+2023-07-08,2023,"juillet","Ghignu",09:00:00,"Voilier",0,1,0,0,0,0,0,NA
+2023-07-08,2023,"juillet","Ghignu",10:00:00,"Moteur",6,0,0,0,0,0,0,NA
+2023-07-08,2023,"juillet","Ghignu",10:00:00,"Voilier",0,1,0,0,0,0,0,NA
+2023-07-08,2023,"juillet","Ghignu",11:00:00,"Moteur",12,2,0,0,0,0,5,NA
+2023-07-08,2023,"juillet","Ghignu",11:00:00,"Voilier",0,1,0,0,0,0,0,NA
+2023-07-08,2023,"juillet","Ghignu",12:00:00,"Moteur",29,3,0,0,0,0,3,NA
+2023-07-08,2023,"juillet","Ghignu",12:00:00,"Voilier",0,1,0,0,0,0,0,NA
+2023-07-08,2023,"juillet","Ghignu",13:00:00,"Moteur",26,13,2,0,0,0,2,NA
+2023-07-08,2023,"juillet","Ghignu",13:00:00,"Voilier",0,0,0,0,0,0,1,NA
+2023-07-08,2023,"juillet","Ghignu",15:00:00,"Moteur",28,25,3,0,0,0,4,NA
+2023-07-08,2023,"juillet","Ghignu",15:00:00,"Voilier",0,1,1,0,0,0,0,NA
+2023-07-08,2023,"juillet","Ghignu",17:00:00,"Moteur",27,5,0,0,0,0,3,NA
+2023-07-08,2023,"juillet","Ghignu",17:00:00,"Voilier",0,1,1,0,0,0,NA,"17h10 Bateau vert (mare e stagnu) fait un tour dans la baie avec 2-3 pers à bord"
+2023-07-08,2023,"juillet","Malfalcu",09:00:00,"Moteur",1,0,0,0,0,0,0,"0"
+2023-07-08,2023,"juillet","Malfalcu",09:00:00,"Voilier",0,0,0,0,0,0,0,"0"
+2023-07-08,2023,"juillet","Malfalcu",12:00:00,"Moteur",2,2,0,0,0,0,5,"0"
+2023-07-08,2023,"juillet","Malfalcu",12:00:00,"Voilier",0,0,0,0,0,0,0,"0"
+2023-07-08,2023,"juillet","Malfalcu",15:00:00,"Moteur",1,0,0,0,0,0,3,"0"
+2023-07-08,2023,"juillet","Malfalcu",15:00:00,"Voilier",0,0,0,0,0,0,2,"0"
+2023-07-08,2023,"juillet","Malfalcu",17:00:00,"Moteur",2,0,0,0,0,0,3,"0"
+2023-07-08,2023,"juillet","Malfalcu",17:00:00,"Voilier",0,0,0,0,0,0,1,"0"
+2023-07-08,2023,"juillet","U Travu",09:00:00,"Moteur",0,0,0,0,0,0,0,NA
+2023-07-08,2023,"juillet","U Travu",09:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-07-08,2023,"juillet","U Travu",12:00:00,"Moteur",15,3,0,0,0,0,11,NA
+2023-07-08,2023,"juillet","U Travu",12:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-07-08,2023,"juillet","U Travu",15:00:00,"Moteur",14,5,1,0,0,0,3,"Dont un bateau tout vert (mare e stagnu) qui allait en direction de l'acciolu mais pas de dépose à ghignu (mais obs au retour après 17h dans la baie de Ghignu)"
+2023-07-08,2023,"juillet","U Travu",15:00:00,"Voilier",0,0,0,0,0,0,1,NA
+2023-07-08,2023,"juillet","U Travu",17:00:00,"Moteur",0,0,0,0,0,0,0,NA
+2023-07-08,2023,"juillet","U Travu",17:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-08-10,2023,"août","Saleccia",09:00:00,"Moteur",0,2,0,0,0,0,5,NA
+2023-08-10,2023,"août","Saleccia",09:00:00,"Voilier",0,17,0,0,0,0,3,NA
+2023-08-10,2023,"août","Saleccia",12:00:00,"Moteur",9,70,11,0,0,0,13,NA
+2023-08-10,2023,"août","Saleccia",12:00:00,"Voilier",0,25,6,0,0,0,3,NA
+2023-08-10,2023,"août","Saleccia",15:00:00,"Moteur",5,73,4,0,0,0,2,NA
+2023-08-10,2023,"août","Saleccia",15:00:00,"Voilier",0,20,4,0,0,0,0,NA
+2023-08-10,2023,"août","Saleccia",17:00:00,"Moteur",0,48,4,0,0,0,4,NA
+2023-08-10,2023,"août","Saleccia",17:00:00,"Voilier",0,29,2,0,0,0,4,NA
+2023-08-10,2023,"août","Lotu",09:00:00,"Moteur",4,1,0,0,0,0,7,NA
+2023-08-10,2023,"août","Lotu",09:00:00,"Voilier",0,18,0,0,0,0,5,NA
+2023-08-10,2023,"août","Lotu",12:00:00,"Moteur",2,8,0,0,0,0,14,NA
+2023-08-10,2023,"août","Lotu",12:00:00,"Voilier",0,17,1,0,0,0,2,NA
+2023-08-10,2023,"août","Lotu",15:00:00,"Moteur",4,21,1,0,0,0,8,NA
+2023-08-10,2023,"août","Lotu",15:00:00,"Voilier",0,6,0,0,0,0,4,NA
+2023-08-10,2023,"août","Lotu",17:00:00,"Moteur",0,23,1,1,0,0,9,NA
+2023-08-10,2023,"août","Lotu",17:00:00,"Voilier",0,8,1,0,0,0,4,NA
+2023-08-10,2023,"août","Mezzanu",09:00:00,"Moteur",6,15,1,1,0,0,10,NA
+2023-08-10,2023,"août","Mezzanu",09:00:00,"Voilier",0,10,1,0,0,0,1,NA
+2023-08-10,2023,"août","Mezzanu",12:00:00,"Moteur",2,21,4,0,0,0,10,NA
+2023-08-10,2023,"août","Mezzanu",12:00:00,"Voilier",0,8,1,0,0,0,3,NA
+2023-08-10,2023,"août","Mezzanu",15:00:00,"Moteur",4,26,4,0,0,0,13,NA
+2023-08-10,2023,"août","Mezzanu",15:00:00,"Voilier",0,8,5,0,0,0,0,NA
+2023-08-10,2023,"août","Mezzanu",17:00:00,"Moteur",8,28,3,0,0,0,0,NA
+2023-08-10,2023,"août","Mezzanu",17:00:00,"Voilier",0,5,3,0,0,0,0,NA
+2023-08-10,2023,"août","Fiume Santu",09:00:00,"Moteur",3,15,0,0,0,0,5,NA
+2023-08-10,2023,"août","Fiume Santu",09:00:00,"Voilier",0,4,0,0,0,0,2,NA
+2023-08-10,2023,"août","Fiume Santu",12:00:00,"Moteur",3,16,1,0,0,0,15,NA
+2023-08-10,2023,"août","Fiume Santu",12:00:00,"Voilier",0,4,0,0,0,0,1,NA
+2023-08-10,2023,"août","Fiume Santu",15:00:00,"Moteur",3,58,0,0,0,0,10,NA
+2023-08-10,2023,"août","Fiume Santu",15:00:00,"Voilier",0,8,1,0,0,0,1,NA
+2023-08-10,2023,"août","Fiume Santu",17:00:00,"Moteur",2,49,0,1,0,0,6,NA
+2023-08-10,2023,"août","Fiume Santu",17:00:00,"Voilier",0,10,0,0,0,0,3,NA
+2023-08-10,2023,"août","A Torra di Murtella",09:00:00,"Moteur",1,3,0,0,0,0,5,NA
+2023-08-10,2023,"août","A Torra di Murtella",09:00:00,"Voilier",0,7,0,0,0,0,3,NA
+2023-08-10,2023,"août","A Torra di Murtella",12:00:00,"Moteur",1,1,0,0,0,0,7,NA
+2023-08-10,2023,"août","A Torra di Murtella",12:00:00,"Voilier",0,7,0,0,0,0,2,NA
+2023-08-10,2023,"août","A Torra di Murtella",15:00:00,"Moteur",1,31,3,0,0,0,11,NA
+2023-08-10,2023,"août","A Torra di Murtella",15:00:00,"Voilier",0,5,0,0,0,0,0,NA
+2023-08-10,2023,"août","A Torra di Murtella",17:00:00,"Moteur",0,26,0,0,0,0,8,NA
+2023-08-10,2023,"août","A Torra di Murtella",17:00:00,"Voilier",0,5,0,0,0,0,4,NA
+2023-09-06,2023,"septembre","Saleccia",09:00:00,"Moteur",1,0,0,0,0,0,1,NA
+2023-09-06,2023,"septembre","Saleccia",09:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","Saleccia",12:00:00,"Moteur",5,0,0,0,0,0,2,NA
+2023-09-06,2023,"septembre","Saleccia",12:00:00,"Voilier",0,1,0,0,0,0,3,NA
+2023-09-06,2023,"septembre","Saleccia",15:00:00,"Moteur",4,0,0,0,0,0,1,NA
+2023-09-06,2023,"septembre","Saleccia",15:00:00,"Voilier",0,1,0,0,0,0,3,NA
+2023-09-06,2023,"septembre","Saleccia",17:00:00,"Moteur",2,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","Saleccia",17:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","Lotu",09:00:00,"Moteur",0,0,0,0,0,0,3,NA
+2023-09-06,2023,"septembre","Lotu",09:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","Lotu",12:00:00,"Moteur",7,1,0,0,0,0,3,NA
+2023-09-06,2023,"septembre","Lotu",12:00:00,"Voilier",1,2,0,0,0,0,1,NA
+2023-09-06,2023,"septembre","Lotu",15:00:00,"Moteur",6,1,0,0,0,0,5,NA
+2023-09-06,2023,"septembre","Lotu",15:00:00,"Voilier",0,1,1,0,0,0,2,NA
+2023-09-06,2023,"septembre","Lotu",17:00:00,"Moteur",0,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","Lotu",17:00:00,"Voilier",0,1,0,0,0,0,1,NA
+2023-09-06,2023,"septembre","Mezzanu",09:00:00,"Moteur",0,0,0,0,0,0,3,NA
+2023-09-06,2023,"septembre","Mezzanu",09:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","Mezzanu",12:00:00,"Moteur",4,0,0,0,0,0,8,NA
+2023-09-06,2023,"septembre","Mezzanu",12:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","Mezzanu",15:00:00,"Moteur",0,0,0,0,0,0,2,NA
+2023-09-06,2023,"septembre","Mezzanu",15:00:00,"Voilier",0,0,0,0,0,0,1,NA
+2023-09-06,2023,"septembre","Mezzanu",17:00:00,"Moteur",0,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","Mezzanu",17:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","Fiume Santu",09:00:00,"Moteur",2,0,0,0,0,0,7,NA
+2023-09-06,2023,"septembre","Fiume Santu",09:00:00,"Voilier",0,4,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","Fiume Santu",12:00:00,"Moteur",23,2,0,0,0,0,6,NA
+2023-09-06,2023,"septembre","Fiume Santu",12:00:00,"Voilier",0,10,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","Fiume Santu",15:00:00,"Moteur",31,2,0,0,0,0,3,NA
+2023-09-06,2023,"septembre","Fiume Santu",15:00:00,"Voilier",0,9,0,0,0,0,3,NA
+2023-09-06,2023,"septembre","Fiume Santu",17:00:00,"Moteur",28,3,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","Fiume Santu",17:00:00,"Voilier",0,7,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","A Torra di Murtella",09:00:00,"Moteur",0,0,0,0,0,0,2,NA
+2023-09-06,2023,"septembre","A Torra di Murtella",09:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","A Torra di Murtella",12:00:00,"Moteur",0,0,0,0,0,0,4,NA
+2023-09-06,2023,"septembre","A Torra di Murtella",12:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","A Torra di Murtella",15:00:00,"Moteur",6,2,0,0,0,0,1,NA
+2023-09-06,2023,"septembre","A Torra di Murtella",15:00:00,"Voilier",0,4,0,0,0,0,1,NA
+2023-09-06,2023,"septembre","A Torra di Murtella",17:00:00,"Moteur",4,2,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","A Torra di Murtella",17:00:00,"Voilier",0,3,0,0,0,0,1,NA
+2023-09-06,2023,"septembre","Ghignu",09:00:00,"Moteur",0,1,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","Ghignu",09:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","Ghignu",12:00:00,"Moteur",9,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","Ghignu",12:00:00,"Voilier",0,4,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","Ghignu",15:00:00,"Moteur",2,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","Ghignu",15:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","Ghignu",17:00:00,"Moteur",0,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","Ghignu",17:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","Malfalcu",09:00:00,"Moteur",0,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","Malfalcu",09:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","Malfalcu",12:00:00,"Moteur",4,NA,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","Malfalcu",12:00:00,"Voilier",0,3,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","Malfalcu",15:00:00,"Moteur",3,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","Malfalcu",15:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","Malfalcu",17:00:00,"Moteur",0,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","Malfalcu",17:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","U Travu",09:00:00,"Moteur",0,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","U Travu",09:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","U Travu",12:00:00,"Moteur",8,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","U Travu",12:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","U Travu",15:00:00,"Moteur",1,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","U Travu",15:00:00,"Voilier",0,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","U Travu",17:00:00,"Moteur",0,0,0,0,0,0,0,NA
+2023-09-06,2023,"septembre","U Travu",17:00:00,"Voilier",0,0,0,0,0,0,0,NA

@@ -1,0 +1,175 @@
+"date","annee","mois","secteur","horaire","personnes_sur_la_plage","personnes_dans_l'eau","pmt","vaches","observations"
+2020-07-29,2020,"juillet","Saleccia",09:00:00,27,9,NA,0,NA
+2020-07-29,2020,"juillet","Saleccia",12:00:00,364,440,NA,0,NA
+2020-07-29,2020,"juillet","Saleccia",14:00:00,368,427,NA,0,NA
+2020-07-29,2020,"juillet","Saleccia",16:00:00,387,432,NA,0,NA
+2020-07-29,2020,"juillet","Lotu",09:00:00,1,2,NA,0,NA
+2020-07-29,2020,"juillet","Lotu",12:00:00,148,98,NA,0,NA
+2020-07-29,2020,"juillet","Lotu",14:45:00,209,197,NA,0,NA
+2020-07-29,2020,"juillet","Lotu",16:45:00,119,81,NA,0,NA
+2020-08-13,2020,"août","Saleccia",09:00:00,143,54,NA,0,"2 personnes ont signalé des déchers dans les dunes, infraction piétinements dunes et signalement eau verte"
+2020-08-13,2020,"août","Saleccia",12:00:00,639,301,NA,0,NA
+2020-08-13,2020,"août","Saleccia",14:00:00,649,505,NA,0,NA
+2020-08-13,2020,"août","Saleccia",16:00:00,576,438,NA,0,NA
+2020-08-13,2020,"août","Lotu",09:00:00,9,10,NA,0,NA
+2020-08-13,2020,"août","Lotu",12:00:00,238,186,NA,0,NA
+2020-08-13,2020,"août","Lotu",14:45:00,316,266,NA,0,NA
+2020-08-13,2020,"août","Lotu",16:45:00,228,137,NA,0,NA
+2020-09-09,2020,"septembre","Saleccia",09:00:00,3,1,NA,0,NA
+2020-09-09,2020,"septembre","Saleccia",12:00:00,258,94,NA,0,NA
+2020-09-09,2020,"septembre","Saleccia",14:00:00,380,139,NA,0,NA
+2020-09-09,2020,"septembre","Saleccia",16:00:00,301,102,NA,0,NA
+2020-09-09,2020,"septembre","Lotu",09:00:00,0,0,NA,0,NA
+2020-09-09,2020,"septembre","Lotu",12:00:00,133,53,NA,0,NA
+2020-09-09,2020,"septembre","Lotu",14:45:00,189,125,NA,0,NA
+2020-09-09,2020,"septembre","Lotu",16:45:00,141,38,NA,0,NA
+2021-06-16,2021,"juin","Saleccia",09:00:00,5,0,0,0,"RAS"
+2021-06-16,2021,"juin","Saleccia",12:00:00,141,73,3,0,"73 personnes dans l'eau dont 3 PMT"
+2021-06-16,2021,"juin","Saleccia",14:00:00,181,81,4,0,"81 personnes dans l'eau dont 4 PMT"
+2021-06-16,2021,"juin","Saleccia",16:00:00,134,69,3,0,"69 personnes dans l'eau dont 3 PMT"
+2021-06-16,2021,"juin","Lotu",09:00:00,11,0,0,15,NA
+2021-06-16,2021,"juin","Lotu",12:00:00,89,21,3,0,"21 personnes dans l'eau (dont 3 PMT)"
+2021-06-16,2021,"juin","Lotu",14:45:00,122,28,5,0,"28 personnes dans l'eau (dont 5 PMT)"
+2021-06-16,2021,"juin","Lotu",16:45:00,84,39,3,0,"39 personnes dans l'eau (dont 3 PMT)"
+2021-07-28,2021,"juillet","Saleccia",09:00:00,26,13,2,0,NA
+2021-07-28,2021,"juillet","Saleccia",12:00:00,478,248,22,0,NA
+2021-07-28,2021,"juillet","Saleccia",14:00:00,470,379,23,0,NA
+2021-07-28,2021,"juillet","Saleccia",16:00:00,462,420,9,0,NA
+2021-07-28,2021,"juillet","Lotu",09:00:00,6,13,1,0,NA
+2021-07-28,2021,"juillet","Lotu",12:00:00,329,115,15,0,NA
+2021-07-28,2021,"juillet","Lotu",14:45:00,370,185,31,0,NA
+2021-07-28,2021,"juillet","Lotu",16:45:00,201,112,4,0,NA
+2021-08-18,2021,"août","Lotu",09:00:00,42,24,0,7,NA
+2021-08-18,2021,"août","Lotu",12:00:00,501,145,9,0,NA
+2021-08-18,2021,"août","Lotu",14:45:00,707,205,17,0,NA
+2021-08-18,2021,"août","Lotu",16:45:00,535,110,12,0,NA
+2021-08-18,2021,"août","Saleccia",09:00:00,7,0,0,0,NA
+2021-08-18,2021,"août","Saleccia",12:00:00,504,186,16,0,NA
+2021-08-18,2021,"août","Saleccia",14:00:00,710,245,12,0,NA
+2021-08-18,2021,"août","Saleccia",16:00:00,589,182,7,0,NA
+2021-09-02,2021,"septembre","Lotu",09:00:00,0,0,0,3,NA
+2021-09-02,2021,"septembre","Lotu",12:00:00,154,35,4,0,NA
+2021-09-02,2021,"septembre","Lotu",14:45:00,380,30,4,0,NA
+2021-09-02,2021,"septembre","Lotu",16:45:00,190,17,3,0,NA
+2021-09-02,2021,"septembre","Saleccia",09:00:00,0,1,0,0,NA
+2021-09-02,2021,"septembre","Saleccia",12:00:00,260,45,9,2,NA
+2021-09-02,2021,"septembre","Saleccia",14:00:00,235,56,9,0,NA
+2021-09-02,2021,"septembre","Saleccia",16:00:00,121,14,5,0,NA
+2022-06-21,2022,"juin","Saleccia",09:00:00,9,2,0,0,NA
+2022-06-21,2022,"juin","Saleccia",12:00:00,271,33,10,0,NA
+2022-06-21,2022,"juin","Saleccia",14:00:00,300,78,8,0,NA
+2022-06-21,2022,"juin","Saleccia",16:00:00,110,55,3,0,NA
+2022-06-21,2022,"juin","Lotu",09:00:00,0,1,0,1,NA
+2022-06-21,2022,"juin","Lotu",12:00:00,52,31,1,0,NA
+2022-06-21,2022,"juin","Lotu",14:45:00,53,47,1,0,NA
+2022-06-21,2022,"juin","Lotu",16:45:00,52,20,0,0,NA
+2022-07-28,2022,"juillet","Lotu",09:00:00,8,6,0,0,NA
+2022-07-28,2022,"juillet","Lotu",12:00:00,133,63,21,0,NA
+2022-07-28,2022,"juillet","Lotu",14:45:00,179,231,36,3,NA
+2022-07-28,2022,"juillet","Lotu",16:45:00,134,104,15,0,NA
+2022-07-28,2022,"juillet","Saleccia",09:00:00,48,45,7,0,"Bcp de vagues"
+2022-07-28,2022,"juillet","Saleccia",12:00:00,525,224,17,0,"Jet attaché à la bouée du chenal"
+2022-07-28,2022,"juillet","Saleccia",14:00:00,643,315,21,0,NA
+2022-07-28,2022,"juillet","Saleccia",16:00:00,658,344,15,0,NA
+2022-08-10,2022,"août","Saleccia",09:00:00,77,46,10,0,"Arrivée de plusieurs nucs avant le comptage"
+2022-08-10,2022,"août","Saleccia",12:00:00,677,233,41,0,"-bateaux passant dans la zone de baignade&#10;-bateaux dans le chenal non motorisé"
+2022-08-10,2022,"août","Saleccia",14:00:00,941,306,52,0,NA
+2022-08-10,2022,"août","Saleccia",16:00:00,637,190,30,0,NA
+2022-08-10,2022,"août","Lotu",09:00:00,7,7,0,0,NA
+2022-08-10,2022,"août","Lotu",12:00:00,445,225,36,0,NA
+2022-08-10,2022,"août","Lotu",14:45:00,619,212,25,0,NA
+2022-08-10,2022,"août","Lotu",16:45:00,546,162,26,0,NA
+2022-09-12,2022,"septembre","Saleccia",09:00:00,0,0,0,0,NA
+2022-09-12,2022,"septembre","Saleccia",12:00:00,278,115,13,0,NA
+2022-09-12,2022,"septembre","Saleccia",14:00:00,301,84,14,0,NA
+2022-09-12,2022,"septembre","Saleccia",16:00:00,370,99,14,1,NA
+2022-09-12,2022,"septembre","Lotu",09:00:00,0,0,0,2,NA
+2022-09-12,2022,"septembre","Lotu",12:00:00,186,58,4,0,NA
+2022-09-12,2022,"septembre","Lotu",14:45:00,296,95,9,0,NA
+2022-09-12,2022,"septembre","Lotu",16:45:00,165,32,3,0,NA
+2023-06-23,2023,"juin","Saleccia",09:00:00,7,2,0,0,NA
+2023-06-23,2023,"juin","Saleccia",12:00:00,167,56,7,0,NA
+2023-06-23,2023,"juin","Saleccia",14:45:00,123,30,2,0,NA
+2023-06-23,2023,"juin","Saleccia",16:45:00,104,12,0,0,NA
+2023-06-23,2023,"juin","Lotu",09:00:00,0,0,0,12,NA
+2023-06-23,2023,"juin","Lotu",12:00:00,145,102,29,17,NA
+2023-06-23,2023,"juin","Lotu",14:45:00,307,158,33,0,NA
+2023-06-23,2023,"juin","Lotu",16:45:00,160,59,6,0,NA
+2023-06-23,2023,"juin","Mezzanu",09:00:00,0,1,0,0,NA
+2023-06-23,2023,"juin","Mezzanu",12:00:00,0,3,0,0,NA
+2023-06-23,2023,"juin","Mezzanu",15:00:00,0,0,0,0,NA
+2023-06-23,2023,"juin","Mezzanu",17:00:00,0,0,0,0,NA
+2023-06-23,2023,"juin","Ghignu",09:00:00,2,2,2,1,NA
+2023-06-23,2023,"juin","Ghignu",12:00:00,13,7,2,4,NA
+2023-06-23,2023,"juin","Ghignu",15:00:00,10,6,0,4,NA
+2023-06-23,2023,"juin","Ghignu",17:00:00,6,0,0,3,NA
+2023-06-23,2023,"juin","Malfalcu",09:00:00,0,0,0,0,NA
+2023-06-23,2023,"juin","Malfalcu",12:00:00,0,0,0,4,NA
+2023-06-23,2023,"juin","Malfalcu",15:00:00,0,0,0,0,NA
+2023-06-23,2023,"juin","Malfalcu",17:00:00,NA,NA,NA,NA,NA
+2023-06-23,2023,"juin","U Travu",09:00:00,0,0,0,0,NA
+2023-06-23,2023,"juin","U Travu",12:00:00,2,8,0,0,NA
+2023-06-23,2023,"juin","U Travu",15:00:00,7,0,0,0,NA
+2023-06-23,2023,"juin","U Travu",17:00:00,NA,NA,NA,NA,NA
+2023-07-28,2023,"juillet","Saleccia",09:00:00,123,32,2,0,"Comptage effectué à 9:30"
+2023-07-28,2023,"juillet","Saleccia",12:00:00,646,183,26,0,NA
+2023-07-28,2023,"juillet","Saleccia",14:45:00,686,285,23,0,NA
+2023-07-28,2023,"juillet","Saleccia",16:45:00,459,205,19,0,NA
+2023-07-28,2023,"juillet","Lotu",09:00:00,13,5,2,7,NA
+2023-07-28,2023,"juillet","Lotu",12:00:00,388,136,24,7,NA
+2023-07-28,2023,"juillet","Lotu",14:45:00,549,95,22,0,NA
+2023-07-28,2023,"juillet","Lotu",16:45:00,266,131,4,0,NA
+2023-07-28,2023,"juillet","Mezzanu",09:00:00,2,10,0,0,NA
+2023-07-28,2023,"juillet","Mezzanu",12:00:00,25,31,4,0,"Bivouac"
+2023-07-28,2023,"juillet","Mezzanu",15:00:00,14,7,5,0,"Bivouac"
+2023-07-28,2023,"juillet","Mezzanu",17:00:00,10,16,3,0,NA
+2023-07-28,2023,"juillet","Ghignu",09:00:00,0,0,0,0,"L'ensemble de la baie est étudiée : Ghignu et l'anse juste à côté = Alga putrica"
+2023-07-28,2023,"juillet","Ghignu",10:00:00,10,10,0,3,NA
+2023-07-28,2023,"juillet","Ghignu",11:00:00,13,6,2,1,NA
+2023-07-28,2023,"juillet","Ghignu",12:00:00,51,18,0,0,NA
+2023-07-28,2023,"juillet","Ghignu",15:00:00,63,44,3,0,NA
+2023-07-28,2023,"juillet","Ghignu",17:00:00,45,6,1,3,NA
+2023-07-28,2023,"juillet","Malfalcu",09:00:00,0,0,0,0,NA
+2023-07-28,2023,"juillet","Malfalcu",12:00:00,0,0,0,2,"2 bateaux ancrés dans la baie: &#10;1 avec 3 pers à bord &#10;1 avec 8 pers à bord"
+2023-07-28,2023,"juillet","Malfalcu",15:00:00,2,3,0,0,"1 bateau ancré dans la baie: &#10;1 avec 2 pers à bord"
+2023-07-28,2023,"juillet","Malfalcu",17:00:00,2,0,0,0,NA
+2023-07-28,2023,"juillet","U Travu",09:00:00,0,0,0,0,"NEANT"
+2023-07-28,2023,"juillet","U Travu",12:00:00,23,7,4,0,NA
+2023-07-28,2023,"juillet","U Travu",15:00:00,8,10,3,0,NA
+2023-07-28,2023,"juillet","U Travu",17:00:00,NA,NA,NA,NA,"Non réalisé, problème sur Ghignu, on est passé après 18h devant Trave"
+2023-08-10,2023,"août","Lotu",09:00:00,91,3,4,0,"1 annexe sur la plage"
+2023-08-10,2023,"août","Lotu",12:00:00,547,100,5,0,"Méduses + 2 annexes et 2 canoës sur la plage"
+2023-08-10,2023,"août","Lotu",14:45:00,643,152,36,0,"1 paddle dans l'eau"
+2023-08-10,2023,"août","Lotu",16:45:00,465,118,17,0,"1 jet + 1 annexe dans le chenal. 1 annexe sur la plage"
+2023-08-10,2023,"août","Saleccia",09:00:00,104,24,0,0,"Groupe de personnes à cheval à l'ouest de la plage"
+2023-08-10,2023,"août","Saleccia",12:00:00,810,180,15,0,NA
+2023-08-10,2023,"août","Saleccia",14:45:00,1056,301,23,0,NA
+2023-08-10,2023,"août","Saleccia",16:45:00,840,209,20,0,NA
+2023-08-10,2023,"août","Mezzanu",09:00:00,6,1,0,0,"Présence d'une vente chapiteau"
+2023-08-10,2023,"août","Mezzanu",12:00:00,30,0,0,0,"Toujours chapiteau"
+2023-08-10,2023,"août","Mezzanu",15:00:00,26,10,0,0,"Toujours chapiteau"
+2023-08-10,2023,"août","Mezzanu",17:00:00,55,3,0,0,"Chapiteau en cours de démontage"
+2023-09-06,2023,"septembre","Saleccia",09:00:00,8,0,0,0,"Un drône&#10;2 personnes dans dunes"
+2023-09-06,2023,"septembre","Saleccia",12:00:00,254,55,19,0,NA
+2023-09-06,2023,"septembre","Saleccia",14:45:00,307,29,3,0,"2 annexes"
+2023-09-06,2023,"septembre","Saleccia",16:45:00,189,23,2,0,NA
+2023-09-06,2023,"septembre","Lotu",09:00:00,1,0,0,0,"arrivée kayak"
+2023-09-06,2023,"septembre","Lotu",12:00:00,143,58,6,0,NA
+2023-09-06,2023,"septembre","Lotu",14:45:00,399,55,7,0,NA
+2023-09-06,2023,"septembre","Lotu",16:45:00,307,20,7,0,NA
+2023-09-06,2023,"septembre","Mezzanu",09:00:00,8,3,3,0,NA
+2023-09-06,2023,"septembre","Mezzanu",12:00:00,8,3,3,0,NA
+2023-09-06,2023,"septembre","Mezzanu",15:00:00,2,1,0,0,NA
+2023-09-06,2023,"septembre","Mezzanu",17:00:00,1,0,0,0,NA
+2023-09-06,2023,"septembre","Ghignu",09:00:00,2,0,0,0,NA
+2023-09-06,2023,"septembre","Ghignu",12:00:00,8,0,0,4,NA
+2023-09-06,2023,"septembre","Ghignu",15:00:00,4,10,0,4,NA
+2023-09-06,2023,"septembre","Ghignu",17:00:00,0,0,0,0,NA
+2023-09-06,2023,"septembre","Malfalcu",09:00:00,0,0,0,0,NA
+2023-09-06,2023,"septembre","Malfalcu",12:00:00,0,0,0,0,NA
+2023-09-06,2023,"septembre","Malfalcu",15:00:00,2,0,0,4,NA
+2023-09-06,2023,"septembre","Malfalcu",17:00:00,0,0,0,0,NA
+2023-09-06,2023,"septembre","U Travu",09:00:00,0,0,0,1,NA
+2023-09-06,2023,"septembre","U Travu",12:00:00,10,3,1,0,NA
+2023-09-06,2023,"septembre","U Travu",15:00:00,2,0,0,0,NA
+2023-09-06,2023,"septembre","U Travu",17:00:00,0,0,0,0,NA
