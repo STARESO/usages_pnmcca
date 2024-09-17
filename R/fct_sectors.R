@@ -1,13 +1,18 @@
-#' Checks a coherence of a sector name
+#' Checks the coherence of a sector name
+#'
+#' This function checks if a given sector name exists in the reference list 
+#' of sector names. If the name is not present, it returns the closest 
+#' matching sector name.
 #'
 #' @param sector_name Name of the sector to check
 #'
-#' @return List containing :
-#' - presence of the sector name in the reference list as a Boolean
-#' - the closest match if the name is not present
+#' @return A list containing:
+#' - `presence`: A Boolean indicating if the sector name is in the reference list
+#' - `closest_match`: The closest matching sector name if the name is not present
 #' @export
 #'
 #' @examples
+#' sector_coherence("Petit Lotu")
 sector_coherence <- function(sector_name) {
   sector_presence <- sector_name %in% ref_secteurs$Secteur_simple
   
@@ -21,9 +26,7 @@ sector_coherence <- function(sector_name) {
     
     if (str_to_lower(sector_name) == "petit lotu") {
       closest_match <- "Mezzanu"
-    }
-    
-    else if (!is.na(closest_index)) {
+    } else if (!is.na(closest_index)) {
       closest_match <- ref_secteurs$Secteur_simple[closest_index]
     }
   } else {
@@ -31,16 +34,18 @@ sector_coherence <- function(sector_name) {
   }
   
   return(list(presence = sector_presence, closest_match = closest_match))
-  
 }
 
-
-#' Returns reference of sector names
+#' Returns a reference list of sector names
 #'
-#' @return Dataframe containing the reference of sector names
+#' This function returns a dataframe containing the reference of sector 
+#' names, including both simple and exact names.
+#'
+#' @return A dataframe containing sector IDs, simple names, and exact names.
 #' @export
 #'
 #' @examples
+#' sector_names()
 sector_names <- function() {
   sectors <- ref_secteurs %>%
     select(id,
@@ -48,5 +53,4 @@ sector_names <- function() {
            Nom_secteur_exact = Secteur)
   
   return(sectors)
-  
 }

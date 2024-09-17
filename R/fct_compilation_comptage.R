@@ -1,18 +1,26 @@
-#' Main compilation function that contains multiple steps of data verification, error logging 
-#' and compilation of individual counting files into one data frame.
+#' Main compilation function for processing and verifying counting files.
 #'
-#' @param counting_type type of counting data to compile. 
-#' Possible current values are :
-#' "plage"
-#' "plaisance"
-#' "meteo"
-#' "activites_loisirs"
+#' This function performs multiple steps of data verification, error logging, 
+#' and compilation of individual counting files into a single data frame.
 #'
-#' @return compilated data frame of the given counting type. The error logs are saved in a log file
-#' using the mistakes_log function.
+#' @param counting_type Character. Type of counting data to compile. 
+#' Possible current values are: 
+#' \describe{
+#'   \item{"plage"}{For beach data.}
+#'   \item{"plaisance"}{For boating data.}
+#'   \item{"meteo"}{For meteorological data.}
+#'   \item{"activites_loisirs"}{For leisure activities data.}
+#' }
+#'
+#' @return A data frame containing the compiled data of the given counting type. 
+#' All errors encountered during the process are saved in a log file using 
+#' the \code{mistakes_log} function.
+#' 
 #' @export
 #'
 #' @examples
+#' compilation_comptage("plage")
+#' compilation_comptage("meteo")
 compilation_comptage <- function(counting_type) {
   
   message(paste("Compilation des données de comptage", counting_type))
@@ -239,3 +247,5 @@ compilation_comptage <- function(counting_type) {
   
   return(comptage_terrain)
 }
+  
+  

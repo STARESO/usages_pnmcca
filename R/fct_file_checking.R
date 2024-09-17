@@ -28,7 +28,8 @@ file_coherence <- function(file_name, counting_type) {
 
 #' Check Date Coherence in File Name or Sheet
 #'
-#' This function checks if the date in a file name follows the expected format and optionally compares the date in the file name to the date in a sheet.
+#' This function checks if the date in a file name follows the expected format and optionally 
+#' compares the date in the file name to the date in a sheet.
 #'
 #' @param file_name The name of the file to check.
 #' @param counting_type The type of field counting (e.g., "plage", "plaisance").

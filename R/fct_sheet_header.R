@@ -1,16 +1,32 @@
-#' Verifying sheet header: number of columns and variable names
+#' Verifies the coherence of the sheet header, including the number of columns 
+#' and variable names
 #'
-#' @param data_sheet 
-#' @param metadata_reference 
-#' @param file_name 
-#' @param sheet 
-#' @param error_logs 
+#' This function checks the structure of the dataset sheet headers by verifying 
+#' the number of columns and the names of variables. It handles both single and 
+#' double headers, and logs any discrepancies found between the dataset and the 
+#' reference metadata.
 #'
-#' @return
+#' @param data_sheet A data frame representing the sheet from the dataset to verify.
+#' @param metadata_reference A data frame containing the reference metadata for 
+#' the columns and variable names.
+#' @param file_name The name of the file from which the sheet is being verified.
+#' @param sheet The name of the sheet being verified.
+#' @param error_logs A list that stores all logged errors encountered during 
+#' the verification process.
+#'
+#' @return A list containing:
+#' - `error_flag`: A boolean value indicating whether any errors were found.
+#' - `error_logs`: The updated error logs including any discrepancies found.
 #' @export
 #'
 #' @examples
-verify_sheet_header <- function(data_sheet, metadata_reference, file_name, sheet, error_logs) {
+#' # Example usage:
+#' verify_sheet_header(data_sheet, metadata_reference, "file.xlsx", "Sheet1", error_logs)
+verify_sheet_header <- function(data_sheet, 
+                                metadata_reference, 
+                                file_name, 
+                                sheet, 
+                                error_logs) {
   # Flag to track whether any errors occurred in the current sheet
   error_flag <- FALSE
   

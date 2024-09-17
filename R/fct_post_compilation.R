@@ -1,22 +1,29 @@
-#' Title
+#' Post-compilation processing of counting data
 #'
-#' @param compilation_data 
-#' @param counting_type 
+#' This function performs additional processing on the compiled data based on 
+#' the type of counting. Depending on the `counting_type`, the function 
+#' performs operations such as pivoting, renaming columns, and calculating 
+#' totals for specific categories.
 #'
-#' @return
+#' @param compilation_data Data frame containing the compiled counting data.
+#' @param counting_type Type of counting data to process. Can be one of the 
+#' following values: "plaisance", "activites_loisirs", or "plage".
+#'
+#' @return A processed data frame with additional columns and formatting 
+#' according to the counting type.
 #' @export
 #'
 #' @examples
+#' # Example usage for plaisance counting type:
+#' processed_data <- post_compilation(compilation_data, "plaisance")
 post_compilation <- function(compilation_data, counting_type) {
   
   if (counting_type == "plaisance") {
     
     compilation_data <- compilation_data %>%
-      # select cols containing __
       tidyr::pivot_longer(cols = contains("__"),
                           names_to = "category",
                           values_to = "nombre") %>%
-      # separate category into two columns
       tidyr::separate_wider_delim(col = category,
                                   delim = "__",
                                   names = c("statut", "taille"))
@@ -35,11 +42,9 @@ post_compilation <- function(compilation_data, counting_type) {
   } else if (counting_type == "activites_loisirs") {
     
     compilation_data <- compilation_data %>%
-      # select cols containing __
       tidyr::pivot_longer(cols = contains("__"),
                           names_to = "category",
                           values_to = "nombre") %>%
-      # separate category into two columns
       tidyr::separate_wider_delim(col = category,
                                   delim = "__",
                                   names = c("type", "usage"))
@@ -54,7 +59,6 @@ post_compilation <- function(compilation_data, counting_type) {
   compilation_data <- compilation_data %>%
     mutate(annee = year(date),
            mois = month(date, label = TRUE, abbr = FALSE)) %>%
-    # Remove all the accents in the column names
     rename_with(
       .fn = function(x) {
         stringi::stri_trans_general(x, "Latin-ASCII")

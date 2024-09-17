@@ -1,11 +1,17 @@
 #' Converts double header to one clean header
 #'
-#' @param dataset dataset with double header
+#' This function combines the first two rows of a dataset with a double 
+#' header by concatenating the two rows into a single clean header. 
+#' It removes accents, replaces spaces with underscores, and handles cases 
+#' where special symbols (like '<', '>', and 'L') are present.
 #'
-#' @return new header
+#' @param dataset A dataset with a double header (first two rows).
+#'
+#' @return A character vector representing the new combined header.
 #' @export
 #'
 #' @examples
+#' double_header_fusion(my_dataset)
 double_header_fusion <- function(dataset) {
   if (nrow(dataset) < 2)
     stop("Dataset must have at least two rows for header fusion.")
@@ -13,50 +19,54 @@ double_header_fusion <- function(dataset) {
   header_selection <- dataset[1:2, ]
   new_header <- c()
   
-  # for all cells, apply str_trans_general to remove accents and replace spaces by nothing
+  # Apply transformations: remove accents, replace spaces with underscores
+  # and handle "<", ">", "L"
   header_selection <- header_selection %>%
     mutate(across(
       everything(),
       ~ stringi::stri_trans_general(., "Latin-ASCII")
-    )) %>%    # Remove accents
+    )) %>%
     mutate(across(everything(), ~ ifelse(
-      grepl("L", .) &
-        (grepl("<", .) |
-           grepl(">", .)),
-      # If 'L' or '<' is present
+      grepl("L", .) & (grepl("<", .) | grepl(">", .)),
       gsub("m| ", "", .),
-      # Remove 'm' and spaces
       gsub(" ", "_", tolower(.))
-    )))                     # Else, replace spaces with underscores and lowercase
+    ))) 
   
-  # Step 2: Create the new header by combining rows
-  new_header <- purrr::map2_chr(header_selection[2, ], header_selection[1, ], function(h2, h1) {
-    if (h2 != h1) {
-      return(paste(h2, h1, sep = "__"))  # Combine if they differ
-    } else {
-      return(h1)  # Keep the same if they are identical
+  # Combine header parts if different; otherwise, keep as is
+  new_header <- purrr::map2_chr(
+    header_selection[2, ],
+    header_selection[1, ],
+    function(h2, h1) {
+      if (h2 != h1) {
+        return(paste(h2, h1, sep = "__"))
+      } else {
+        return(h1)
+      }
     }
-  })
+  )
   
   new_header <- unname(new_header)
-  
   return(new_header)
-  
 }
 
 
-
-#' Converts xlsx data with double header as one clean header dataset using concatenation
+#' Imports an Excel sheet with a double header and creates a clean header.
 #'
-#' @param file_path path of the xlsx file
-#' @param sheet_name name of the sheet to import
+#' This function imports an Excel sheet with a double header, concatenates 
+#' the two header rows into one clean header, and returns the dataset 
+#' with this new header. It ensures that the number of columns in the 
+#' dataset matches the new header.
 #'
-#' @return dataset with clean header
+#' @param file_path The path to the Excel (.xlsx) file.
+#' @param sheet_name The name of the sheet to import.
+#'
+#' @return A dataset with a single clean header after merging the double header.
 #' @export
 #'
 #' @examples
+#' double_header_import("my_file.xlsx", "Sheet1")
 double_header_import <- function(file_path, sheet_name) {
-  # Import of whole dataset
+  # Import the whole dataset with no column names
   data_double <- openxlsx::read.xlsx(
     xlsxFile = file_path,
     sheet = sheet_name,
@@ -65,11 +75,11 @@ double_header_import <- function(file_path, sheet_name) {
     fillMergedCells = TRUE
   )
   
-  # Double header combined as 1 header by concatenation
+  # Create the new header by combining the first two rows
   names_data_double <- double_header_fusion(data_double)
   
-  # Import of dataset with new header
-  data_double <-  openxlsx::read.xlsx(
+  # Import the dataset starting from the third row, with the new header
+  data_double <- openxlsx::read.xlsx(
     xlsxFile = file_path,
     sheet = sheet_name,
     sep.names = " ",
@@ -80,39 +90,43 @@ double_header_import <- function(file_path, sheet_name) {
     cols = 1:length(names_data_double)
   )
   
-  # Check if the number of columns read matches the header length
+  # Ensure the number of columns matches the header
   if (ncol(data_double) < length(names_data_double)) {
-    # Add empty columns if necessary to match the number of headers
-    data_double <- cbind(data_double, matrix(
-      NA,
-      nrow = nrow(data_double),
-      ncol = length(names_data_double) - ncol(data_double)
-    ))
+    data_double <- cbind(
+      data_double, 
+      matrix(NA, nrow = nrow(data_double), 
+             ncol = length(names_data_double) - ncol(data_double))
+    )
   }
   
-  # Renaming columns with new header
+  # Rename columns with the new header
   colnames(data_double) <- names_data_double
   
   return(data_double)
-  
 }
 
 
-#' Title
+#' Splits a fused header into two parts.
 #'
-#' @param fused_header 
+#' This function splits a fused header (e.g., "ancre__L<8m") into its 
+#' two component parts, returning them as champ1 and champ2. If the header 
+#' is not fused, champ1 and champ2 are identical.
 #'
-#' @return
+#' @param fused_header A character string representing a fused header.
+#'
+#' @return A list with two elements: champ1 (the first part of the header) 
+#' and champ2 (the second part of the header).
 #' @export
 #'
 #' @examples
+#' split_fused_headers("ancre__L<8m")
 split_fused_headers <- function(fused_header) {
   parts <- strsplit(fused_header, "__")[[1]]
   
-  # If there's only one part, return it as champ1 and NA as champ2
+  # If there's only one part, set champ1 and champ2 as identical
   if (length(parts) == 1) {
     return(list(champ1 = parts[1], champ2 = parts[1]))
   } else {
-    return(list(champ1 = parts[2], champ2 = parts[1])) # Return both parts if present
+    return(list(champ1 = parts[2], champ2 = parts[1])) 
   }
 }
