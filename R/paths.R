@@ -1,46 +1,58 @@
-#' Observatoire des Usages: Folders and Files Paths
+#' ---
+#' title : "Paths.R"
+#' author : Aubin Woehrel
+#' date : 2024-09-17
+#' version : 1.0
+#' ---
 #'
-#' This script defines the paths used in the project for raw data, 
-#' processed data, and outputs such as logs. It also creates a 
-#' list `paths` that can be used to access these paths by name.
+#' =============================================================================
+#' 
+#' OBSERVATOIRE DES USAGES - CHEMIN DES DOSSIERS ET FICHIERS
 #'
-#' The paths are organized by categories such as raw data for different 
-#' types of observations (e.g., "plaisance", "meteo", etc.) and processed 
-#' data outputs.
+#' Description : 
+#' Ce script définit les chemins utilisés dans le projet pour les données brutes, 
+#' les données traitées et les sorties telles que les fichiers de logs. Il crée 
+#' également une liste `paths` qui permet d'accéder à ces chemins par leur nom
+#' dans les autres scripts.
 #'
-#' @section Paths of Raw Data:
-#' - `comptage_plaisance`: Path to raw data for "plaisance".
-#' - `comptage_activites_loisirs`: Path to raw data for "activites loisirs".
-#' - `comptage_meteo`: Path to raw data for meteorological data.
-#' - `comptage_plage`: Path to raw data for beach data.
-#' - `comptage_terrestre`: Path to raw data for terrestrial observation.
-#' - `comptage_debarquements`: Path to raw data for debarquements
+#' Les chemins sont organisés par catégories, telles que les données brutes 
+#' pour différents types d'observations (par exemple, "plaisance", "meteo", etc.) 
+#' et les sorties de données traitées.
 #'
-#' @section Reference Data:
-#' - `comptage_reference`: Path to the reference dataset for variable names.
+#' @section Chemins des données brutes :
+#' - `comptage_plaisance` : Chemin vers les données brutes pour le comptage des bateaux de plaisance.
+#' - `comptage_activites_loisirs` : Chemin vers les données brutes pour les activités de loisir.
+#' - `comptage_meteo` : Chemin vers les données brutes pour les données météorologiques.
+#' - `comptage_plage` : Chemin vers les données brutes pour les données de plage.
+#' - `comptage_terrestre` : Chemin vers les données brutes pour les observations terrestres.
+#' - `comptage_debarquements` : Chemin vers les données brutes pour les débarquements.
 #'
-#' @section Processed Data:
-#' - `processed_plaisance`: Path for processed data of "plaisance".
-#' - `processed_plage`: Path for processed beach data.
-#' - `processed_activites_loisirs`: Path for processed "activites loisirs".
-#' - `processed_meteo`: Path for processed meteorological data.
-#' - `processed_terrestre`: Path for processed terrestrial observation data.
-#' - `processed_debarquements`: Path for processed debarkation data.
+#' @section Données de référence :
+#' - `comptage_reference` : Chemin vers le jeu de données de référence pour les noms de variables.
 #'
-#' @section Output:
-#' - `verification_logs`: Path for log files of verification processes.
+#' @section Données traitées :
+#' - `processed_plaisance` : Chemin vers les données traitées pour "plaisance".
+#' - `processed_plage` : Chemin vers les données traitées pour les plages.
+#' - `processed_activites_loisirs` : Chemin vers les données traitées pour "activités loisirs".
+#' - `processed_meteo` : Chemin vers les données traitées pour les données météorologiques.
+#' - `processed_terrestre` : Chemin vers les données traitées pour les observations terrestres.
+#' - `processed_debarquements` : Chemin vers les données traitées pour les débarquements.
 #'
-#' The `paths` object is a list containing all the defined paths, 
-#' which can be accessed by name (e.g., `paths$comptage_plaisance`).
+#' @section Sorties :
+#' - `verification_logs` : Chemin vers les fichiers de logs des processus de vérification.
+#'
+#' L'objet `paths` est une liste contenant tous les chemins définis, qui peuvent 
+#' être accédés par leur nom (par exemple, `paths$comptage_plaisance`).
 #'
 #' @export
 #'
 #' @examples
-#' # Access the path for plaisance data
+#' # Accéder au chemin des données pour la plaisance
 #' paths$comptage_plaisance
 #'
+#' =============================================================================
 
-# Paths of the raw data ----
+# Chemins des données brutes ----
 
 ## Comptage terrain ----
 comptage_plaisance <- "data/raw/comptages_terrain/plaisance/"
@@ -50,12 +62,16 @@ comptage_plage <- "data/raw/comptages_terrain/plage/"
 comptage_terrestre <- "data/raw/comptages_terrain/frequentation_terrestre/"
 comptage_debarquements <- "data/raw/comptages_terrain/debarquements/"
 
-# Reference data set for variable names ----
+## Référence noms de variables ----
 comptage_reference <- "data/raw/comptages_terrain/modeles/reference_comptage_terrain_donnees_brutes.xlsx"
+
+## Secteurs ----
+reference_secteurs <- "data/raw/cartographie/Sec_nav_maj_2023_Corrigée/Sec_nav_maj_2023.csv"
+
 
 ## Survols aériens ----
 
-# Paths of processed data ----
+# Chemins des données traitées ----
 
 ## Palettes
 palettes <- paste0("data/processed/palettes/")
@@ -68,15 +84,15 @@ processed_meteo <- "data/processed/us_med_pnmcca_observatoire_comptage_terrain_m
 processed_terrestre <- "data/processed/us_med_pnmcca_observatoire_comptage_terrain_frequentation_terrestre"
 processed_debarquements <- "data/processed/us_med_pnmcca_observatoire_comptage_terrain_debarquements"
 
-# Outputs ----
+# Sorties ----
 
-## Log files ----
+## Fichiers de logs ----
 verification_logs <- "logs/"
 
-# Finalize paths output for sourcing ----
+# Finaliser l'export des chemins pour le sourcing ----
 
-# Get all variables that start by "path" and input them in a list. 
-# Paths can be accessed through paths$the_name_of_the_path
+# Obtenir toutes les variables commençant par "path" et les mettre dans une liste.
+# Les chemins peuvent être accédés via paths$le_nom_du_chemin
 paths_names <- ls(envir = .GlobalEnv)
 paths <- mget(paths_names, envir = .GlobalEnv)
 paths <- as.list(paths)

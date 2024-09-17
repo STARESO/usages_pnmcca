@@ -1,17 +1,17 @@
-#' Check the Coherence of a File Name
+#' Vérifie la cohérence du nom de fichier
 #'
-#' This function checks if the name of a field counting type file follows the expected naming format.
+#' Cette fonction vérifie si le nom d'un fichier de comptage terrain suit le format de 
+#' nommage attendu.
 #'
-#' @param file_name The name of the file to check.
-#' @param counting_type The type of field counting (e.g., "plage", "plaisance").
+#' @param file_name Le nom du fichier à vérifier.
+#' @param counting_type Le type de comptage terrain (par ex. "plage", "plaisance").
 #'
-#' @return A logical value: `TRUE` if the file name follows the expected format, `FALSE` otherwise.
+#' @return Une valeur logique : `TRUE` si le nom du fichier suit le format attendu, `FALSE` sinon.
 #' 
 #' @export
 #'
 #' @examples
 #' file_coherence("us_med_pnmcca_observatoire_comptage_terrain_plage_2023-08-15.xlsx", "plage")
-#' 
 file_coherence <- function(file_name, counting_type) {
   file_name_type <- paste0(
     "us_med_pnmcca_observatoire_comptage_terrain_",
@@ -25,18 +25,19 @@ file_coherence <- function(file_name, counting_type) {
 }
 
 
-
-#' Check Date Coherence in File Name or Sheet
+#' Vérifie la cohérence de la date dans le nom de fichier ou la feuille
 #'
-#' This function checks if the date in a file name follows the expected format and optionally 
-#' compares the date in the file name to the date in a sheet.
+#' Cette fonction vérifie si la date dans un nom de fichier suit le format attendu et 
+#' compare éventuellement la date dans le nom de fichier à celle d'une feuille spécifique.
 #'
-#' @param file_name The name of the file to check.
-#' @param counting_type The type of field counting (e.g., "plage", "plaisance").
-#' @param date_format The expected date format ("YYYY_MM_DD" or "DD_MM_YYYY"). Default is "YYYY_MM_DD".
-#' @param sheet Optional: The sheet to check date coherence with. If `NULL`, only the file name is checked.
+#' @param file_name Le nom du fichier à vérifier.
+#' @param counting_type Le type de comptage terrain (par ex. "plage", "plaisance").
+#' @param date_format Le format de date attendu ("YYYY_MM_DD" ou "DD_MM_YYYY"). Par défaut "YYYY_MM_DD".
+#' @param sheet Optionnel : La feuille avec laquelle vérifier la cohérence de la date. 
+#' Si `NULL`, seule la date du nom de fichier est vérifiée.
 #'
-#' @return A list with logical value `coherent` indicating whether the date is coherent, and `wrong_date` if applicable.
+#' @return Une liste avec une valeur logique `coherent` indiquant si la date est cohérente, 
+#' et `wrong_date` si applicable.
 #' 
 #' @export
 #'
@@ -46,16 +47,16 @@ file_date_coherence <- function(file_name,
                                 counting_type,
                                 date_format = "YYYY_MM_DD",
                                 sheet = NULL) {
-  # Extracting date from file name
+  # Extraction de la date à partir du nom de fichier
   if (date_format == "YYYY_MM_DD") {
     date_comptage <- str_extract_all(file_name, "\\d{4}-\\d{2}-\\d{2}")[[1]]
   } else if (date_format == "DD_MM_YYYY") {
     date_comptage <- str_extract_all(file_name, "\\d{4}_\\d{2}_\\d{2}")[[1]]
   } else {
-    stop("Date format not recognized")
+    stop("Format de date non reconnu")
   }
   
-  # If just checking the file name's date coherence
+  # Si la vérification concerne uniquement la date dans le nom de fichier
   if (is.null(sheet)) {
     if (is.na(date_comptage[1])) {
       return(list(coherent = FALSE, wrong_date = date_comptage[1]))
@@ -63,18 +64,18 @@ file_date_coherence <- function(file_name,
       return(list(coherent = TRUE, wrong_date = NULL))
     }
     
-    # If checking coherence between file name and sheet date
+    # Si la vérification concerne la cohérence entre la date dans le nom de fichier et celle de la feuille
   } else {
-    file_path <- paste0(
-      "data/raw/comptages_terrain/",
-      str_to_title(counting_type),
-      "/",
-      file_name,
-      ".xlsx"
-    )
+    stop("Autres formats non encore pris en charge")
     
-    sheet_date <- read.xlsx(xlsxFile = file_path, sheet = sheet)
-    
-    # Logic to check date between metadata and comptage can be added here
+    # Exemple pour ajouter une vérification de la cohérence des dates entre les métadonnées et les comptages
+    # file_path <- paste0(
+    #   "data/raw/comptages_terrain/",
+    #   str_to_title(counting_type),
+    #   "/",
+    #   file_name,
+    #   ".xlsx"
+    # )
+    # sheet_date <- read.xlsx(xlsxFile = file_path, sheet = sheet)
   }
 }

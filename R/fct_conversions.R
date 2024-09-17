@@ -1,10 +1,11 @@
-#' Convert Empty Strings and "NA" Text to NA
+#' Convertir les chaînes vides et le texte "NA" en NA
 #'
-#' This function replaces empty strings and the text "NA" with actual NA values.
+#' Cette fonction remplace les chaînes vides et le texte "NA" par des valeurs NA.
 #'
-#' @param data_sheet A data frame to clean.
+#' @param data_sheet Un data frame à nettoyer.
 #'
-#' @return A cleaned data frame with empty strings and "NA" replaced by NA.
+#' @return Un data frame nettoyé où les chaînes vides et "NA" ont été remplacées 
+#' par des NA.
 #'
 #' @export
 #'
@@ -14,24 +15,25 @@ convert_to_na <- function(data_sheet) {
   data_sheet <- data_sheet %>%
     mutate(across(
       everything(),
-      ~ na_if(trimws(.), "")    # Convert empty strings to NA
+      ~ na_if(trimws(.), "")    # Convertir les chaînes vides en NA
     )) %>%
     mutate(across(
       everything(),
-      ~ na_if(., "NA")          # Convert text "NA" to actual NA
+      ~ na_if(., "NA")          # Convertir le texte "NA" en NA réel
     ))
   
   return(data_sheet)
 }
 
 
-#' Convert Decimal Time to "HH:MM:SS" Format
+#' Convertir l'heure décimale au format "HH:MM:SS"
 #'
-#' Converts decimal time (e.g., 0.5 for 12:00 PM) to "HH:MM:SS" format.
+#' Convertit une heure décimale (par ex., 0.5 pour 12h00) au format "HH:MM:SS".
 #'
-#' @param decimal_time A numeric vector with decimal times (e.g., 0.5 = 12:00 PM).
+#' @param decimal_time Un vecteur numérique avec des heures au format décimal 
+#' (par ex., 0.5 = 12h00).
 #'
-#' @return A vector of times in "HH:MM:SS" format.
+#' @return Un vecteur d'heures au format "HH:MM:SS".
 #'
 #' @export
 #'

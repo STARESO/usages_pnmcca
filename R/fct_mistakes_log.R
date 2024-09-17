@@ -1,13 +1,13 @@
-#' Log Compilation Mistakes
+#' Journalisation des erreurs de compilation
 #'
-#' This function generates a log file detailing the errors encountered 
-#' during the compilation of field counting files. It organizes errors 
-#' by type and provides suggestions for corrections.
+#' Cette fonction génère un fichier journal détaillant les erreurs rencontrées 
+#' lors de la compilation des fichiers de comptage terrain. Les erreurs sont 
+#' organisées par type et des suggestions de correction sont fournies.
 #'
-#' @param counting_type The type of field counting (e.g., "plage", "plaisance").
-#' @param error_logs A list containing all errors encountered during processing.
+#' @param counting_type Le type de comptage terrain (par exemple, "plage", "plaisance").
+#' @param error_logs Une liste contenant toutes les erreurs rencontrées lors du traitement.
 #'
-#' @return The total number of errors found.
+#' @return Le nombre total d'erreurs trouvées.
 #' @export
 #'
 #' @examples
@@ -64,7 +64,7 @@ mistakes_log <- function(counting_type, error_logs) {
         log_file,
         append = TRUE)
   
-  # --- Wrong named files ---
+  # Fichiers mal nommés ----
   write("--- Fichiers mal nommés :\n", log_file, append = TRUE)
   
   if (length(error_logs$wrong_named_files) > 0) {
@@ -88,7 +88,7 @@ mistakes_log <- function(counting_type, error_logs) {
     write("Tous les fichiers sont correctement nommés.\n\n", log_file, append = TRUE)
   }
   
-  # --- Wrong number of sheets ---
+  # Nombre d'onglets incohérents ----
   write("--- Nombre d'onglets (secteurs) incohérents :\n", log_file, append = TRUE)
   
   if (length(error_logs$wrong_amount_of_sheets_files) > 0) {
@@ -109,7 +109,7 @@ mistakes_log <- function(counting_type, error_logs) {
           log_file, append = TRUE)
   }
   
-  # --- Wrong named sheets ---
+  # Onglets mal nommés ----
   write("--- Onglets (secteurs) mal nommés : \n", log_file, append = TRUE)
   
   if (length(error_logs$wrong_named_sheets) > 0) {
@@ -146,7 +146,7 @@ mistakes_log <- function(counting_type, error_logs) {
     write("Tous les secteurs sont correctement nommés.\n\n", log_file, append = TRUE)
   }
   
-  # --- Inconsistencies between metadata and sheets ---
+  # Incohérences entre les métadonnées et les onglets ----
   write("--- Incohérence entre les noms des secteurs et les métadonnées : \n", 
         log_file, append = TRUE)
   
@@ -198,7 +198,7 @@ mistakes_log <- function(counting_type, error_logs) {
           log_file, append = TRUE)
   }
   
-  # --- Wrong number of columns ---
+  # Nombre de variables incorrect ----
   write("--- Nombre de variables incorrect : \n", log_file, append = TRUE)
   
   if (length(error_logs$wrong_column_amount) > 0) {
@@ -249,7 +249,7 @@ mistakes_log <- function(counting_type, error_logs) {
     write("Le nombre de variables est correct.\n\n", log_file, append = TRUE)
   }
   
-  # --- Wrong variable names ---
+  # Noms de variables incorrects ----
   write("--- Noms de variables incorrects : \n", log_file, append = TRUE)
   
   if (length(error_logs$wrong_variable_names) > 0) {
@@ -312,7 +312,7 @@ mistakes_log <- function(counting_type, error_logs) {
     write("Tous les noms de variables sont corrects.\n\n", log_file, append = TRUE)
   }
   
-  # --- Unrecognized variable types ---
+  # Types de variables non reconnus ----
   write("--- Noms de types de variables non reconnus : \n", log_file, append = TRUE)
   
   if (length(error_logs$unknown_format) > 0) {
@@ -340,7 +340,7 @@ mistakes_log <- function(counting_type, error_logs) {
     write("Tous les types de variables sont reconnus.\n\n", log_file, append = TRUE)
   }
   
-  # --- Wrong variable formats ---
+  # Types de variables erronés ----
   write("--- Type de variable erronés : \n", log_file, append = TRUE)
   
   if (length(error_logs$wrong_column_format) > 0) {
@@ -393,7 +393,7 @@ mistakes_log <- function(counting_type, error_logs) {
     write("Tous les types de variables sont corrects.\n\n", log_file, append = TRUE)
   }
   
-  # End of log
+  # Fin du journal
   write(
     paste(
       " --- Fin de la vérification des données de",

@@ -1,14 +1,14 @@
-#' Checks the coherence of a sector name
+#' Vérifie la cohérence d'un nom de secteur
 #'
-#' This function checks if a given sector name exists in the reference list 
-#' of sector names. If the name is not present, it returns the closest 
-#' matching sector name.
+#' Cette fonction vérifie si un nom de secteur donné existe dans la liste de 
+#' référence des secteurs. Si le nom n'est pas présent, elle retourne le nom 
+#' de secteur correspondant le plus proche.
 #'
-#' @param sector_name Name of the sector to check
+#' @param sector_name Nom du secteur à vérifier.
 #'
-#' @return A list containing:
-#' - `presence`: A Boolean indicating if the sector name is in the reference list
-#' - `closest_match`: The closest matching sector name if the name is not present
+#' @return Une liste contenant :
+#' - `presence`: Un booléen indiquant si le nom du secteur est présent dans la liste de référence.
+#' - `closest_match`: Le nom de secteur correspondant le plus proche si le nom n'est pas présent.
 #' @export
 #'
 #' @examples
@@ -36,12 +36,13 @@ sector_coherence <- function(sector_name) {
   return(list(presence = sector_presence, closest_match = closest_match))
 }
 
-#' Returns a reference list of sector names
+#' Retourne une liste de référence des noms de secteurs
 #'
-#' This function returns a dataframe containing the reference of sector 
-#' names, including both simple and exact names.
+#' Cette fonction renvoie un data frame contenant la référence des noms de 
+#' secteurs, y compris les noms simples et exacts.
 #'
-#' @return A dataframe containing sector IDs, simple names, and exact names.
+#' @return Un data frame contenant les identifiants des secteurs, les noms simples 
+#' et les noms exacts des secteurs.
 #' @export
 #'
 #' @examples

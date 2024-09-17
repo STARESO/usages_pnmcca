@@ -1,20 +1,20 @@
-#' Post-compilation processing of counting data
+#' Traitement post-compilation des données de comptage
 #'
-#' This function performs additional processing on the compiled data based on 
-#' the type of counting. Depending on the `counting_type`, the function 
-#' performs operations such as pivoting, renaming columns, and calculating 
-#' totals for specific categories.
+#' Cette fonction effectue un traitement supplémentaire sur les données compilées 
+#' en fonction du type de comptage. Selon le `counting_type`, la fonction effectue 
+#' des opérations telles que la pivotation, le renommage des colonnes et le calcul 
+#' des totaux pour des catégories spécifiques.
 #'
-#' @param compilation_data Data frame containing the compiled counting data.
-#' @param counting_type Type of counting data to process. Can be one of the 
-#' following values: "plaisance", "activites_loisirs", or "plage".
+#' @param compilation_data Data frame contenant les données de comptage compilées.
+#' @param counting_type Type de données de comptage à traiter. Peut prendre l'une 
+#' des valeurs suivantes : "plaisance", "activites_loisirs", ou "plage".
 #'
-#' @return A processed data frame with additional columns and formatting 
-#' according to the counting type.
+#' @return Un data frame traité avec des colonnes supplémentaires et un formatage 
+#' spécifique selon le type de comptage.
 #' @export
 #'
 #' @examples
-#' # Example usage for plaisance counting type:
+#' # Exemple d'utilisation pour le type de comptage "plaisance" :
 #' processed_data <- post_compilation(compilation_data, "plaisance")
 post_compilation <- function(compilation_data, counting_type) {
   
@@ -71,3 +71,4 @@ post_compilation <- function(compilation_data, counting_type) {
   
   return(compilation_data)
 }
+
