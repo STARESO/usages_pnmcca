@@ -1,0 +1,454 @@
+mistakes_log <- function(counting_type, error_logs) {
+  counting_type <- paste0("comptage_terrain_", counting_type)
+  
+  log_file <- paste0(
+    paths$verification_logs,
+    "compilation_",
+    counting_type,
+    "_",
+    format(Sys.time(), "%Y-%m-%d_%Hh%M"),
+    ".log"
+  )
+  file.create(log_file)
+  
+  write(
+    paste(
+      " --- Vérification des données de",
+      str_replace_all(counting_type, "_", " "),
+      "--- \n"
+    ),
+    log_file,
+    append = TRUE
+  )
+  
+  write(
+    paste(
+      "En cas de présence d'erreurs, veuillez les corriger.",
+      "Attention : les données érronées ne sont pas enregistrées dans le jeu",
+      "de données compilé.\nElles ne le seront qu'après correction des erreurs indiquées."
+    ),
+    log_file,
+    append = TRUE
+  )
+  
+  number_of_errors <- sum(
+    sapply(error_logs[c(
+      "wrong_named_files", 
+      "wrong_named_dates", 
+      "wrong_named_sheets",
+      "wrong_amount_of_sheets_files", 
+      "error_sheet_not_in_meta",
+      "error_meta_not_in_sheets", 
+      "wrong_column_amount_files",
+      "wrong_variable_names_files",
+      "unknown_format",
+      "wrong_column_format"
+    )], length)
+  )
+  
+  write(paste0("Nombre total d'erreurs : ", number_of_errors, "\n\n"),
+        log_file,
+        append = TRUE)
+  
+  
+  # Error feedback for wrong named files
+  write("--- Fichiers mal nommés :\n", log_file, append = TRUE)
+  
+  if (length(error_logs$wrong_named_files) > 0) {
+    write(
+      paste0(
+        "Les fichiers de ",
+        str_replace_all(counting_type, "_", " "),
+        " doivent être au format ",
+        "PNMCCA_usages_plaisance_",
+        counting_type,
+        "_YYYY-MM-DD.xlsx \n"
+      ),
+      log_file,
+      append = TRUE
+    )
+    
+    for (wrong_file in error_logs$wrong_named_files) {
+      write(paste0(" > ", wrong_file, "\n"), log_file, append = TRUE)
+    }
+    
+    write("\n", log_file, append = TRUE)
+    
+  } else {
+    write("Tous les fichiers sont correctement nommés.\n\n",
+          log_file,
+          append = TRUE)
+  }
+  
+  
+  # Error feedback for wrong amount of sheets compared to metadata
+  write("--- Nombre d'onglets (secteurs) incohérents :\n",
+        log_file,
+        append = TRUE)
+  
+  if (length(error_logs$wrong_amount_of_sheets_files) > 0) {
+    write(
+      paste0("Les fichiers suivants ont un nombre d'onglets incohérent : \n"),
+      log_file,
+      append = TRUE
+    )
+    
+    for (wrong_file in error_logs$wrong_amount_of_sheets_files) {
+      write(paste0(" > ", wrong_file, "\n"), log_file, append = TRUE)
+    }
+    
+    write(
+      paste0(
+        "Veuillez faire correspondre le nombre d'onglets avec les métadonnées ",
+        "contenues dans l'onglet metadata_comptages.\n\n"
+      ),
+      log_file,
+      append = TRUE
+    )
+    
+  } else {
+    write("Le nombre d'onglets est cohérent avec les métadonnées.\n\n",
+          log_file,
+          append = TRUE)
+  }
+  
+  
+  # Error feedback for non-existing sectors in reference database
+  write("--- Onglets (secteurs) mal nommés : \n", log_file, append = TRUE)
+  
+  if (length(error_logs$wrong_named_sheets) > 0) {
+    write(
+      paste0(
+        "Certains noms d'onglets des données sources ne correspondent pas aux noms de secteurs acceptés.\n",
+        "Veuillez les renommer avec un nom de secteur valide (c.f. référence des secteurs).\n",
+        "Les noms invalides sont affichés pour chaque fichier sous la forme : \n",
+        "nom d'onglet refusé --> suggestion la plus proche\n"
+      ),
+      log_file,
+      append = TRUE
+    )
+    
+    for (concerned_file in unique(error_logs$wrong_named_sheets_files)) {
+      write(paste0(" > Pour le fichier ", concerned_file, ":\n"),
+            log_file,
+            append = TRUE)
+      
+      concerned_sheets <- error_logs$wrong_named_sheets[error_logs$wrong_named_sheets_files == concerned_file]
+      concerned_suggestions <- error_logs$suggested_names_sheets[error_logs$wrong_named_sheets_files == concerned_file]
+      
+      for (i in seq_along(concerned_sheets)) {
+        write(
+          paste0(
+            "\t", concerned_sheets[i],
+            " --> ", concerned_suggestions[i], "\n"
+          ),
+          log_file,
+          append = TRUE
+        )
+      }
+    }
+    
+    write("", log_file, append = TRUE)
+    
+  } else {
+    write("Tous les secteurs sont correctement nommés.\n\n",
+          log_file,
+          append = TRUE)
+  }
+  
+  
+  
+  
+  
+  # Error feedback for inconsistencies between metadata and sheets
+  write("--- Incohérence entre les noms des secteurs et les métadonnées : \n",
+        log_file,
+        append = TRUE)
+  
+  if (length(error_logs$error_sheet_not_in_meta) > 0 | length(error_logs$error_meta_not_in_sheets) > 0) {
+    
+    if (length(error_logs$error_sheet_not_in_meta) > 0) {
+      write(
+        paste0(
+          "Les fichiers suivants contiennent des noms d'onglets incohérents: \n"
+        ),
+        log_file,
+        append = TRUE
+      )
+      
+      for (concerned_file in unique(error_logs$error_sheet_not_in_meta_files)) {
+        write(paste0(" > Pour le fichier ", concerned_file, ":\n"),
+              log_file,
+              append = TRUE)
+        
+        concerned_sheets <- error_logs$error_sheet_not_in_meta[error_logs$error_sheet_not_in_meta_files == concerned_file]
+        for (i in seq_along(concerned_sheets)) {
+          write(paste0("\t", concerned_sheets[i], "\n"), log_file, append = TRUE)
+        }
+      }
+    }
+    
+    if (length(error_logs$error_meta_not_in_sheets) > 0) {
+      write(
+        paste0(
+          "Pour les fichiers suivants, certains secteurs sont présents dans l'onglet ",
+          "metadata_comptages, mais l'onglet correspondant au secteur n'existe pas : \n"
+        ),
+        log_file,
+        append = TRUE
+      )
+      
+      for (concerned_file in unique(error_logs$error_meta_not_in_sheets_files)) {
+        write(paste0(" > Pour le fichier ", concerned_file, ":\n"),
+              log_file,
+              append = TRUE)
+        
+        concerned_sheets <- error_logs$error_meta_not_in_sheets[error_logs$error_meta_not_in_sheets_files == concerned_file]
+        for (i in seq_along(concerned_sheets)) {
+          write(paste0("\t", concerned_sheets[i], "\n"), log_file, append = TRUE)
+        }
+      }
+    }
+    
+    write("", log_file, append = TRUE)
+    
+  } else {
+    write(
+      "Pas d'incohérence entre les noms des secteurs et les métadonnées.\n\n",
+      log_file,
+      append = TRUE
+    )
+  }
+  
+  # Error feedback for wrong number of columns
+  write("--- Nombre de variables incorrect : \n", log_file, append = TRUE)
+  
+  if (length(error_logs$wrong_column_amount) > 0) {
+    write(
+      paste0(
+        "Certains fichiers contiennent un nombre de variables incorrect.\n",
+        "Veuillez vérifier que le nombre de colonnes correspond bien à la référence.\n"
+      ),
+      log_file,
+      append = TRUE
+    )
+    
+    for (concerned_file in unique(error_logs$wrong_column_amount_files)) {
+      write(paste0(" > Pour le fichier ", concerned_file, ":\n"),
+            log_file,
+            append = TRUE)
+      
+      for (concerned_sheet in unique(error_logs$wrong_column_amount_sheets[error_logs$wrong_column_amount_files == concerned_file])) {
+        write(paste0("\t Pour l'onglet ", concerned_sheet, ":\n"),
+              log_file,
+              append = TRUE)
+        
+        write(
+          paste0("\t Nombre de colonnes attendu : ",
+                 error_logs$right_column_amount[error_logs$wrong_column_amount_files == concerned_file &
+                                                  error_logs$wrong_column_amount_sheets == concerned_sheet], "\n"),
+          log_file,
+          append = TRUE
+        )
+        
+        write(
+          paste0("\t Nombre de colonnes observé : ",
+                 error_logs$wrong_column_amount[error_logs$wrong_column_amount_files == concerned_file &
+                                                  error_logs$wrong_column_amount_sheets == concerned_sheet], "\n"),
+          log_file,
+          append = TRUE
+        )
+      }
+    }
+    
+    write("", log_file, append = TRUE)
+    
+  } else {
+    write("Le nombre de variables est correct.\n\n", log_file, append = TRUE)
+  }
+  
+  # Error feedback for wrong variable names
+  write("--- Noms de variables incorrects : \n", log_file, append = TRUE)
+  
+  if (length(error_logs$wrong_variable_names) > 0) {
+    write(
+      paste0(
+        "Certains noms de variables ne correspondent pas aux noms de variables acceptés.\n",
+        "Veuillez les renommer avec un nom de variable valide (c.f. référence des métadonnées).\n",
+        "L'erreur pourrait aussi provenir de la mauvaise position des colonnes, censées être à la ligne 1.\n"
+      ),
+      log_file,
+      append = TRUE
+    )
+    
+    for (concerned_file in unique(error_logs$wrong_variable_names_files)) {
+      write(paste(" > Pour le fichier ", concerned_file, ":\n"),
+            log_file,
+            append = TRUE)
+      
+      for (concerned_sheet in unique(error_logs$wrong_variable_names_sheets[error_logs$wrong_variable_names_files == concerned_file])) {
+        write(paste("\t Pour l'onglet ", concerned_sheet, ":\n"),
+              log_file,
+              append = TRUE)
+        
+        concerned_variables <- error_logs$wrong_variable_names[error_logs$wrong_variable_names_files == concerned_file &
+                                                                 error_logs$wrong_variable_names_sheets == concerned_sheet]
+        concerned_positions <- error_logs$wrong_variable_names_position[error_logs$wrong_variable_names_files == concerned_file &
+                                                                          error_logs$wrong_variable_names_sheets == concerned_sheet]
+        concerned_corrections <- error_logs$right_variable_names[error_logs$wrong_variable_names_files == concerned_file &
+                                                                   error_logs$wrong_variable_names_sheets == concerned_sheet]
+        
+        for (i in seq_along(concerned_variables)) {
+          write(
+            paste(
+              "\t Nom attendu à la colonne",
+              str_to_upper(letters[concerned_positions[i]]),
+              ":",
+              concerned_corrections[i], "\n"
+            ),
+            log_file,
+            append = TRUE
+          )
+          
+          write(
+            paste(
+              "\t Nom observé à la colonne",
+              str_to_upper(letters[concerned_positions[i]]),
+              ":",
+              concerned_variables[i], "\n"
+            ),
+            log_file,
+            append = TRUE
+          )
+        }
+      }
+    }
+    
+    write("", log_file, append = TRUE)
+    
+  } else {
+    write("Tous les noms de variables sont corrects.\n\n", log_file, append = TRUE)
+  }
+  
+  # Error feedback for unknown variable types
+  write("--- Noms de types de variables non reconnus : \n", log_file, append = TRUE)
+  
+  if (length(error_logs$unknown_format) > 0) {
+    write(
+      paste0(
+        "Certains types de variables ne correspondent pas aux types de variables acceptés.\n",
+        "Veuillez vous référer aux métadonnées de référence.\n"
+      ),
+      log_file,
+      append = TRUE
+    )
+    
+    for (concerned_file in unique(error_logs$unknown_format_files)) {
+      write(paste(" > Pour le fichier ", concerned_file, ":\n"),
+            log_file,
+            append = TRUE)
+      
+      for (concerned_variable in error_logs$unknown_format[error_logs$unknown_format_files == concerned_file]) {
+        write(paste("\t", concerned_variable, "\n"),
+              log_file,
+              append = TRUE)
+      }
+    }
+    
+    write("", log_file, append = TRUE)
+    
+  } else {
+    write("Tous les types de variables sont reconnus.\n\n", log_file, append = TRUE)
+  }
+  
+  # Error feedback for wrong variable types
+  write("--- Type de variable erronés : \n", log_file, append = TRUE)
+  
+  if (length(error_logs$wrong_column_format) > 0) {
+    write(
+      paste0(
+        "Certains types de variables ne correspondent pas aux types de variables acceptés.\n",
+        "Veuillez vérifier les colonnes correspondantes.\n"
+      ),
+      log_file,
+      append = TRUE
+    )
+    
+    for (concerned_file in unique(error_logs$wrong_column_format_files)) {
+      write(paste(" > Pour le fichier ", concerned_file, ":\n"),
+            log_file,
+            append = TRUE)
+      
+      for (concerned_sheet in unique(error_logs$wrong_column_format_sheets[error_logs$wrong_column_format_files == concerned_file])) {
+        write(paste("\t Pour l'onglet ", concerned_sheet),
+              log_file,
+              append = TRUE)
+        
+        concerned_column_name <- error_logs$wrong_column_format_name[error_logs$wrong_column_format_files == concerned_file &
+                                                                       error_logs$wrong_column_format_sheets == concerned_sheet]
+        concerned_expected <- error_logs$expected_column_format[error_logs$wrong_column_format_files == concerned_file &
+                                                                  error_logs$wrong_column_format_sheets == concerned_sheet]
+        concerned_column_class <- error_logs$wrong_column_format[error_logs$wrong_column_format_files == concerned_file &
+                                                                   error_logs$wrong_column_format_sheets == concerned_sheet]
+        
+        
+        for (i in seq_along(concerned_column_name)) {
+          write(
+            paste(
+              "\t \t Pour la colonne :",
+              concerned_column_name[i]
+            ),
+            log_file,
+            append = TRUE
+          )
+          
+          write(
+            paste(
+              "\t \t \t Type de variable attendu :", concerned_expected[i]
+            ),
+            log_file,
+            append = TRUE
+          )
+          
+          write(
+            paste(
+              "\t \t \t Type de variable observé :", concerned_column_class[i]
+            ),
+            log_file,
+            append = TRUE
+          )
+          
+        }
+        
+        write("", log_file, append = TRUE)
+      }
+    }
+    
+    write("", log_file, append = TRUE)
+    
+  } else {
+    write("Tous les types de variables sont corrects.\n\n", log_file, append = TRUE)
+  }
+  
+  
+  write(
+    paste(
+      " --- Fin de la vérification des données de",
+      str_replace_all(counting_type, "_", " "),
+      "---"
+    ),
+    log_file,
+    append = TRUE
+  )
+  
+  if (number_of_errors != 0) {
+    message(paste(
+      "Fichier log pour le",
+      counting_type,
+      "enregistré au chemin :",
+      log_file
+    ))
+  }
+  
+  return(number_of_errors)
+}
