@@ -1,5 +1,5 @@
 #' ---
-#' title : "Paths.R"
+#' title : "Chemins des dossiers et fichiers"
 #' author : Aubin Woehrel
 #' date : 2024-09-17
 #' version : 1.0
@@ -7,50 +7,23 @@
 #'
 #' =============================================================================
 #' 
-#' OBSERVATOIRE DES USAGES - CHEMIN DES DOSSIERS ET FICHIERS
+#' OBSERVATOIRE DES USAGES - CHEMINs DES DOSSIERS ET FICHIERS
 #'
 #' Description : 
 #' Ce script définit les chemins utilisés dans le projet pour les données brutes, 
-#' les données traitées et les sorties telles que les fichiers de logs. Il crée 
-#' également une liste `paths` qui permet d'accéder à ces chemins par leur nom
-#' dans les autres scripts.
+#' les données traitées et les sorties telles que les fichiers logs de 
+#' journalisation. Il crée également une liste `paths` qui permet d'accéder à 
+#' ces chemins par leur nom dans les autres scripts.
 #'
 #' Les chemins sont organisés par catégories, telles que les données brutes 
 #' pour différents types d'observations (par exemple, "plaisance", "meteo", etc.) 
 #' et les sorties de données traitées.
-#'
-#' @section Chemins des données brutes :
-#' - `comptage_plaisance` : Chemin vers les données brutes pour le comptage des bateaux de plaisance.
-#' - `comptage_activites_loisirs` : Chemin vers les données brutes pour les activités de loisir.
-#' - `comptage_meteo` : Chemin vers les données brutes pour les données météorologiques.
-#' - `comptage_plage` : Chemin vers les données brutes pour les données de plage.
-#' - `comptage_terrestre` : Chemin vers les données brutes pour les observations terrestres.
-#' - `comptage_debarquements` : Chemin vers les données brutes pour les débarquements.
-#'
-#' @section Données de référence :
-#' - `comptage_reference` : Chemin vers le jeu de données de référence pour les noms de variables.
-#'
-#' @section Données traitées :
-#' - `processed_plaisance` : Chemin vers les données traitées pour "plaisance".
-#' - `processed_plage` : Chemin vers les données traitées pour les plages.
-#' - `processed_activites_loisirs` : Chemin vers les données traitées pour "activités loisirs".
-#' - `processed_meteo` : Chemin vers les données traitées pour les données météorologiques.
-#' - `processed_terrestre` : Chemin vers les données traitées pour les observations terrestres.
-#' - `processed_debarquements` : Chemin vers les données traitées pour les débarquements.
-#'
-#' @section Sorties :
-#' - `verification_logs` : Chemin vers les fichiers de logs des processus de vérification.
-#'
+#' 
 #' L'objet `paths` est une liste contenant tous les chemins définis, qui peuvent 
 #' être accédés par leur nom (par exemple, `paths$comptage_plaisance`).
-#'
-#' @export
-#'
-#' @examples
-#' # Accéder au chemin des données pour la plaisance
-#' paths$comptage_plaisance
-#'
+#' 
 #' =============================================================================
+
 
 # Chemins des données brutes ----
 

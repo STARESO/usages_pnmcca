@@ -1,10 +1,30 @@
+#' ---
+#' title : "Fonctions de vérifications de fichiers"
+#' author : Aubin Woehrel
+#' date : 2024-09-17
+#' version : 1.0
+#' ---
+#'
+#' =============================================================================
+#' 
+#' OBSERVATOIRE DES USAGES - FONCTIONS DE VERIFICATION DE FICHIERS
+#' 
+#' Description : 
+#' Script contenant toutes les fonctions permettant de vérifier la cohérence des
+#' noms de fichiers et des dates dans les fichiers de comptage terrain.
+#' 
+#' =============================================================================
+
+
+#' =============================================================================
+#' 
 #' Vérifie la cohérence du nom de fichier
 #'
-#' Cette fonction vérifie si le nom d'un fichier de comptage terrain suit le format de 
-#' nommage attendu.
+#' Cette fonction vérifie si le nom d'un fichier de comptage terrain suit le 
+#' format standard attendu.
 #'
-#' @param file_name Le nom du fichier à vérifier.
-#' @param counting_type Le type de comptage terrain (par ex. "plage", "plaisance").
+#' @param file_name Nom du fichier à vérifier.
+#' @param counting_type Type de comptage terrain (par ex. "plage", "plaisance").
 #'
 #' @return Une valeur logique : `TRUE` si le nom du fichier suit le format attendu, `FALSE` sinon.
 #' 
@@ -12,6 +32,7 @@
 #'
 #' @examples
 #' file_coherence("us_med_pnmcca_observatoire_comptage_terrain_plage_2023-08-15.xlsx", "plage")
+#' 
 file_coherence <- function(file_name, counting_type) {
   file_name_type <- paste0(
     "us_med_pnmcca_observatoire_comptage_terrain_",
@@ -25,24 +46,28 @@ file_coherence <- function(file_name, counting_type) {
 }
 
 
+#' =============================================================================
+#' 
 #' Vérifie la cohérence de la date dans le nom de fichier ou la feuille
 #'
 #' Cette fonction vérifie si la date dans un nom de fichier suit le format attendu et 
 #' compare éventuellement la date dans le nom de fichier à celle d'une feuille spécifique.
 #'
-#' @param file_name Le nom du fichier à vérifier.
-#' @param counting_type Le type de comptage terrain (par ex. "plage", "plaisance").
-#' @param date_format Le format de date attendu ("YYYY_MM_DD" ou "DD_MM_YYYY"). Par défaut "YYYY_MM_DD".
+#' @param file_name Nom du fichier à vérifier.
+#' @param counting_type Type de comptage terrain (par ex. "plage", "plaisance").
+#' @param date_format Format de date attendu ("YYYY_MM_DD" ou "DD_MM_YYYY"). 
+#' Par défaut "YYYY_MM_DD".
 #' @param sheet Optionnel : La feuille avec laquelle vérifier la cohérence de la date. 
 #' Si `NULL`, seule la date du nom de fichier est vérifiée.
 #'
-#' @return Une liste avec une valeur logique `coherent` indiquant si la date est cohérente, 
-#' et `wrong_date` si applicable.
+#' @return Une liste contenant la valeur logique `coherent` indiquant si la date est cohérente, 
+#' ainsi que la mauvaise date `wrong_date` si applicable.
 #' 
 #' @export
 #'
 #' @examples
 #' file_date_coherence("us_med_pnmcca_observatoire_comptage_terrain_plage_2023-08-15.xlsx", "plage")
+#' 
 file_date_coherence <- function(file_name,
                                 counting_type,
                                 date_format = "YYYY_MM_DD",

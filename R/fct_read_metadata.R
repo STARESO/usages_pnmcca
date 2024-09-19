@@ -1,21 +1,43 @@
-#' Reads and cleans metadata for the specified counting type.
+#' ---
+#' title : "Lecture des métadonnées"
+#' author : Aubin Woehrel
+#' date : 2024-09-17
+#' version : 1.0
+#' ---
 #'
-#' This function reads metadata from the reference file for the given 
-#' counting type and applies several cleaning steps, including renaming 
-#' columns, removing accents, and handling modalities. It renames columns 
-#' to lower case, removes accents, and renames specific columns as needed.
+#' =============================================================================
+#' 
+#' OBSERVATOIRE DES USAGES - Lecture des métadonnées
+#' 
+#' Description : 
+#' Script contenant toutes les fonctions permettant de lire et nettoyer les
+#' métadonnées des différents types de comptages.  
+#' 
+#' =============================================================================
+
+
+#' =============================================================================
+#' 
+#' Lecture et nettoyage des données pour un type de comptage spécifique
 #'
-#' @param counting_type The type of counting data to read metadata for. 
-#' This should correspond to the sheet name in the metadata reference file.
+#' Cette fonction lit les métadonnées du fichier de référence pour le type de
+#' comptage donné et applique plusieurs étapes de nettoyage, notamment le
+#' renommage des colonnes, la suppression des accents et la gestion des
+#' modalités. Elle renomme les colonnes en minuscules, supprime les accents et
+#' renomme les colonnes spécifiques si nécessaire.
 #'
-#' @return A cleaned metadata dataframe with the columns renamed and 
-#' processed, ready for further use in the compilation process.
+#' @param counting_type Type de comptage 
+#' 
+#' @return Un dataframe de métadonnées nettoyé avec les colonnes renommées et
+#' prêtes pour une utilisation ultérieure dans le processus de compilation.
+#' 
 #' @export
 #'
 #' @examples
 #' read_metadata("plaisance")
+#' 
 read_metadata <- function(counting_type) {
-  # Read metadata and clean it
+  
   metadata <- read.xlsx(
     xlsxFile = paths$comptage_reference,
     sheet = counting_type,

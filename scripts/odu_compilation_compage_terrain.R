@@ -60,8 +60,8 @@ source("R/fct_sheet_header.R")
 
 ## Référence des noms de secteurs ----
 ref_secteurs <- read.csv(file = paths$reference_secteurs, sep = ";") %>%
-  mutate(Secteur_simple = stringi::stri_trans_general(Secteur, "Latin-ASCII")) %>%
-  select(
+  dplyr::mutate(Secteur_simple = stringi::stri_trans_general(Secteur, "Latin-ASCII")) %>%
+  dplyr::select(
     "id", 
     "Secteur",
     "Secteur_simple", 
@@ -70,7 +70,6 @@ ref_secteurs <- read.csv(file = paths$reference_secteurs, sep = ";") %>%
     "Code_INSEE", 
     "Com_Corse"
   )
-
 
 # Compilation ----
 

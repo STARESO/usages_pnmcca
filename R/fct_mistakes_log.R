@@ -1,20 +1,47 @@
+#' ---
+#' title : "Journalisation des erreurs de compilation"
+#' author : Aubin Woehrel
+#' date : 2024-09-17
+#' version : 1.0
+#' ---
+#'
+#' =============================================================================
+#' 
+#' OBSERVATOIRE DES USAGES - JOURNALISATION DES ERREURS DE COMPILATION
+#' 
+#' Description : 
+#' Ce script contient une fonction permettant de générer une journalisation des
+#' erreurs rencontrées lors de la compilation des fichiers de comptage terrain.
+#' Le fichier de journalisation est organisé par type d'erreur et des suggestions
+#' de correction sont fournies. Il est enregistré sous format .log.
+#' 
+#' =============================================================================
+
+
+
+#' =============================================================================
+#' 
 #' Journalisation des erreurs de compilation
 #'
 #' Cette fonction génère un fichier journal détaillant les erreurs rencontrées 
-#' lors de la compilation des fichiers de comptage terrain. Les erreurs sont 
-#' organisées par type et des suggestions de correction sont fournies.
+#' lors de la compilation des fichiers de comptage terrain. 
 #'
-#' @param counting_type Le type de comptage terrain (par exemple, "plage", "plaisance").
-#' @param error_logs Une liste contenant toutes les erreurs rencontrées lors du traitement.
+#' @param counting_type Type de comptage terrain (par exemple, "plage", "plaisance").
+#' @param error_logs Liste contenant toutes les erreurs rencontrées lors du traitement.
 #'
-#' @return Le nombre total d'erreurs trouvées.
+#' @return Nombre total d'erreurs trouvées.
 #' @export
 #'
 #' @examples
 #' mistakes_log("plaisance", error_logs)
+#' 
 mistakes_log <- function(counting_type, error_logs) {
+  
+  # Initialisation ----
+  # Type de comptage
   counting_type <- paste0("comptage_terrain_", counting_type)
   
+  # Emplacement du nouveau fichier log
   log_file <- paste0(
     paths$verification_logs,
     "compilation_",
@@ -23,8 +50,11 @@ mistakes_log <- function(counting_type, error_logs) {
     format(Sys.time(), "%Y-%m-%d_%Hh%M"),
     ".log"
   )
+  
+  # Création du fichier log
   file.create(log_file)
   
+  # Initialisation du fichier log
   write(
     paste(
       " --- Vérification des données de",
@@ -45,6 +75,7 @@ mistakes_log <- function(counting_type, error_logs) {
     append = TRUE
   )
   
+  # Nombre total d'erreurs
   number_of_errors <- sum(
     sapply(error_logs[c(
       "wrong_named_files", 
@@ -408,5 +439,6 @@ mistakes_log <- function(counting_type, error_logs) {
     message(paste("Fichier log pour le", counting_type, "enregistré au chemin :", log_file))
   }
   
+  # Renvoi du nombre d'erreurs
   return(number_of_errors)
 }

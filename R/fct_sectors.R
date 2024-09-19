@@ -1,4 +1,24 @@
-#' Vérifie la cohérence d'un nom de secteur
+#' ---
+#' title : "Référence secteurs"
+#' author : Aubin Woehrel
+#' date : 2024-09-17
+#' version : 1.0
+#' ---
+#'
+#' =============================================================================
+#' 
+#' OBSERVATOIRE DES USAGES - RÉFÉRENCE SECTEURS
+#' 
+#' Description : 
+#' Ce script contient les fonctions permettant de vérifier la cohérence des noms
+#' de secteurs et de renvoyer une liste de référence des noms de secteurs.
+#' 
+#' =============================================================================
+
+
+#' =============================================================================
+#' 
+#' Cohérence d'un nom de secteur
 #'
 #' Cette fonction vérifie si un nom de secteur donné existe dans la liste de 
 #' référence des secteurs. Si le nom n'est pas présent, elle retourne le nom 
@@ -13,6 +33,7 @@
 #'
 #' @examples
 #' sector_coherence("Petit Lotu")
+#' 
 sector_coherence <- function(sector_name) {
   sector_presence <- sector_name %in% ref_secteurs$Secteur_simple
   
@@ -36,6 +57,9 @@ sector_coherence <- function(sector_name) {
   return(list(presence = sector_presence, closest_match = closest_match))
 }
 
+
+#' =============================================================================
+#' 
 #' Retourne une liste de référence des noms de secteurs
 #'
 #' Cette fonction renvoie un data frame contenant la référence des noms de 
@@ -47,6 +71,7 @@ sector_coherence <- function(sector_name) {
 #'
 #' @examples
 #' sector_names()
+#' 
 sector_names <- function() {
   sectors <- ref_secteurs %>%
     select(id,
