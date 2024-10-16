@@ -21,7 +21,6 @@
 #' 
 #' =============================================================================
 
-
 # Initialisation ----
 
 ## Nettoyage de l'environnement ----
@@ -78,19 +77,21 @@ compilation_plage <- compilation_comptage("plage")
 compilation_plaisance <- compilation_comptage("plaisance")
 compilation_meteo <- compilation_comptage("meteo")
 compilation_activites <- compilation_comptage("activites_loisirs")
+compilation_debarquements <- compilation_comptage("debarquements")
 
 ## Post compilation vers format final ----
 compilation_plage <- post_compilation(compilation_plage, counting_type = "plage")
 compilation_plaisance <- post_compilation(compilation_plaisance, counting_type = "plaisance")
 compilation_meteo <- post_compilation(compilation_meteo, counting_type = "meteo")
 compilation_activites <- post_compilation(compilation_activites, counting_type = "activites_loisirs")
-
+compilation_debarquements <- post_compilation(compilation_debarquements, counting_type = "debarquements")
 
 # Check général des compilations ----
 skimr::skim(compilation_plage)
 skimr::skim(compilation_plaisance)
 skimr::skim(compilation_meteo)
 skimr::skim(compilation_activites)
+skimr::skim(compilation_debarquements)
 
 
 # Sauvegarde des données traitées ----
@@ -100,9 +101,11 @@ saveRDS(compilation_plaisance, paste0(paths$processed_plaisance, ".rds"))
 saveRDS(compilation_plage, paste0(paths$processed_plage, ".rds"))
 saveRDS(compilation_meteo, paste0(paths$processed_meteo, ".rds"))
 saveRDS(compilation_activites, paste0(paths$processed_activites, ".rds"))
+saveRDS(compilation_debarquements, paste0(paths$processed_debarquements, ".rds"))
 
 ## Fichiers csv ----
 write.csv(compilation_plaisance, paste0(paths$processed_plaisance, ".csv"), row.names = FALSE)
 write.csv(compilation_plage, paste0(paths$processed_plage, ".csv"), row.names = FALSE)
 write.csv(compilation_meteo, paste0(paths$processed_meteo, ".csv"), row.names = FALSE)
 write.csv(compilation_activites, paste0(paths$processed_activites, ".csv"), row.names = FALSE)
+write.csv(compilation_debarquements, paste0(paths$processed_debarquements, ".csv"), row.names = FALSE)

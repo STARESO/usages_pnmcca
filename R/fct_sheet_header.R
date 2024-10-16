@@ -50,6 +50,9 @@ verify_sheet_header <- function(data_sheet,
                                 error_logs) {
   # Indicateur pour suivre si des erreurs se sont produites dans la feuille en cours
   error_flag <- FALSE
+  # print(data_sheet[1, ])
+  # print(metadata_reference)
+  
   
   # Vérification cas d'en-tête double (présence de champ2 dans les métadonnées)
   if ("champ2" %in% names(metadata_reference)) {
@@ -103,8 +106,9 @@ verify_sheet_header <- function(data_sheet,
     
     # Vérification noms de variables en-tête simple
     coherent_variable_names <- data_sheet[1, ] == metadata_reference$champ
+    
     if (sum(!coherent_variable_names) != 0) {
-      error_logs$wrong_variable_names <- c(error_logs$wrong_variable_names, names(data_sheet)[!coherent_variable_names])
+      error_logs$wrong_variable_names <- c(error_logs$wrong_variable_names, data_sheet[1, ][!coherent_variable_names])
       error_logs$right_variable_names <- c(error_logs$right_variable_names, metadata_reference$champ[!coherent_variable_names])
       error_logs$wrong_variable_names_position <- c(error_logs$wrong_variable_names_position, which(!coherent_variable_names))
       error_logs$wrong_variable_names_files <- c(error_logs$wrong_variable_names_files, rep(file_name, sum(!coherent_variable_names)))

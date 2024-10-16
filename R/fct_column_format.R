@@ -78,7 +78,6 @@ check_column_format <- function(data_sheet,
       gsub(" ", "_", tolower(.))
     )))
   
-  
   # Parcours chaque colonne de la feuille de données
   for (col in names(data_sheet)) {
     

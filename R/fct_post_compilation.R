@@ -84,14 +84,14 @@ post_compilation <- function(compilation_data, counting_type) {
   compilation_data <- compilation_data %>%
     mutate(annee = year(date),
            mois = month(date, label = TRUE, abbr = FALSE),
-           jour = mday(date, label = TRUE, abbr = FALSE)) %>%
+           jour = mday(date)) %>%
     rename_with(
       .fn = function(x) {
         stringi::stri_trans_general(x, "Latin-ASCII")
       },
       .cols = everything()
     ) %>%
-    select(date, annee, mois, secteur, everything(), -commentaires, commentaires) %>%
+    select(date, annee, mois, jour, secteur, everything(), -commentaires, commentaires) %>%
     mutate(date = as.Date(date)) %>%
     arrange(date, secteur, horaire)
   

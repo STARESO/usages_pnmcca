@@ -84,7 +84,12 @@ compilation_comptage <- function(counting_type) {
     expected_column_format = c(),
     wrong_column_format_name = c(),
     wrong_column_format_sheets = c(),
-    wrong_column_format_files = c()
+    wrong_column_format_files = c(),
+    wrong_content = c(),
+    wrong_content_suggestion = c(),
+    wrong_content_columns = c(),
+    wrong_content_sheets = c(),
+    wrong_content_files = c()
   )
   
   # Initialisation data frame final
@@ -213,7 +218,8 @@ compilation_comptage <- function(counting_type) {
         
         # Nettoyage noms de colonnes
         data_sheet <- data_sheet %>%
-          rename_with(~ str_replace_all(., " ", "_"), everything()) 
+          rename_with(~ stringr::str_replace_all(., " ", "_"), everything()) %>%
+          rename_with(~ stringi::stri_trans_general(., "Latin-ASCII"), everything())
         
         # Conversion cellules vides en NA et texte "NA" en valeur NA
         data_sheet <- convert_to_na(data_sheet)
@@ -233,6 +239,8 @@ compilation_comptage <- function(counting_type) {
         data_sheet <- format_check$data_sheet
         error_logs <- format_check$error_logs
         
+        # Check du contenu des colonnes avec les valeurs des métadonnées de référence
+        error_logs <- check_column_content(data_sheet)
         
         # Ajout des colonnes date et secteur aux données
         if (counting_type != "meteo") {
@@ -249,6 +257,8 @@ compilation_comptage <- function(counting_type) {
       } # Fin des feuilles autres que metadata_comptages
     }  # Fin boucle feuilles
   }  # Fin boucle fichiers
+  
+  error_logs <<- error_logs
   
   # Enregistrement des erreurs dans un fichier log + nombre d'erreurs total
   mistakes <- mistakes_log(counting_type, error_logs)

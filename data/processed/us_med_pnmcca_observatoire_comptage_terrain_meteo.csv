@@ -1,293 +1,293 @@
-"date","annee","mois","secteur","horaire","force_vent","etat_mer","couverture_nuageuse","temperature_sol","direction_vent","direction_houle","observateurs","commentaires"
-2020-07-20,2020,"juillet","Fiume Santu",09:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova",NA
-2020-07-20,2020,"juillet","Fiume Santu",12:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova","Basé sur Fiume Santu 9h"
-2020-07-20,2020,"juillet","Fiume Santu",15:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova","Basé sur Fiume Santu 9h"
-2020-07-20,2020,"juillet","Fiume Santu",17:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova","Basé sur Fiume Santu 9h"
-2020-07-20,2020,"juillet","Lotu",09:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova",NA
-2020-07-20,2020,"juillet","Lotu",12:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova","Basé sur Lotu 9h"
-2020-07-20,2020,"juillet","Lotu",15:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova","Basé sur Lotu 9h"
-2020-07-20,2020,"juillet","Lotu",17:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova","Basé sur Lotu 9h"
-2020-07-20,2020,"juillet","Petit Lotu",09:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova",NA
-2020-07-20,2020,"juillet","Petit Lotu",12:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova","Basé sur Petit Lotu 9h"
-2020-07-20,2020,"juillet","Petit Lotu",15:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova","Basé sur Petit Lotu 9h"
-2020-07-20,2020,"juillet","Petit Lotu",17:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova","Basé sur Petit Lotu 9h"
-2020-07-20,2020,"juillet","Saleccia",09:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova",NA
-2020-07-20,2020,"juillet","Saleccia",12:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova","Basé sur Saleccia 9h"
-2020-07-20,2020,"juillet","Saleccia",15:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova","Basé sur Saleccia 9h"
-2020-07-20,2020,"juillet","Saleccia",17:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova","Basé sur Saleccia 9h"
-2020-07-29,2020,"juillet","Lotu",09:00:00,"F2","belle","0-10",NA,NA,NA,NA,"Basé sur Lotu 9h"
-2020-07-29,2020,"juillet","Lotu",12:00:00,"F2","belle","0-10",NA,NA,NA,NA,"Basé sur Lotu 9h"
-2020-07-29,2020,"juillet","Lotu",15:00:00,"F2","belle","0-10",NA,NA,NA,NA,"Basé sur Lotu 9h"
-2020-07-29,2020,"juillet","Lotu",17:00:00,"F2","belle","0-10",NA,NA,NA,NA,"Basé sur Lotu 9h"
-2020-07-29,2020,"juillet","Saleccia",09:00:00,"F2","belle","0-10",NA,NA,NA,NA,"Basé sur Lotu 9h"
-2020-07-29,2020,"juillet","Saleccia",12:00:00,"F2","belle","0-10",NA,NA,NA,NA,"Basé sur Lotu 9h"
-2020-07-29,2020,"juillet","Saleccia",15:00:00,"F2","belle","0-10",NA,NA,NA,NA,"Basé sur Lotu 9h"
-2020-07-29,2020,"juillet","Saleccia",17:00:00,"F2","belle","0-10",NA,NA,NA,NA,"Basé sur Lotu 9h"
-2020-08-13,2020,"août","Fiume Santu",09:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)",NA
-2020-08-13,2020,"août","Fiume Santu",12:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)","Basé sur Fiume Santu 9h"
-2020-08-13,2020,"août","Fiume Santu",15:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)","Basé sur Fiume Santu 9h"
-2020-08-13,2020,"août","Fiume Santu",17:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)","Basé sur Fiume Santu 9h"
-2020-08-13,2020,"août","Lotu",09:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)",NA
-2020-08-13,2020,"août","Lotu",12:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)","Basé sur Lotu 9h"
-2020-08-13,2020,"août","Lotu",15:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)","Basé sur Lotu 9h"
-2020-08-13,2020,"août","Lotu",17:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)","Basé sur Lotu 9h"
-2020-08-13,2020,"août","Petit Lotu",09:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)",NA
-2020-08-13,2020,"août","Petit Lotu",12:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)","Basé sur Petit Lotu 9h"
-2020-08-13,2020,"août","Petit Lotu",15:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)","Basé sur Petit Lotu 9h"
-2020-08-13,2020,"août","Petit Lotu",17:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)","Basé sur Petit Lotu 9h"
-2020-08-13,2020,"août","Saleccia",09:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)",NA
-2020-08-13,2020,"août","Saleccia",12:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)","Basé sur Saleccia 9h"
-2020-08-13,2020,"août","Saleccia",15:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)","Basé sur Saleccia 9h"
-2020-08-13,2020,"août","Saleccia",17:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)","Basé sur Saleccia 9h"
-2020-09-09,2020,"septembre","Fiume Santu",09:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Jean-Phi, Frank",NA
-2020-09-09,2020,"septembre","Fiume Santu",12:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Jean-Phi, Frank","Basé sur Fiume Santu 9h"
-2020-09-09,2020,"septembre","Fiume Santu",15:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Jean-Phi, Frank","Basé sur Fiume Santu 9h"
-2020-09-09,2020,"septembre","Fiume Santu",17:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Jean-Phi, Frank","Basé sur Fiume Santu 9h"
-2020-09-09,2020,"septembre","Lotu",09:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Jean-Phi, Frank",NA
-2020-09-09,2020,"septembre","Lotu",12:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Jean-Phi, Frank","Basé sur Lotu 9h"
-2020-09-09,2020,"septembre","Lotu",15:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Jean-Phi, Frank","Basé sur Lotu 9h"
-2020-09-09,2020,"septembre","Lotu",17:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Jean-Phi, Frank","Basé sur Lotu 9h"
-2020-09-09,2020,"septembre","Petit Lotu",09:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Jean-Phi, Frank",NA
-2020-09-09,2020,"septembre","Petit Lotu",12:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Jean-Phi, Frank","Basé sur Petit Lotu 9h"
-2020-09-09,2020,"septembre","Petit Lotu",15:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Jean-Phi, Frank","Basé sur Petit Lotu 9h"
-2020-09-09,2020,"septembre","Petit Lotu",17:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Jean-Phi, Frank","Basé sur Petit Lotu 9h"
-2020-09-09,2020,"septembre","Saleccia",09:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Sophie, Sébastien",NA
-2020-09-09,2020,"septembre","Saleccia",12:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Sophie, Sébastien","Basé sur Saleccia 9h"
-2020-09-09,2020,"septembre","Saleccia",15:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Sophie, Sébastien","Basé sur Saleccia 9h"
-2020-09-09,2020,"septembre","Saleccia",17:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Sophie, Sébastien","Basé sur Saleccia 9h"
-2021-06-16,2021,"juin","Fiume Santu",09:00:00,"F1","ridee","0-10",26,"E",NA,"Axel, Sophie","Uniquement issu de Saleccia jour"
-2021-06-16,2021,"juin","Fiume Santu",12:00:00,"F1","ridee","0-10",26,"E",NA,"Axel, Sophie","Uniquement issu de Saleccia jour"
-2021-06-16,2021,"juin","Fiume Santu",15:00:00,"F1","ridee","0-10",26,"E",NA,"Axel, Sophie","Uniquement issu de Saleccia jour"
-2021-06-16,2021,"juin","Fiume Santu",17:00:00,"F1","ridee","0-10",26,"E",NA,"Axel, Sophie","Uniquement issu de Saleccia jour"
-2021-06-16,2021,"juin","Lotu",09:00:00,"F1","ridee","0-10",26,"E",NA,"Aurelie, Perrine","Uniquement issu de Lotu jour"
-2021-06-16,2021,"juin","Lotu",12:00:00,"F1","ridee","0-10",26,"E",NA,"Aurelie, Perrine","Uniquement issu de Lotu jour"
-2021-06-16,2021,"juin","Lotu",15:00:00,"F1","ridee","0-10",26,"E",NA,"Aurelie, Perrine","Uniquement issu de Lotu jour"
-2021-06-16,2021,"juin","Lotu",17:00:00,"F1","ridee","0-10",26,"E",NA,"Aurelie, Perrine","Uniquement issu de Lotu jour"
-2021-06-16,2021,"juin","Petit Lotu",09:00:00,"F1","ridee","0-10",26,"E",NA,"Axel, Sophie","Uniquement issu de Saleccia jour"
-2021-06-16,2021,"juin","Petit Lotu",12:00:00,"F1","ridee","0-10",26,"E",NA,"Axel, Sophie","Uniquement issu de Saleccia jour"
-2021-06-16,2021,"juin","Petit Lotu",15:00:00,"F1","ridee","0-10",26,"E",NA,"Axel, Sophie","Uniquement issu de Saleccia jour"
-2021-06-16,2021,"juin","Petit Lotu",17:00:00,"F1","ridee","0-10",26,"E",NA,"Axel, Sophie","Uniquement issu de Saleccia jour"
-2021-06-16,2021,"juin","Saleccia",09:00:00,"F1","ridee","0-10",26,"E",NA,"Axel, Sophie","Uniquement issu de Saleccia jour"
-2021-06-16,2021,"juin","Saleccia",12:00:00,"F1","ridee","0-10",26,"E",NA,"Axel, Sophie","Uniquement issu de Saleccia jour"
-2021-06-16,2021,"juin","Saleccia",15:00:00,"F1","ridee","0-10",26,"E",NA,"Axel, Sophie","Uniquement issu de Saleccia jour"
-2021-06-16,2021,"juin","Saleccia",17:00:00,"F1","ridee","0-10",26,"E",NA,"Axel, Sophie","Uniquement issu de Saleccia jour"
-2021-07-28,2021,"juillet","Fiume Santu",09:00:00,"F1","calme","0-10",26,"NO","SO","Laurent, Alex",NA
-2021-07-28,2021,"juillet","Fiume Santu",12:00:00,"F1","calme","0-10",NA,"NO","SO","Laurent, Alex",NA
-2021-07-28,2021,"juillet","Fiume Santu",15:00:00,NA,NA,NA,NA,NA,NA,"Laurent, Alex",NA
-2021-07-28,2021,"juillet","Fiume Santu",17:00:00,"F2","ridee","0-10",NA,"NO","SO","Laurent, Alex",NA
-2021-07-28,2021,"juillet","Lotu",09:00:00,"F1","calme","0-10",26,"NO","SO","Laurent, Alex",NA
-2021-07-28,2021,"juillet","Lotu",12:00:00,"F0","calme","10-25",NA,"N","SO","Laurent, Alex",NA
-2021-07-28,2021,"juillet","Lotu",15:00:00,NA,NA,NA,NA,NA,NA,"Laurent, Alex",NA
-2021-07-28,2021,"juillet","Lotu",17:00:00,"F0","calme","0-10",NA,"NO","SO","Laurent, Alex",NA
-2021-07-28,2021,"juillet","Petit Lotu",09:00:00,"F1","calme","0-10",26,"NO","SE","Laurent, Alex",NA
-2021-07-28,2021,"juillet","Petit Lotu",12:00:00,"F1","calme","0-10",NA,"NO","SE","Laurent, Alex",NA
-2021-07-28,2021,"juillet","Petit Lotu",15:00:00,NA,NA,NA,NA,NA,NA,"Laurent, Alex",NA
-2021-07-28,2021,"juillet","Petit Lotu",17:00:00,"F1","calme","0-10",NA,"NO","SE","Laurent, Alex",NA
-2021-07-28,2021,"juillet","Saleccia",09:00:00,"F1","calme","0-10",27,"NO","SE","Laurent, Alex",NA
-2021-07-28,2021,"juillet","Saleccia",12:00:00,"F0","calme","0-10",NA,"NO","SE","Laurent, Alex",NA
-2021-07-28,2021,"juillet","Saleccia",15:00:00,"F0","calme","0-10",NA,"SO","SE","Laurent, Alex",NA
-2021-07-28,2021,"juillet","Saleccia",17:00:00,NA,NA,NA,NA,NA,NA,"Laurent, Alex",NA
-2021-08-18,2021,"août","Fiume Santu",09:00:00,"F1","calme","0-10",26,"N",NA,"Frank, Alex",NA
-2021-08-18,2021,"août","Fiume Santu",12:00:00,"F1","calme","0-10",28,"N",NA,"Frank, Alex",NA
-2021-08-18,2021,"août","Fiume Santu",15:00:00,"F1","calme","0-10",28,"NE",NA,"Frank, Alex",NA
-2021-08-18,2021,"août","Fiume Santu",17:00:00,"F1","calme","0-10",27,"NE",NA,"Frank, Alex",NA
-2021-08-18,2021,"août","Lotu",09:00:00,"F1","calme","0-10",25,"NE",NA,"Frank, Alex",NA
-2021-08-18,2021,"août","Lotu",12:00:00,"F2","ridee","10-25",28,"N","S","Frank, Alex",NA
-2021-08-18,2021,"août","Lotu",15:00:00,"F2","ridee","10-25",28,"NO","SE","Frank, Alex",NA
-2021-08-18,2021,"août","Lotu",17:00:00,"F1","ridee","0-10",27,"NO","SE","Frank, Alex",NA
-2021-08-18,2021,"août","Petit Lotu",09:00:00,"F1","calme","0-10",25,"NE",NA,"Frank, Alex",NA
-2021-08-18,2021,"août","Petit Lotu",12:00:00,"F2","ridee","10-25",28,"O","S","Frank, Alex",NA
-2021-08-18,2021,"août","Petit Lotu",15:00:00,"F2","ridee","10-25",28,"NO","SE","Frank, Alex",NA
-2021-08-18,2021,"août","Petit Lotu",17:00:00,"F1","ridee","0-10",27,"NO","SE","Frank, Alex",NA
-2021-08-18,2021,"août","Saleccia",09:00:00,"F1","ridee","0-10",25,"O","E","Frank, Alex",NA
-2021-08-18,2021,"août","Saleccia",12:00:00,"F1","ridee","10-25",28,"NO","S","Frank, Alex",NA
-2021-08-18,2021,"août","Saleccia",15:00:00,"F2","belle","10-25",28,"NO","SE","Frank, Alex",NA
-2021-08-18,2021,"août","Saleccia",17:00:00,"F2","ridee","10-25",26,"NO","SE","Frank, Alex",NA
-2021-09-02,2021,"septembre","Fiume Santu",09:00:00,"F2","ridee","25-50",24,"E","O","Alex, Jean-Phi",NA
-2021-09-02,2021,"septembre","Fiume Santu",12:00:00,"F3","peu agitee","50-75",25,"E","O","Alex, Jean-Phi",NA
-2021-09-02,2021,"septembre","Fiume Santu",15:00:00,"F3","peu agitee","75-100",25,"E","O","Alex, Jean-Phi",NA
-2021-09-02,2021,"septembre","Fiume Santu",17:00:00,"F2","peu agitee","75-100",25,"E","O","Alex, Jean-Phi",NA
-2021-09-02,2021,"septembre","Lotu",09:00:00,"F2","ridee","25-50",24,"E","O","Alex, Jean-Phi",NA
-2021-09-02,2021,"septembre","Lotu",12:00:00,"F3","peu agitee","50-75",26,"E","O","Alex, Jean-Phi",NA
-2021-09-02,2021,"septembre","Lotu",15:00:00,"F3","peu agitee","50-75",25,"E","O","Alex, Jean-Phi",NA
-2021-09-02,2021,"septembre","Lotu",17:00:00,"F2","peu agitee","75-100",25,"E","O","Alex, Jean-Phi",NA
-2021-09-02,2021,"septembre","Petit Lotu",09:00:00,"F2","ridee","25-50",24,"E","O","Alex, Jean-Phi",NA
-2021-09-02,2021,"septembre","Petit Lotu",12:00:00,"F3","peu agitee","50-75",26,"E","O","Alex, Jean-Phi",NA
-2021-09-02,2021,"septembre","Petit Lotu",15:00:00,"F3","peu agitee","50-75",25,"E","O","Alex, Jean-Phi",NA
-2021-09-02,2021,"septembre","Petit Lotu",17:00:00,"F2","peu agitee","75-100",25,"E","O","Alex, Jean-Phi",NA
-2021-09-02,2021,"septembre","Saleccia",09:00:00,"F2","ridee","25-50",24,"E","O","Alex, Jean-Phi",NA
-2021-09-02,2021,"septembre","Saleccia",12:00:00,"F3","peu agitee","50-75",25,"E","O","Alex, Jean-Phi",NA
-2021-09-02,2021,"septembre","Saleccia",15:00:00,"F3","peu agitee","50-75",24,"E","O","Alex, Jean-Phi",NA
-2021-09-02,2021,"septembre","Saleccia",17:00:00,"F2","peu agitee","75-100",24,"E","O","Alex, Jean-Phi",NA
-2022-06-21,2022,"juin","Fiume Santu",09:00:00,"F1","ridee","0-10",28,"SE",NA,"Jean-Phi CASANOVA, Alex CRISPI",NA
-2022-06-21,2022,"juin","Fiume Santu",12:00:00,"F3","ridee","10-25",28,"N","S","Jean-Phi CASANOVA, Alex CRISPI",NA
-2022-06-21,2022,"juin","Fiume Santu",15:00:00,"F2","belle","0-10",28,"N","S","Jean-Phi CASANOVA, Alex CRISPI",NA
-2022-06-21,2022,"juin","Fiume Santu",17:00:00,"F0","calme","0-10",29,"N","S","Jean-Phi CASANOVA, Alex CRISPI",NA
-2022-06-21,2022,"juin","Lotu",09:00:00,"F1","ridee","0-10",28,"SE",NA,"Jean-Phi CASANOVA, Alex CRISPI",NA
-2022-06-21,2022,"juin","Lotu",12:00:00,"F3","belle","10-25",28,"N","S","Jean-Phi CASANOVA, Alex CRISPI",NA
-2022-06-21,2022,"juin","Lotu",15:00:00,"F2","belle","10-25",29,"N","S","Jean-Phi CASANOVA, Alex CRISPI",NA
-2022-06-21,2022,"juin","Lotu",17:00:00,"F0","calme","0-10",29,"N","S","Jean-Phi CASANOVA, Alex CRISPI",NA
-2022-06-21,2022,"juin","Petit Lotu",09:00:00,"F1","ridee","0-10",28,"SE",NA,"Jean-Phi CASANOVA, Alex CRISPI",NA
-2022-06-21,2022,"juin","Petit Lotu",12:00:00,"F3","belle","10-25",28,"N","S","Jean-Phi CASANOVA, Alex CRISPI",NA
-2022-06-21,2022,"juin","Petit Lotu",15:00:00,"F2","belle","10-25",28,"N","S","Jean-Phi CASANOVA, Alex CRISPI",NA
-2022-06-21,2022,"juin","Petit Lotu",17:00:00,"F0","calme","0-10",29,"N","S","Jean-Phi CASANOVA, Alex CRISPI",NA
-2022-06-21,2022,"juin","Saleccia",09:00:00,"F1","calme","0-10",28,"SE",NA,"Jean-Phi CASANOVA, Alex CRISPI",NA
-2022-06-21,2022,"juin","Saleccia",12:00:00,"F2","ridee","10-25",27,"N","S","Jean-Phi CASANOVA, Alex CRISPI",NA
-2022-06-21,2022,"juin","Saleccia",15:00:00,"F1","belle","10-25",28,"N","S","Jean-Phi CASANOVA, Alex CRISPI",NA
-2022-06-21,2022,"juin","Saleccia",17:00:00,"F2","ridee","0-10",29,"N","S","Jean-Phi CASANOVA, Alex CRISPI",NA
-2022-07-28,2022,"juillet","Fiume Santu",09:00:00,"F1","belle","0-10",28,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
-2022-07-28,2022,"juillet","Fiume Santu",12:00:00,"F3","belle","0-10",31,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
-2022-07-28,2022,"juillet","Fiume Santu",15:00:00,"F2","belle","0-10",30,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
-2022-07-28,2022,"juillet","Fiume Santu",17:00:00,"F1","belle","0-10",28,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
-2022-07-28,2022,"juillet","Lotu",09:00:00,"F1","belle","0-10",28,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
-2022-07-28,2022,"juillet","Lotu",12:00:00,"F3","belle","0-10",31,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
-2022-07-28,2022,"juillet","Lotu",15:00:00,"F1","belle","0-10",32,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
-2022-07-28,2022,"juillet","Lotu",17:00:00,"F1","belle","0-10",28,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
-2022-07-28,2022,"juillet","Petit Lotu",09:00:00,"F1","belle","0-10",28,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
-2022-07-28,2022,"juillet","Petit Lotu",12:00:00,"F3","belle","0-10",31,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
-2022-07-28,2022,"juillet","Petit Lotu",15:00:00,"F2","belle","0-10",30,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
-2022-07-28,2022,"juillet","Petit Lotu",17:00:00,"F1","belle","0-10",28,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
-2022-07-28,2022,"juillet","Saleccia",09:00:00,"F1","belle","0-10",28,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
-2022-07-28,2022,"juillet","Saleccia",12:00:00,"F3","peu agitee","0-10",32,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
-2022-07-28,2022,"juillet","Saleccia",15:00:00,"F2","belle","0-10",30,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
-2022-07-28,2022,"juillet","Saleccia",17:00:00,"F1","belle","0-10",28,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
-2022-08-10,2022,"août","Fiume Santu",09:00:00,"F2","belle","0-10",28,"SE",NA,"Laurent Ricquiers, Axel Priouzeau",NA
-2022-08-10,2022,"août","Fiume Santu",12:00:00,"F3","belle","0-10",32,"E",NA,"Laurent Ricquiers, Axel Priouzeau",NA
-2022-08-10,2022,"août","Fiume Santu",15:00:00,"F4","peu agitee","0-10",33,"NE",NA,"Laurent Ricquiers, Axel Priouzeau",NA
-2022-08-10,2022,"août","Fiume Santu",17:00:00,NA,NA,NA,NA,NA,NA,NA,"Pas de comptage problème échouage"
-2022-08-10,2022,"août","Lotu",09:00:00,"F2","belle","0-10",28,"SE",NA,"Laurent Ricquiers, Axel Priouzeau",NA
-2022-08-10,2022,"août","Lotu",12:00:00,"F2","belle","0-10",32,"ESE",NA,"Laurent Ricquiers, Axel Priouzeau",NA
-2022-08-10,2022,"août","Lotu",15:00:00,"F2","belle","0-10",33,"E",NA,"Laurent Ricquiers, Axel Priouzeau",NA
-2022-08-10,2022,"août","Lotu",17:00:00,NA,NA,NA,NA,NA,NA,NA,"Pas de comptage problème échouage"
-2022-08-10,2022,"août","Petit Lotu",09:00:00,"F2","belle","0-10",28,"SE",NA,"Laurent Ricquiers, Axel Priouzeau",NA
-2022-08-10,2022,"août","Petit Lotu",12:00:00,"F2","belle","0-10",32,"ESE",NA,"Laurent Ricquiers, Axel Priouzeau",NA
-2022-08-10,2022,"août","Petit Lotu",15:00:00,"F2","belle","0-10",33,"E",NA,"Laurent Ricquiers, Axel Priouzeau",NA
-2022-08-10,2022,"août","Petit Lotu",17:00:00,NA,NA,NA,NA,NA,NA,NA,"Pas de comptage problème échouage"
-2022-08-10,2022,"août","Saleccia",09:00:00,"F2","belle","0-10",28,"SE",NA,"Laurent Ricquiers, Axel Priouzeau",NA
-2022-08-10,2022,"août","Saleccia",12:00:00,"F2","belle","0-10",32,"ESE",NA,"Laurent Ricquiers, Axel Priouzeau",NA
-2022-08-10,2022,"août","Saleccia",15:00:00,"F2","belle","0-10",33,"E",NA,"Laurent Ricquiers, Axel Priouzeau",NA
-2022-08-10,2022,"août","Saleccia",17:00:00,NA,NA,NA,NA,NA,NA,NA,"Pas de comptage problème échouage"
-2022-09-12,2022,"septembre","Lotu",09:00:00,"F0","calme","0-10",26,NA,NA,"Alex, Cédric, Perrine",NA
-2022-09-12,2022,"septembre","Lotu",12:00:00,"F1","ridee","0-10",27,"N","S","Alex, Cédric, Perrine",NA
-2022-09-12,2022,"septembre","Lotu",15:00:00,"F0","ridee","10-25",28,"N","S","Alex, Cédric, Perrine",NA
-2022-09-12,2022,"septembre","Lotu",17:00:00,"F0","ridee","10-25",28,"N","S","Alex, Cédric, Perrine",NA
-2022-09-12,2022,"septembre","Mezzanu",09:00:00,"F0","calme","0-10",26,NA,NA,"Alex, Cédric, Perrine",NA
-2022-09-12,2022,"septembre","Mezzanu",12:00:00,"F1","ridee","0-10",27,"N","S","Alex, Cédric, Perrine",NA
-2022-09-12,2022,"septembre","Mezzanu",15:00:00,"F0","ridee","10-25",28,"N","S","Alex, Cédric, Perrine",NA
-2022-09-12,2022,"septembre","Mezzanu",17:00:00,"F0","ridee","10-25",28,"N","S","Alex, Cédric, Perrine",NA
-2022-09-12,2022,"septembre","Saleccia",09:00:00,"F0","calme","0-10",26,NA,NA,"Alex, Cédric, Perrine",NA
-2022-09-12,2022,"septembre","Saleccia",12:00:00,"F1","ridee","0-10",27,"N","S","Alex, Cédric, Perrine",NA
-2022-09-12,2022,"septembre","Saleccia",15:00:00,"F0","ridee","10-25",28,"N","S","Alex, Cédric, Perrine",NA
-2022-09-12,2022,"septembre","Saleccia",17:00:00,"F0","ridee","10-25",28,"N","S","Alex, Cédric, Perrine",NA
-2023-06-23,2023,"juin","A Torra di Murtella",09:00:00,"F0","calme","0-10",28,NA,NA,"Laurent, Jean Phi",NA
-2023-06-23,2023,"juin","A Torra di Murtella",12:00:00,"F1","calme","0-10",30,"O",NA,"Laurent, Jean Phi",NA
-2023-06-23,2023,"juin","A Torra di Murtella",15:00:00,"F2","belle","0-10",30,"O","E","Laurent, Jean Phi",NA
-2023-06-23,2023,"juin","A Torra di Murtella",17:00:00,"F3","belle","0-10",30,"O","E","Laurent, Jean Phi",NA
-2023-06-23,2023,"juin","Fiume Santu",09:00:00,"F0","calme","0-10",29,NA,NA,"Laurent, Jean Phi",NA
-2023-06-23,2023,"juin","Fiume Santu",12:00:00,"F1","calme","0-10",30,"O",NA,"Laurent, Jean Phi",NA
-2023-06-23,2023,"juin","Fiume Santu",15:00:00,"F2","belle","0-10",30,"O","E","Laurent, Jean Phi",NA
-2023-06-23,2023,"juin","Fiume Santu",17:00:00,"F3","belle","0-10",30,"O","E","Laurent, Jean Phi",NA
-2023-06-23,2023,"juin","Ghignu",09:00:00,"F3","peu agitee","0-10",25,"O","E","Laurent CECCALDI",NA
-2023-06-23,2023,"juin","Ghignu",12:00:00,"F3","peu agitee","0-10",26,"O","E","Laurent CECCALDI",NA
-2023-06-23,2023,"juin","Ghignu",15:00:00,"F3","peu agitee","0-10",28,"O","E","Laurent CECCALDI",NA
-2023-06-23,2023,"juin","Ghignu",17:00:00,"F3","peu agitee","0-10",26,"O","E","Laurent CECCALDI",NA
-2023-06-23,2023,"juin","Lotu",09:00:00,"F1","ridee","0-10",26,"SE","SE","Laurent, Jean Phi",NA
-2023-06-23,2023,"juin","Lotu",12:00:00,"F2","ridee","0-10",29,"SE","SE","Laurent, Jean Phi",NA
-2023-06-23,2023,"juin","Lotu",15:00:00,"F2","belle","0-10",30,"O","E","Laurent, Jean Phi",NA
-2023-06-23,2023,"juin","Lotu",17:00:00,"F3","belle","0-10",30,"O","E","Laurent, Jean Phi",NA
-2023-06-23,2023,"juin","Malfalcu",09:00:00,"F3","peu agitee","10-25",25,"O","E","Laurent CECCALDI",NA
-2023-06-23,2023,"juin","Malfalcu",12:00:00,"F3","peu agitee","10-25",26,"O","E","Laurent CECCALDI",NA
-2023-06-23,2023,"juin","Malfalcu",15:00:00,"F4","agitee","10-25",28,"O","E","Laurent CECCALDI",NA
-2023-06-23,2023,"juin","Malfalcu",17:00:00,NA,NA,NA,NA,NA,NA,"Laurent CECCALDI","Non réalisé car mauvais temps"
-2023-06-23,2023,"juin","Mezzanu",09:00:00,"F1","ridee","0-10",26,"SE","SE","Laurent, Jean Phi",NA
-2023-06-23,2023,"juin","Mezzanu",12:00:00,"F1","calme","0-10",30,"SO","SO","Laurent, Jean Phi",NA
-2023-06-23,2023,"juin","Mezzanu",15:00:00,"F2","belle","0-10",30,"O","E","Laurent, Jean Phi",NA
-2023-06-23,2023,"juin","Mezzanu",17:00:00,"F3","belle","0-10",30,"O","E","Laurent, Jean Phi",NA
-2023-06-23,2023,"juin","Saleccia",09:00:00,"F0","ridee","10-25",26,NA,"SE","Laurent, Jean Phi",NA
-2023-06-23,2023,"juin","Saleccia",12:00:00,"F3","belle","0-10",32,"SO","SE","Laurent, Jean Phi",NA
-2023-06-23,2023,"juin","Saleccia",15:00:00,"F2","belle","0-10",30,"O","E","Laurent, Jean Phi",NA
-2023-06-23,2023,"juin","Saleccia",17:00:00,"F3","belle","0-10",30,"O","E","Laurent, Jean Phi",NA
-2023-06-23,2023,"juin","Trave",09:00:00,"F3","peu agitee","10-25",25,"O","E","Laurent CECCALDI",NA
-2023-06-23,2023,"juin","Trave",12:00:00,"F3","peu agitee","10-25",26,"O","E","Laurent CECCALDI",NA
-2023-06-23,2023,"juin","Trave",15:00:00,"F4","agitee","10-25",28,"O","E","Laurent CECCALDI",NA
-2023-06-23,2023,"juin","Trave",17:00:00,NA,NA,NA,NA,NA,NA,"Laurent CECCALDI","Non réalisé car mauvais temps"
-2023-07-28,2023,"juillet","A Torra di Murtella",09:00:00,NA,"ridée","25-50",NA,NA,NA,"Kevin DCDFL, Axel Priouzeau",NA
-2023-07-28,2023,"juillet","A Torra di Murtella",12:00:00,"F1","ridée","10-25",30,"NO","SO","Kevin DCDFL, Axel Priouzeau",NA
-2023-07-28,2023,"juillet","A Torra di Murtella",15:00:00,"F1","ridée","75-100",27,"SO","S","Kevin DCDFL, Axel Priouzeau",NA
-2023-07-28,2023,"juillet","A Torra di Murtella",17:00:00,"F1","calme","50-75",27,"N","S","Kevin DCDFL, Axel Priouzeau",NA
-2023-07-28,2023,"juillet","Fiume Santu",09:00:00,"F1","ridée","25-50",27,"N","SO","Kevin DCDFL, Axel Priouzeau",NA
-2023-07-28,2023,"juillet","Fiume Santu",12:00:00,"F1","ridée","10-25",30,"NO","SO","Kevin DCDFL, Axel Priouzeau",NA
-2023-07-28,2023,"juillet","Fiume Santu",15:00:00,"F1","ridée","75-100",27,"N","S","Kevin DCDFL, Axel Priouzeau",NA
-2023-07-28,2023,"juillet","Fiume Santu",17:00:00,"F1","calme","50-75",28,"N",NA,"Kevin DCDFL, Axel Priouzeau",NA
-2023-07-28,2023,"juillet","Ghignu",09:00:00,"F1","belle","25-50",24,"O","E","Laurent, Julie",NA
-2023-07-28,2023,"juillet","Ghignu",12:00:00,"F1","calme","0-10",28,"O","E","Laurent, Julie",NA
-2023-07-28,2023,"juillet","Ghignu",15:00:00,"F0","calme","10-25",25,"O","E","Laurent, Julie",NA
-2023-07-28,2023,"juillet","Ghignu",17:00:00,NA,NA,NA,NA,NA,NA,"Laurent, Julie",NA
-2023-07-28,2023,"juillet","Lotu",09:00:00,"F0","calme","25-50",27,NA,"S","Kevin DCDFL, Axel Priouzeau",NA
-2023-07-28,2023,"juillet","Lotu",12:00:00,"F1","belle","10-25",27,"NO","SO","Kevin DCDFL, Axel Priouzeau",NA
-2023-07-28,2023,"juillet","Lotu",15:00:00,"F1","ridee","75-100",27,"NO","SO","Kevin DCDFL, Axel Priouzeau",NA
-2023-07-28,2023,"juillet","Lotu",17:00:00,"F1","ridée","50-75",27,"NO","SE","Kevin DCDFL, Axel Priouzeau",NA
-2023-07-28,2023,"juillet","Malfalcu",09:00:00,"F1","belle","25-50",24,"O","E","Laurent, Julie",NA
-2023-07-28,2023,"juillet","Malfalcu",12:00:00,"F1","belle","0-10",28,"O","E","Laurent, Julie",NA
-2023-07-28,2023,"juillet","Malfalcu",15:00:00,"F0","calme","25-50",25,"O","E","Laurent, Julie",NA
-2023-07-28,2023,"juillet","Malfalcu",17:00:00,"F0","calme","25-50",24,NA,NA,"Laurent, Julie",NA
-2023-07-28,2023,"juillet","Petit Lotu",09:00:00,"F1","calme","25-50",27,"N","SO","Kevin DCDFL, Axel Priouzeau",NA
-2023-07-28,2023,"juillet","Petit Lotu",12:00:00,"F1","belle","10-25",27,"NO","SO","Kevin DCDFL, Axel Priouzeau",NA
-2023-07-28,2023,"juillet","Petit Lotu",15:00:00,"F1","ridée","75-100",27,"NO","S","Kevin DCDFL, Axel Priouzeau",NA
-2023-07-28,2023,"juillet","Petit Lotu",17:00:00,"F1","ridée","50-75",27,"NO","SE","Kevin DCDFL, Axel Priouzeau",NA
-2023-07-28,2023,"juillet","Saleccia",09:00:00,"F0","ridee","25-50",24,"N","S","Kevin DCDFL, Axel Priouzeau",NA
-2023-07-28,2023,"juillet","Saleccia",12:00:00,"F1","belle","10-25",27,"NO","SE","Kevin DCDFL, Axel Priouzeau",NA
-2023-07-28,2023,"juillet","Saleccia",15:00:00,"F1","belle","50-75",30,"NO","SE","Kevin DCDFL, Axel Priouzeau",NA
-2023-07-28,2023,"juillet","Saleccia",17:00:00,"F1","ridée","50-75",27,"NO","SE","Kevin DCDFL, Axel Priouzeau",NA
-2023-07-28,2023,"juillet","Trave",09:00:00,"F1","belle","25-50",24,"O","E","Laurent, Julie",NA
-2023-07-28,2023,"juillet","Trave",12:00:00,"F0","ridée","0-10",28,"O","E","Laurent, Julie",NA
-2023-07-28,2023,"juillet","Trave",15:00:00,"F0","calme","25-50",25,"O","E","Laurent, Julie",NA
-2023-07-28,2023,"juillet","Trave",17:00:00,NA,NA,NA,NA,NA,NA,"Laurent, Julie",NA
-2023-08-10,2023,"août","Fiume Santu",09:00:00,"F2","belle","0-10",28,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
-2023-08-10,2023,"août","Fiume Santu",12:00:00,"F3","belle","0-10",25,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
-2023-08-10,2023,"août","Fiume Santu",15:00:00,"F3","belle","10-25",28,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
-2023-08-10,2023,"août","Fiume Santu",17:00:00,"F3","belle","10-25",26,"N",NA,"Kevin DCDFL, Alexandre Raibaldi",NA
-2023-08-10,2023,"août","Lotu",09:00:00,"F2","belle","0-10",28,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
-2023-08-10,2023,"août","Lotu",12:00:00,"F3","belle","0-10",26,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
-2023-08-10,2023,"août","Lotu",15:00:00,"F2","belle","10-25",28,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
-2023-08-10,2023,"août","Lotu",17:00:00,"F3","belle","10-25",27,"O","O","Kevin DCDFL, Alexandre Raibaldi",NA
-2023-08-10,2023,"août","Mortella",09:00:00,"F2","belle","0-10",28,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
-2023-08-10,2023,"août","Mortella",12:00:00,"F3","belle","0-10",25,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
-2023-08-10,2023,"août","Mortella",15:00:00,"F3","belle","10-25",28,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
-2023-08-10,2023,"août","Mortella",17:00:00,"F3","belle","10-25",26,"N",NA,"Kevin DCDFL, Alexandre Raibaldi",NA
-2023-08-10,2023,"août","Petit Lotu",09:00:00,"F2","belle","0-10",28,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
-2023-08-10,2023,"août","Petit Lotu",12:00:00,"F3","belle","0-10",26,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
-2023-08-10,2023,"août","Petit Lotu",15:00:00,"F2","belle","10-25",28,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
-2023-08-10,2023,"août","Petit Lotu",17:00:00,"F3","belle","10-25",26,"O","O","Kevin DCDFL, Alexandre Raibaldi",NA
-2023-08-10,2023,"août","Saleccia",09:00:00,"F2","belle","0-10",24,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
-2023-08-10,2023,"août","Saleccia",12:00:00,"F3","belle","0-10",27,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
-2023-08-10,2023,"août","Saleccia",15:00:00,"F2","belle","10-25",28,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
-2023-08-10,2023,"août","Saleccia",17:00:00,"F3","belle","10-25",26,"O","O","Kevin DCDFL, Alexandre Raibaldi",NA
-2023-09-06,2023,"septembre","Fiume Santu",09:00:00,"F1","peu agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
-2023-09-06,2023,"septembre","Fiume Santu",12:00:00,"F1","peu agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
-2023-09-06,2023,"septembre","Fiume Santu",15:00:00,"F3","agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
-2023-09-06,2023,"septembre","Fiume Santu",17:00:00,"F3","agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
-2023-09-06,2023,"septembre","Ghignu",09:00:00,"F1","peu agitee","0-10",27,"E","S","F. Sorbara, F. Giorgetti, L. Ceccaldi",NA
-2023-09-06,2023,"septembre","Ghignu",12:00:00,"F2","peu agitee","0-10",27,"E","S","F. Sorbara, F. Giorgetti, L. Ceccaldi",NA
-2023-09-06,2023,"septembre","Ghignu",15:00:00,"F4","agitee","0-10",28,"NE","S","F. Sorbara, F. Giorgetti, L. Ceccaldi",NA
-2023-09-06,2023,"septembre","Ghignu",17:00:00,NA,NA,NA,NA,NA,NA,NA,NA
-2023-09-06,2023,"septembre","Lotu",09:00:00,"F1","peu agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
-2023-09-06,2023,"septembre","Lotu",12:00:00,"F1","peu agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
-2023-09-06,2023,"septembre","Lotu",15:00:00,"F3","agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
-2023-09-06,2023,"septembre","Lotu",17:00:00,"F3","agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
-2023-09-06,2023,"septembre","Malfalcu",09:00:00,"F1","peu agitee","0-10",27,"E","S","F. Sorbara, F. Giorgetti, L. Ceccaldi",NA
-2023-09-06,2023,"septembre","Malfalcu",12:00:00,"F2","peu agitee","0-10",27,"E","S","F. Sorbara, F. Giorgetti, L. Ceccaldi",NA
-2023-09-06,2023,"septembre","Malfalcu",15:00:00,"F4","agitee","0-10",28,"NE","S","F. Sorbara, F. Giorgetti, L. Ceccaldi",NA
-2023-09-06,2023,"septembre","Malfalcu",17:00:00,NA,NA,NA,NA,NA,NA,NA,NA
-2023-09-06,2023,"septembre","Mezzanu",09:00:00,"F1","peu agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
-2023-09-06,2023,"septembre","Mezzanu",12:00:00,"F1","peu agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
-2023-09-06,2023,"septembre","Mezzanu",15:00:00,"F3","agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
-2023-09-06,2023,"septembre","Mezzanu",17:00:00,"F3","agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
-2023-09-06,2023,"septembre","Saleccia",09:00:00,"F1","peu agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
-2023-09-06,2023,"septembre","Saleccia",12:00:00,"F1","peu agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
-2023-09-06,2023,"septembre","Saleccia",15:00:00,"F3","agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
-2023-09-06,2023,"septembre","Saleccia",17:00:00,"F3","agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
-2023-09-06,2023,"septembre","Torra di Murtella",09:00:00,"F1","peu agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
-2023-09-06,2023,"septembre","Torra di Murtella",12:00:00,"F1","peu agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
-2023-09-06,2023,"septembre","Torra di Murtella",15:00:00,"F3","agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
-2023-09-06,2023,"septembre","Torra di Murtella",17:00:00,"F3","agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
+"date","annee","mois","jour","secteur","horaire","force_vent","etat_mer","couverture_nuageuse","temperature_sol","direction_vent","direction_houle","observateurs","commentaires"
+2020-07-20,2020,"juillet",20,"Fiume Santu",09:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova",NA
+2020-07-20,2020,"juillet",20,"Fiume Santu",12:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova","Basé sur Fiume Santu 9h"
+2020-07-20,2020,"juillet",20,"Fiume Santu",15:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova","Basé sur Fiume Santu 9h"
+2020-07-20,2020,"juillet",20,"Fiume Santu",17:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova","Basé sur Fiume Santu 9h"
+2020-07-20,2020,"juillet",20,"Lotu",09:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova",NA
+2020-07-20,2020,"juillet",20,"Lotu",12:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova","Basé sur Lotu 9h"
+2020-07-20,2020,"juillet",20,"Lotu",15:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova","Basé sur Lotu 9h"
+2020-07-20,2020,"juillet",20,"Lotu",17:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova","Basé sur Lotu 9h"
+2020-07-20,2020,"juillet",20,"Petit Lotu",09:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova",NA
+2020-07-20,2020,"juillet",20,"Petit Lotu",12:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova","Basé sur Petit Lotu 9h"
+2020-07-20,2020,"juillet",20,"Petit Lotu",15:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova","Basé sur Petit Lotu 9h"
+2020-07-20,2020,"juillet",20,"Petit Lotu",17:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova","Basé sur Petit Lotu 9h"
+2020-07-20,2020,"juillet",20,"Saleccia",09:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova",NA
+2020-07-20,2020,"juillet",20,"Saleccia",12:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova","Basé sur Saleccia 9h"
+2020-07-20,2020,"juillet",20,"Saleccia",15:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova","Basé sur Saleccia 9h"
+2020-07-20,2020,"juillet",20,"Saleccia",17:00:00,"F0","belle","0-10",NA,NA,NA,"Ricquiers, Casanova","Basé sur Saleccia 9h"
+2020-07-29,2020,"juillet",29,"Lotu",09:00:00,"F2","belle","0-10",NA,NA,NA,NA,"Basé sur Lotu 9h"
+2020-07-29,2020,"juillet",29,"Lotu",12:00:00,"F2","belle","0-10",NA,NA,NA,NA,"Basé sur Lotu 9h"
+2020-07-29,2020,"juillet",29,"Lotu",15:00:00,"F2","belle","0-10",NA,NA,NA,NA,"Basé sur Lotu 9h"
+2020-07-29,2020,"juillet",29,"Lotu",17:00:00,"F2","belle","0-10",NA,NA,NA,NA,"Basé sur Lotu 9h"
+2020-07-29,2020,"juillet",29,"Saleccia",09:00:00,"F2","belle","0-10",NA,NA,NA,NA,"Basé sur Lotu 9h"
+2020-07-29,2020,"juillet",29,"Saleccia",12:00:00,"F2","belle","0-10",NA,NA,NA,NA,"Basé sur Lotu 9h"
+2020-07-29,2020,"juillet",29,"Saleccia",15:00:00,"F2","belle","0-10",NA,NA,NA,NA,"Basé sur Lotu 9h"
+2020-07-29,2020,"juillet",29,"Saleccia",17:00:00,"F2","belle","0-10",NA,NA,NA,NA,"Basé sur Lotu 9h"
+2020-08-13,2020,"août",13,"Fiume Santu",09:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)",NA
+2020-08-13,2020,"août",13,"Fiume Santu",12:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)","Basé sur Fiume Santu 9h"
+2020-08-13,2020,"août",13,"Fiume Santu",15:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)","Basé sur Fiume Santu 9h"
+2020-08-13,2020,"août",13,"Fiume Santu",17:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)","Basé sur Fiume Santu 9h"
+2020-08-13,2020,"août",13,"Lotu",09:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)",NA
+2020-08-13,2020,"août",13,"Lotu",12:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)","Basé sur Lotu 9h"
+2020-08-13,2020,"août",13,"Lotu",15:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)","Basé sur Lotu 9h"
+2020-08-13,2020,"août",13,"Lotu",17:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)","Basé sur Lotu 9h"
+2020-08-13,2020,"août",13,"Petit Lotu",09:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)",NA
+2020-08-13,2020,"août",13,"Petit Lotu",12:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)","Basé sur Petit Lotu 9h"
+2020-08-13,2020,"août",13,"Petit Lotu",15:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)","Basé sur Petit Lotu 9h"
+2020-08-13,2020,"août",13,"Petit Lotu",17:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)","Basé sur Petit Lotu 9h"
+2020-08-13,2020,"août",13,"Saleccia",09:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)",NA
+2020-08-13,2020,"août",13,"Saleccia",12:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)","Basé sur Saleccia 9h"
+2020-08-13,2020,"août",13,"Saleccia",15:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)","Basé sur Saleccia 9h"
+2020-08-13,2020,"août",13,"Saleccia",17:00:00,"F0","belle","0-10",NA,NA,NA,"Laure-Hélène, Fred (CDC)","Basé sur Saleccia 9h"
+2020-09-09,2020,"septembre",9,"Fiume Santu",09:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Jean-Phi, Frank",NA
+2020-09-09,2020,"septembre",9,"Fiume Santu",12:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Jean-Phi, Frank","Basé sur Fiume Santu 9h"
+2020-09-09,2020,"septembre",9,"Fiume Santu",15:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Jean-Phi, Frank","Basé sur Fiume Santu 9h"
+2020-09-09,2020,"septembre",9,"Fiume Santu",17:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Jean-Phi, Frank","Basé sur Fiume Santu 9h"
+2020-09-09,2020,"septembre",9,"Lotu",09:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Jean-Phi, Frank",NA
+2020-09-09,2020,"septembre",9,"Lotu",12:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Jean-Phi, Frank","Basé sur Lotu 9h"
+2020-09-09,2020,"septembre",9,"Lotu",15:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Jean-Phi, Frank","Basé sur Lotu 9h"
+2020-09-09,2020,"septembre",9,"Lotu",17:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Jean-Phi, Frank","Basé sur Lotu 9h"
+2020-09-09,2020,"septembre",9,"Petit Lotu",09:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Jean-Phi, Frank",NA
+2020-09-09,2020,"septembre",9,"Petit Lotu",12:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Jean-Phi, Frank","Basé sur Petit Lotu 9h"
+2020-09-09,2020,"septembre",9,"Petit Lotu",15:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Jean-Phi, Frank","Basé sur Petit Lotu 9h"
+2020-09-09,2020,"septembre",9,"Petit Lotu",17:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Jean-Phi, Frank","Basé sur Petit Lotu 9h"
+2020-09-09,2020,"septembre",9,"Saleccia",09:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Sophie, Sébastien",NA
+2020-09-09,2020,"septembre",9,"Saleccia",12:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Sophie, Sébastien","Basé sur Saleccia 9h"
+2020-09-09,2020,"septembre",9,"Saleccia",15:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Sophie, Sébastien","Basé sur Saleccia 9h"
+2020-09-09,2020,"septembre",9,"Saleccia",17:00:00,"F1","peu agitee","0-10",NA,NA,NA,"Sophie, Sébastien","Basé sur Saleccia 9h"
+2021-06-16,2021,"juin",16,"Fiume Santu",09:00:00,"F1","ridee","0-10",26,"E",NA,"Axel, Sophie","Uniquement issu de Saleccia jour"
+2021-06-16,2021,"juin",16,"Fiume Santu",12:00:00,"F1","ridee","0-10",26,"E",NA,"Axel, Sophie","Uniquement issu de Saleccia jour"
+2021-06-16,2021,"juin",16,"Fiume Santu",15:00:00,"F1","ridee","0-10",26,"E",NA,"Axel, Sophie","Uniquement issu de Saleccia jour"
+2021-06-16,2021,"juin",16,"Fiume Santu",17:00:00,"F1","ridee","0-10",26,"E",NA,"Axel, Sophie","Uniquement issu de Saleccia jour"
+2021-06-16,2021,"juin",16,"Lotu",09:00:00,"F1","ridee","0-10",26,"E",NA,"Aurelie, Perrine","Uniquement issu de Lotu jour"
+2021-06-16,2021,"juin",16,"Lotu",12:00:00,"F1","ridee","0-10",26,"E",NA,"Aurelie, Perrine","Uniquement issu de Lotu jour"
+2021-06-16,2021,"juin",16,"Lotu",15:00:00,"F1","ridee","0-10",26,"E",NA,"Aurelie, Perrine","Uniquement issu de Lotu jour"
+2021-06-16,2021,"juin",16,"Lotu",17:00:00,"F1","ridee","0-10",26,"E",NA,"Aurelie, Perrine","Uniquement issu de Lotu jour"
+2021-06-16,2021,"juin",16,"Petit Lotu",09:00:00,"F1","ridee","0-10",26,"E",NA,"Axel, Sophie","Uniquement issu de Saleccia jour"
+2021-06-16,2021,"juin",16,"Petit Lotu",12:00:00,"F1","ridee","0-10",26,"E",NA,"Axel, Sophie","Uniquement issu de Saleccia jour"
+2021-06-16,2021,"juin",16,"Petit Lotu",15:00:00,"F1","ridee","0-10",26,"E",NA,"Axel, Sophie","Uniquement issu de Saleccia jour"
+2021-06-16,2021,"juin",16,"Petit Lotu",17:00:00,"F1","ridee","0-10",26,"E",NA,"Axel, Sophie","Uniquement issu de Saleccia jour"
+2021-06-16,2021,"juin",16,"Saleccia",09:00:00,"F1","ridee","0-10",26,"E",NA,"Axel, Sophie","Uniquement issu de Saleccia jour"
+2021-06-16,2021,"juin",16,"Saleccia",12:00:00,"F1","ridee","0-10",26,"E",NA,"Axel, Sophie","Uniquement issu de Saleccia jour"
+2021-06-16,2021,"juin",16,"Saleccia",15:00:00,"F1","ridee","0-10",26,"E",NA,"Axel, Sophie","Uniquement issu de Saleccia jour"
+2021-06-16,2021,"juin",16,"Saleccia",17:00:00,"F1","ridee","0-10",26,"E",NA,"Axel, Sophie","Uniquement issu de Saleccia jour"
+2021-07-28,2021,"juillet",28,"Fiume Santu",09:00:00,"F1","calme","0-10",26,"NO","SO","Laurent, Alex",NA
+2021-07-28,2021,"juillet",28,"Fiume Santu",12:00:00,"F1","calme","0-10",NA,"NO","SO","Laurent, Alex",NA
+2021-07-28,2021,"juillet",28,"Fiume Santu",15:00:00,NA,NA,NA,NA,NA,NA,"Laurent, Alex",NA
+2021-07-28,2021,"juillet",28,"Fiume Santu",17:00:00,"F2","ridee","0-10",NA,"NO","SO","Laurent, Alex",NA
+2021-07-28,2021,"juillet",28,"Lotu",09:00:00,"F1","calme","0-10",26,"NO","SO","Laurent, Alex",NA
+2021-07-28,2021,"juillet",28,"Lotu",12:00:00,"F0","calme","10-25",NA,"N","SO","Laurent, Alex",NA
+2021-07-28,2021,"juillet",28,"Lotu",15:00:00,NA,NA,NA,NA,NA,NA,"Laurent, Alex",NA
+2021-07-28,2021,"juillet",28,"Lotu",17:00:00,"F0","calme","0-10",NA,"NO","SO","Laurent, Alex",NA
+2021-07-28,2021,"juillet",28,"Petit Lotu",09:00:00,"F1","calme","0-10",26,"NO","SE","Laurent, Alex",NA
+2021-07-28,2021,"juillet",28,"Petit Lotu",12:00:00,"F1","calme","0-10",NA,"NO","SE","Laurent, Alex",NA
+2021-07-28,2021,"juillet",28,"Petit Lotu",15:00:00,NA,NA,NA,NA,NA,NA,"Laurent, Alex",NA
+2021-07-28,2021,"juillet",28,"Petit Lotu",17:00:00,"F1","calme","0-10",NA,"NO","SE","Laurent, Alex",NA
+2021-07-28,2021,"juillet",28,"Saleccia",09:00:00,"F1","calme","0-10",27,"NO","SE","Laurent, Alex",NA
+2021-07-28,2021,"juillet",28,"Saleccia",12:00:00,"F0","calme","0-10",NA,"NO","SE","Laurent, Alex",NA
+2021-07-28,2021,"juillet",28,"Saleccia",15:00:00,"F0","calme","0-10",NA,"SO","SE","Laurent, Alex",NA
+2021-07-28,2021,"juillet",28,"Saleccia",17:00:00,NA,NA,NA,NA,NA,NA,"Laurent, Alex",NA
+2021-08-18,2021,"août",18,"Fiume Santu",09:00:00,"F1","calme","0-10",26,"N",NA,"Frank, Alex",NA
+2021-08-18,2021,"août",18,"Fiume Santu",12:00:00,"F1","calme","0-10",28,"N",NA,"Frank, Alex",NA
+2021-08-18,2021,"août",18,"Fiume Santu",15:00:00,"F1","calme","0-10",28,"NE",NA,"Frank, Alex",NA
+2021-08-18,2021,"août",18,"Fiume Santu",17:00:00,"F1","calme","0-10",27,"NE",NA,"Frank, Alex",NA
+2021-08-18,2021,"août",18,"Lotu",09:00:00,"F1","calme","0-10",25,"NE",NA,"Frank, Alex",NA
+2021-08-18,2021,"août",18,"Lotu",12:00:00,"F2","ridee","10-25",28,"N","S","Frank, Alex",NA
+2021-08-18,2021,"août",18,"Lotu",15:00:00,"F2","ridee","10-25",28,"NO","SE","Frank, Alex",NA
+2021-08-18,2021,"août",18,"Lotu",17:00:00,"F1","ridee","0-10",27,"NO","SE","Frank, Alex",NA
+2021-08-18,2021,"août",18,"Petit Lotu",09:00:00,"F1","calme","0-10",25,"NE",NA,"Frank, Alex",NA
+2021-08-18,2021,"août",18,"Petit Lotu",12:00:00,"F2","ridee","10-25",28,"O","S","Frank, Alex",NA
+2021-08-18,2021,"août",18,"Petit Lotu",15:00:00,"F2","ridee","10-25",28,"NO","SE","Frank, Alex",NA
+2021-08-18,2021,"août",18,"Petit Lotu",17:00:00,"F1","ridee","0-10",27,"NO","SE","Frank, Alex",NA
+2021-08-18,2021,"août",18,"Saleccia",09:00:00,"F1","ridee","0-10",25,"O","E","Frank, Alex",NA
+2021-08-18,2021,"août",18,"Saleccia",12:00:00,"F1","ridee","10-25",28,"NO","S","Frank, Alex",NA
+2021-08-18,2021,"août",18,"Saleccia",15:00:00,"F2","belle","10-25",28,"NO","SE","Frank, Alex",NA
+2021-08-18,2021,"août",18,"Saleccia",17:00:00,"F2","ridee","10-25",26,"NO","SE","Frank, Alex",NA
+2021-09-02,2021,"septembre",2,"Fiume Santu",09:00:00,"F2","ridee","25-50",24,"E","O","Alex, Jean-Phi",NA
+2021-09-02,2021,"septembre",2,"Fiume Santu",12:00:00,"F3","peu agitee","50-75",25,"E","O","Alex, Jean-Phi",NA
+2021-09-02,2021,"septembre",2,"Fiume Santu",15:00:00,"F3","peu agitee","75-100",25,"E","O","Alex, Jean-Phi",NA
+2021-09-02,2021,"septembre",2,"Fiume Santu",17:00:00,"F2","peu agitee","75-100",25,"E","O","Alex, Jean-Phi",NA
+2021-09-02,2021,"septembre",2,"Lotu",09:00:00,"F2","ridee","25-50",24,"E","O","Alex, Jean-Phi",NA
+2021-09-02,2021,"septembre",2,"Lotu",12:00:00,"F3","peu agitee","50-75",26,"E","O","Alex, Jean-Phi",NA
+2021-09-02,2021,"septembre",2,"Lotu",15:00:00,"F3","peu agitee","50-75",25,"E","O","Alex, Jean-Phi",NA
+2021-09-02,2021,"septembre",2,"Lotu",17:00:00,"F2","peu agitee","75-100",25,"E","O","Alex, Jean-Phi",NA
+2021-09-02,2021,"septembre",2,"Petit Lotu",09:00:00,"F2","ridee","25-50",24,"E","O","Alex, Jean-Phi",NA
+2021-09-02,2021,"septembre",2,"Petit Lotu",12:00:00,"F3","peu agitee","50-75",26,"E","O","Alex, Jean-Phi",NA
+2021-09-02,2021,"septembre",2,"Petit Lotu",15:00:00,"F3","peu agitee","50-75",25,"E","O","Alex, Jean-Phi",NA
+2021-09-02,2021,"septembre",2,"Petit Lotu",17:00:00,"F2","peu agitee","75-100",25,"E","O","Alex, Jean-Phi",NA
+2021-09-02,2021,"septembre",2,"Saleccia",09:00:00,"F2","ridee","25-50",24,"E","O","Alex, Jean-Phi",NA
+2021-09-02,2021,"septembre",2,"Saleccia",12:00:00,"F3","peu agitee","50-75",25,"E","O","Alex, Jean-Phi",NA
+2021-09-02,2021,"septembre",2,"Saleccia",15:00:00,"F3","peu agitee","50-75",24,"E","O","Alex, Jean-Phi",NA
+2021-09-02,2021,"septembre",2,"Saleccia",17:00:00,"F2","peu agitee","75-100",24,"E","O","Alex, Jean-Phi",NA
+2022-06-21,2022,"juin",21,"Fiume Santu",09:00:00,"F1","ridee","0-10",28,"SE",NA,"Jean-Phi CASANOVA, Alex CRISPI",NA
+2022-06-21,2022,"juin",21,"Fiume Santu",12:00:00,"F3","ridee","10-25",28,"N","S","Jean-Phi CASANOVA, Alex CRISPI",NA
+2022-06-21,2022,"juin",21,"Fiume Santu",15:00:00,"F2","belle","0-10",28,"N","S","Jean-Phi CASANOVA, Alex CRISPI",NA
+2022-06-21,2022,"juin",21,"Fiume Santu",17:00:00,"F0","calme","0-10",29,"N","S","Jean-Phi CASANOVA, Alex CRISPI",NA
+2022-06-21,2022,"juin",21,"Lotu",09:00:00,"F1","ridee","0-10",28,"SE",NA,"Jean-Phi CASANOVA, Alex CRISPI",NA
+2022-06-21,2022,"juin",21,"Lotu",12:00:00,"F3","belle","10-25",28,"N","S","Jean-Phi CASANOVA, Alex CRISPI",NA
+2022-06-21,2022,"juin",21,"Lotu",15:00:00,"F2","belle","10-25",29,"N","S","Jean-Phi CASANOVA, Alex CRISPI",NA
+2022-06-21,2022,"juin",21,"Lotu",17:00:00,"F0","calme","0-10",29,"N","S","Jean-Phi CASANOVA, Alex CRISPI",NA
+2022-06-21,2022,"juin",21,"Petit Lotu",09:00:00,"F1","ridee","0-10",28,"SE",NA,"Jean-Phi CASANOVA, Alex CRISPI",NA
+2022-06-21,2022,"juin",21,"Petit Lotu",12:00:00,"F3","belle","10-25",28,"N","S","Jean-Phi CASANOVA, Alex CRISPI",NA
+2022-06-21,2022,"juin",21,"Petit Lotu",15:00:00,"F2","belle","10-25",28,"N","S","Jean-Phi CASANOVA, Alex CRISPI",NA
+2022-06-21,2022,"juin",21,"Petit Lotu",17:00:00,"F0","calme","0-10",29,"N","S","Jean-Phi CASANOVA, Alex CRISPI",NA
+2022-06-21,2022,"juin",21,"Saleccia",09:00:00,"F1","calme","0-10",28,"SE",NA,"Jean-Phi CASANOVA, Alex CRISPI",NA
+2022-06-21,2022,"juin",21,"Saleccia",12:00:00,"F2","ridee","10-25",27,"N","S","Jean-Phi CASANOVA, Alex CRISPI",NA
+2022-06-21,2022,"juin",21,"Saleccia",15:00:00,"F1","belle","10-25",28,"N","S","Jean-Phi CASANOVA, Alex CRISPI",NA
+2022-06-21,2022,"juin",21,"Saleccia",17:00:00,"F2","ridee","0-10",29,"N","S","Jean-Phi CASANOVA, Alex CRISPI",NA
+2022-07-28,2022,"juillet",28,"Fiume Santu",09:00:00,"F1","belle","0-10",28,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
+2022-07-28,2022,"juillet",28,"Fiume Santu",12:00:00,"F3","belle","0-10",31,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
+2022-07-28,2022,"juillet",28,"Fiume Santu",15:00:00,"F2","belle","0-10",30,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
+2022-07-28,2022,"juillet",28,"Fiume Santu",17:00:00,"F1","belle","0-10",28,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
+2022-07-28,2022,"juillet",28,"Lotu",09:00:00,"F1","belle","0-10",28,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
+2022-07-28,2022,"juillet",28,"Lotu",12:00:00,"F3","belle","0-10",31,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
+2022-07-28,2022,"juillet",28,"Lotu",15:00:00,"F1","belle","0-10",32,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
+2022-07-28,2022,"juillet",28,"Lotu",17:00:00,"F1","belle","0-10",28,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
+2022-07-28,2022,"juillet",28,"Petit Lotu",09:00:00,"F1","belle","0-10",28,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
+2022-07-28,2022,"juillet",28,"Petit Lotu",12:00:00,"F3","belle","0-10",31,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
+2022-07-28,2022,"juillet",28,"Petit Lotu",15:00:00,"F2","belle","0-10",30,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
+2022-07-28,2022,"juillet",28,"Petit Lotu",17:00:00,"F1","belle","0-10",28,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
+2022-07-28,2022,"juillet",28,"Saleccia",09:00:00,"F1","belle","0-10",28,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
+2022-07-28,2022,"juillet",28,"Saleccia",12:00:00,"F3","peu agitee","0-10",32,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
+2022-07-28,2022,"juillet",28,"Saleccia",15:00:00,"F2","belle","0-10",30,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
+2022-07-28,2022,"juillet",28,"Saleccia",17:00:00,"F1","belle","0-10",28,"NO","SE","A. Crispi, A. Priouzeau, J-P Casanova",NA
+2022-08-10,2022,"août",10,"Fiume Santu",09:00:00,"F2","belle","0-10",28,"SE",NA,"Laurent Ricquiers, Axel Priouzeau",NA
+2022-08-10,2022,"août",10,"Fiume Santu",12:00:00,"F3","belle","0-10",32,"E",NA,"Laurent Ricquiers, Axel Priouzeau",NA
+2022-08-10,2022,"août",10,"Fiume Santu",15:00:00,"F4","peu agitee","0-10",33,"NE",NA,"Laurent Ricquiers, Axel Priouzeau",NA
+2022-08-10,2022,"août",10,"Fiume Santu",17:00:00,NA,NA,NA,NA,NA,NA,NA,"Pas de comptage problème échouage"
+2022-08-10,2022,"août",10,"Lotu",09:00:00,"F2","belle","0-10",28,"SE",NA,"Laurent Ricquiers, Axel Priouzeau",NA
+2022-08-10,2022,"août",10,"Lotu",12:00:00,"F2","belle","0-10",32,"ESE",NA,"Laurent Ricquiers, Axel Priouzeau",NA
+2022-08-10,2022,"août",10,"Lotu",15:00:00,"F2","belle","0-10",33,"E",NA,"Laurent Ricquiers, Axel Priouzeau",NA
+2022-08-10,2022,"août",10,"Lotu",17:00:00,NA,NA,NA,NA,NA,NA,NA,"Pas de comptage problème échouage"
+2022-08-10,2022,"août",10,"Petit Lotu",09:00:00,"F2","belle","0-10",28,"SE",NA,"Laurent Ricquiers, Axel Priouzeau",NA
+2022-08-10,2022,"août",10,"Petit Lotu",12:00:00,"F2","belle","0-10",32,"ESE",NA,"Laurent Ricquiers, Axel Priouzeau",NA
+2022-08-10,2022,"août",10,"Petit Lotu",15:00:00,"F2","belle","0-10",33,"E",NA,"Laurent Ricquiers, Axel Priouzeau",NA
+2022-08-10,2022,"août",10,"Petit Lotu",17:00:00,NA,NA,NA,NA,NA,NA,NA,"Pas de comptage problème échouage"
+2022-08-10,2022,"août",10,"Saleccia",09:00:00,"F2","belle","0-10",28,"SE",NA,"Laurent Ricquiers, Axel Priouzeau",NA
+2022-08-10,2022,"août",10,"Saleccia",12:00:00,"F2","belle","0-10",32,"ESE",NA,"Laurent Ricquiers, Axel Priouzeau",NA
+2022-08-10,2022,"août",10,"Saleccia",15:00:00,"F2","belle","0-10",33,"E",NA,"Laurent Ricquiers, Axel Priouzeau",NA
+2022-08-10,2022,"août",10,"Saleccia",17:00:00,NA,NA,NA,NA,NA,NA,NA,"Pas de comptage problème échouage"
+2022-09-12,2022,"septembre",12,"Lotu",09:00:00,"F0","calme","0-10",26,NA,NA,"Alex, Cédric, Perrine",NA
+2022-09-12,2022,"septembre",12,"Lotu",12:00:00,"F1","ridee","0-10",27,"N","S","Alex, Cédric, Perrine",NA
+2022-09-12,2022,"septembre",12,"Lotu",15:00:00,"F0","ridee","10-25",28,"N","S","Alex, Cédric, Perrine",NA
+2022-09-12,2022,"septembre",12,"Lotu",17:00:00,"F0","ridee","10-25",28,"N","S","Alex, Cédric, Perrine",NA
+2022-09-12,2022,"septembre",12,"Mezzanu",09:00:00,"F0","calme","0-10",26,NA,NA,"Alex, Cédric, Perrine",NA
+2022-09-12,2022,"septembre",12,"Mezzanu",12:00:00,"F1","ridee","0-10",27,"N","S","Alex, Cédric, Perrine",NA
+2022-09-12,2022,"septembre",12,"Mezzanu",15:00:00,"F0","ridee","10-25",28,"N","S","Alex, Cédric, Perrine",NA
+2022-09-12,2022,"septembre",12,"Mezzanu",17:00:00,"F0","ridee","10-25",28,"N","S","Alex, Cédric, Perrine",NA
+2022-09-12,2022,"septembre",12,"Saleccia",09:00:00,"F0","calme","0-10",26,NA,NA,"Alex, Cédric, Perrine",NA
+2022-09-12,2022,"septembre",12,"Saleccia",12:00:00,"F1","ridee","0-10",27,"N","S","Alex, Cédric, Perrine",NA
+2022-09-12,2022,"septembre",12,"Saleccia",15:00:00,"F0","ridee","10-25",28,"N","S","Alex, Cédric, Perrine",NA
+2022-09-12,2022,"septembre",12,"Saleccia",17:00:00,"F0","ridee","10-25",28,"N","S","Alex, Cédric, Perrine",NA
+2023-06-23,2023,"juin",23,"A Torra di Murtella",09:00:00,"F0","calme","0-10",28,NA,NA,"Laurent, Jean Phi",NA
+2023-06-23,2023,"juin",23,"A Torra di Murtella",12:00:00,"F1","calme","0-10",30,"O",NA,"Laurent, Jean Phi",NA
+2023-06-23,2023,"juin",23,"A Torra di Murtella",15:00:00,"F2","belle","0-10",30,"O","E","Laurent, Jean Phi",NA
+2023-06-23,2023,"juin",23,"A Torra di Murtella",17:00:00,"F3","belle","0-10",30,"O","E","Laurent, Jean Phi",NA
+2023-06-23,2023,"juin",23,"Fiume Santu",09:00:00,"F0","calme","0-10",29,NA,NA,"Laurent, Jean Phi",NA
+2023-06-23,2023,"juin",23,"Fiume Santu",12:00:00,"F1","calme","0-10",30,"O",NA,"Laurent, Jean Phi",NA
+2023-06-23,2023,"juin",23,"Fiume Santu",15:00:00,"F2","belle","0-10",30,"O","E","Laurent, Jean Phi",NA
+2023-06-23,2023,"juin",23,"Fiume Santu",17:00:00,"F3","belle","0-10",30,"O","E","Laurent, Jean Phi",NA
+2023-06-23,2023,"juin",23,"Ghignu",09:00:00,"F3","peu agitee","0-10",25,"O","E","Laurent CECCALDI",NA
+2023-06-23,2023,"juin",23,"Ghignu",12:00:00,"F3","peu agitee","0-10",26,"O","E","Laurent CECCALDI",NA
+2023-06-23,2023,"juin",23,"Ghignu",15:00:00,"F3","peu agitee","0-10",28,"O","E","Laurent CECCALDI",NA
+2023-06-23,2023,"juin",23,"Ghignu",17:00:00,"F3","peu agitee","0-10",26,"O","E","Laurent CECCALDI",NA
+2023-06-23,2023,"juin",23,"Lotu",09:00:00,"F1","ridee","0-10",26,"SE","SE","Laurent, Jean Phi",NA
+2023-06-23,2023,"juin",23,"Lotu",12:00:00,"F2","ridee","0-10",29,"SE","SE","Laurent, Jean Phi",NA
+2023-06-23,2023,"juin",23,"Lotu",15:00:00,"F2","belle","0-10",30,"O","E","Laurent, Jean Phi",NA
+2023-06-23,2023,"juin",23,"Lotu",17:00:00,"F3","belle","0-10",30,"O","E","Laurent, Jean Phi",NA
+2023-06-23,2023,"juin",23,"Malfalcu",09:00:00,"F3","peu agitee","10-25",25,"O","E","Laurent CECCALDI",NA
+2023-06-23,2023,"juin",23,"Malfalcu",12:00:00,"F3","peu agitee","10-25",26,"O","E","Laurent CECCALDI",NA
+2023-06-23,2023,"juin",23,"Malfalcu",15:00:00,"F4","agitee","10-25",28,"O","E","Laurent CECCALDI",NA
+2023-06-23,2023,"juin",23,"Malfalcu",17:00:00,NA,NA,NA,NA,NA,NA,"Laurent CECCALDI","Non réalisé car mauvais temps"
+2023-06-23,2023,"juin",23,"Mezzanu",09:00:00,"F1","ridee","0-10",26,"SE","SE","Laurent, Jean Phi",NA
+2023-06-23,2023,"juin",23,"Mezzanu",12:00:00,"F1","calme","0-10",30,"SO","SO","Laurent, Jean Phi",NA
+2023-06-23,2023,"juin",23,"Mezzanu",15:00:00,"F2","belle","0-10",30,"O","E","Laurent, Jean Phi",NA
+2023-06-23,2023,"juin",23,"Mezzanu",17:00:00,"F3","belle","0-10",30,"O","E","Laurent, Jean Phi",NA
+2023-06-23,2023,"juin",23,"Saleccia",09:00:00,"F0","ridee","10-25",26,NA,"SE","Laurent, Jean Phi",NA
+2023-06-23,2023,"juin",23,"Saleccia",12:00:00,"F3","belle","0-10",32,"SO","SE","Laurent, Jean Phi",NA
+2023-06-23,2023,"juin",23,"Saleccia",15:00:00,"F2","belle","0-10",30,"O","E","Laurent, Jean Phi",NA
+2023-06-23,2023,"juin",23,"Saleccia",17:00:00,"F3","belle","0-10",30,"O","E","Laurent, Jean Phi",NA
+2023-06-23,2023,"juin",23,"Trave",09:00:00,"F3","peu agitee","10-25",25,"O","E","Laurent CECCALDI",NA
+2023-06-23,2023,"juin",23,"Trave",12:00:00,"F3","peu agitee","10-25",26,"O","E","Laurent CECCALDI",NA
+2023-06-23,2023,"juin",23,"Trave",15:00:00,"F4","agitee","10-25",28,"O","E","Laurent CECCALDI",NA
+2023-06-23,2023,"juin",23,"Trave",17:00:00,NA,NA,NA,NA,NA,NA,"Laurent CECCALDI","Non réalisé car mauvais temps"
+2023-07-28,2023,"juillet",28,"A Torra di Murtella",09:00:00,NA,"ridée","25-50",NA,NA,NA,"Kevin DCDFL, Axel Priouzeau",NA
+2023-07-28,2023,"juillet",28,"A Torra di Murtella",12:00:00,"F1","ridée","10-25",30,"NO","SO","Kevin DCDFL, Axel Priouzeau",NA
+2023-07-28,2023,"juillet",28,"A Torra di Murtella",15:00:00,"F1","ridée","75-100",27,"SO","S","Kevin DCDFL, Axel Priouzeau",NA
+2023-07-28,2023,"juillet",28,"A Torra di Murtella",17:00:00,"F1","calme","50-75",27,"N","S","Kevin DCDFL, Axel Priouzeau",NA
+2023-07-28,2023,"juillet",28,"Fiume Santu",09:00:00,"F1","ridée","25-50",27,"N","SO","Kevin DCDFL, Axel Priouzeau",NA
+2023-07-28,2023,"juillet",28,"Fiume Santu",12:00:00,"F1","ridée","10-25",30,"NO","SO","Kevin DCDFL, Axel Priouzeau",NA
+2023-07-28,2023,"juillet",28,"Fiume Santu",15:00:00,"F1","ridée","75-100",27,"N","S","Kevin DCDFL, Axel Priouzeau",NA
+2023-07-28,2023,"juillet",28,"Fiume Santu",17:00:00,"F1","calme","50-75",28,"N",NA,"Kevin DCDFL, Axel Priouzeau",NA
+2023-07-28,2023,"juillet",28,"Ghignu",09:00:00,"F1","belle","25-50",24,"O","E","Laurent, Julie",NA
+2023-07-28,2023,"juillet",28,"Ghignu",12:00:00,"F1","calme","0-10",28,"O","E","Laurent, Julie",NA
+2023-07-28,2023,"juillet",28,"Ghignu",15:00:00,"F0","calme","10-25",25,"O","E","Laurent, Julie",NA
+2023-07-28,2023,"juillet",28,"Ghignu",17:00:00,NA,NA,NA,NA,NA,NA,"Laurent, Julie",NA
+2023-07-28,2023,"juillet",28,"Lotu",09:00:00,"F0","calme","25-50",27,NA,"S","Kevin DCDFL, Axel Priouzeau",NA
+2023-07-28,2023,"juillet",28,"Lotu",12:00:00,"F1","belle","10-25",27,"NO","SO","Kevin DCDFL, Axel Priouzeau",NA
+2023-07-28,2023,"juillet",28,"Lotu",15:00:00,"F1","ridee","75-100",27,"NO","SO","Kevin DCDFL, Axel Priouzeau",NA
+2023-07-28,2023,"juillet",28,"Lotu",17:00:00,"F1","ridée","50-75",27,"NO","SE","Kevin DCDFL, Axel Priouzeau",NA
+2023-07-28,2023,"juillet",28,"Malfalcu",09:00:00,"F1","belle","25-50",24,"O","E","Laurent, Julie",NA
+2023-07-28,2023,"juillet",28,"Malfalcu",12:00:00,"F1","belle","0-10",28,"O","E","Laurent, Julie",NA
+2023-07-28,2023,"juillet",28,"Malfalcu",15:00:00,"F0","calme","25-50",25,"O","E","Laurent, Julie",NA
+2023-07-28,2023,"juillet",28,"Malfalcu",17:00:00,"F0","calme","25-50",24,NA,NA,"Laurent, Julie",NA
+2023-07-28,2023,"juillet",28,"Petit Lotu",09:00:00,"F1","calme","25-50",27,"N","SO","Kevin DCDFL, Axel Priouzeau",NA
+2023-07-28,2023,"juillet",28,"Petit Lotu",12:00:00,"F1","belle","10-25",27,"NO","SO","Kevin DCDFL, Axel Priouzeau",NA
+2023-07-28,2023,"juillet",28,"Petit Lotu",15:00:00,"F1","ridée","75-100",27,"NO","S","Kevin DCDFL, Axel Priouzeau",NA
+2023-07-28,2023,"juillet",28,"Petit Lotu",17:00:00,"F1","ridée","50-75",27,"NO","SE","Kevin DCDFL, Axel Priouzeau",NA
+2023-07-28,2023,"juillet",28,"Saleccia",09:00:00,"F0","ridee","25-50",24,"N","S","Kevin DCDFL, Axel Priouzeau",NA
+2023-07-28,2023,"juillet",28,"Saleccia",12:00:00,"F1","belle","10-25",27,"NO","SE","Kevin DCDFL, Axel Priouzeau",NA
+2023-07-28,2023,"juillet",28,"Saleccia",15:00:00,"F1","belle","50-75",30,"NO","SE","Kevin DCDFL, Axel Priouzeau",NA
+2023-07-28,2023,"juillet",28,"Saleccia",17:00:00,"F1","ridée","50-75",27,"NO","SE","Kevin DCDFL, Axel Priouzeau",NA
+2023-07-28,2023,"juillet",28,"Trave",09:00:00,"F1","belle","25-50",24,"O","E","Laurent, Julie",NA
+2023-07-28,2023,"juillet",28,"Trave",12:00:00,"F0","ridée","0-10",28,"O","E","Laurent, Julie",NA
+2023-07-28,2023,"juillet",28,"Trave",15:00:00,"F0","calme","25-50",25,"O","E","Laurent, Julie",NA
+2023-07-28,2023,"juillet",28,"Trave",17:00:00,NA,NA,NA,NA,NA,NA,"Laurent, Julie",NA
+2023-08-10,2023,"août",10,"Fiume Santu",09:00:00,"F2","belle","0-10",28,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
+2023-08-10,2023,"août",10,"Fiume Santu",12:00:00,"F3","belle","0-10",25,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
+2023-08-10,2023,"août",10,"Fiume Santu",15:00:00,"F3","belle","10-25",28,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
+2023-08-10,2023,"août",10,"Fiume Santu",17:00:00,"F3","belle","10-25",26,"N",NA,"Kevin DCDFL, Alexandre Raibaldi",NA
+2023-08-10,2023,"août",10,"Lotu",09:00:00,"F2","belle","0-10",28,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
+2023-08-10,2023,"août",10,"Lotu",12:00:00,"F3","belle","0-10",26,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
+2023-08-10,2023,"août",10,"Lotu",15:00:00,"F2","belle","10-25",28,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
+2023-08-10,2023,"août",10,"Lotu",17:00:00,"F3","belle","10-25",27,"O","O","Kevin DCDFL, Alexandre Raibaldi",NA
+2023-08-10,2023,"août",10,"Mortella",09:00:00,"F2","belle","0-10",28,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
+2023-08-10,2023,"août",10,"Mortella",12:00:00,"F3","belle","0-10",25,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
+2023-08-10,2023,"août",10,"Mortella",15:00:00,"F3","belle","10-25",28,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
+2023-08-10,2023,"août",10,"Mortella",17:00:00,"F3","belle","10-25",26,"N",NA,"Kevin DCDFL, Alexandre Raibaldi",NA
+2023-08-10,2023,"août",10,"Petit Lotu",09:00:00,"F2","belle","0-10",28,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
+2023-08-10,2023,"août",10,"Petit Lotu",12:00:00,"F3","belle","0-10",26,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
+2023-08-10,2023,"août",10,"Petit Lotu",15:00:00,"F2","belle","10-25",28,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
+2023-08-10,2023,"août",10,"Petit Lotu",17:00:00,"F3","belle","10-25",26,"O","O","Kevin DCDFL, Alexandre Raibaldi",NA
+2023-08-10,2023,"août",10,"Saleccia",09:00:00,"F2","belle","0-10",24,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
+2023-08-10,2023,"août",10,"Saleccia",12:00:00,"F3","belle","0-10",27,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
+2023-08-10,2023,"août",10,"Saleccia",15:00:00,"F2","belle","10-25",28,"NE","O","Kevin DCDFL, Alexandre Raibaldi",NA
+2023-08-10,2023,"août",10,"Saleccia",17:00:00,"F3","belle","10-25",26,"O","O","Kevin DCDFL, Alexandre Raibaldi",NA
+2023-09-06,2023,"septembre",6,"Fiume Santu",09:00:00,"F1","peu agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
+2023-09-06,2023,"septembre",6,"Fiume Santu",12:00:00,"F1","peu agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
+2023-09-06,2023,"septembre",6,"Fiume Santu",15:00:00,"F3","agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
+2023-09-06,2023,"septembre",6,"Fiume Santu",17:00:00,"F3","agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
+2023-09-06,2023,"septembre",6,"Ghignu",09:00:00,"F1","peu agitee","0-10",27,"E","S","F. Sorbara, F. Giorgetti, L. Ceccaldi",NA
+2023-09-06,2023,"septembre",6,"Ghignu",12:00:00,"F2","peu agitee","0-10",27,"E","S","F. Sorbara, F. Giorgetti, L. Ceccaldi",NA
+2023-09-06,2023,"septembre",6,"Ghignu",15:00:00,"F4","agitee","0-10",28,"NE","S","F. Sorbara, F. Giorgetti, L. Ceccaldi",NA
+2023-09-06,2023,"septembre",6,"Ghignu",17:00:00,NA,NA,NA,NA,NA,NA,NA,NA
+2023-09-06,2023,"septembre",6,"Lotu",09:00:00,"F1","peu agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
+2023-09-06,2023,"septembre",6,"Lotu",12:00:00,"F1","peu agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
+2023-09-06,2023,"septembre",6,"Lotu",15:00:00,"F3","agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
+2023-09-06,2023,"septembre",6,"Lotu",17:00:00,"F3","agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
+2023-09-06,2023,"septembre",6,"Malfalcu",09:00:00,"F1","peu agitee","0-10",27,"E","S","F. Sorbara, F. Giorgetti, L. Ceccaldi",NA
+2023-09-06,2023,"septembre",6,"Malfalcu",12:00:00,"F2","peu agitee","0-10",27,"E","S","F. Sorbara, F. Giorgetti, L. Ceccaldi",NA
+2023-09-06,2023,"septembre",6,"Malfalcu",15:00:00,"F4","agitee","0-10",28,"NE","S","F. Sorbara, F. Giorgetti, L. Ceccaldi",NA
+2023-09-06,2023,"septembre",6,"Malfalcu",17:00:00,NA,NA,NA,NA,NA,NA,NA,NA
+2023-09-06,2023,"septembre",6,"Mezzanu",09:00:00,"F1","peu agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
+2023-09-06,2023,"septembre",6,"Mezzanu",12:00:00,"F1","peu agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
+2023-09-06,2023,"septembre",6,"Mezzanu",15:00:00,"F3","agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
+2023-09-06,2023,"septembre",6,"Mezzanu",17:00:00,"F3","agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
+2023-09-06,2023,"septembre",6,"Saleccia",09:00:00,"F1","peu agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
+2023-09-06,2023,"septembre",6,"Saleccia",12:00:00,"F1","peu agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
+2023-09-06,2023,"septembre",6,"Saleccia",15:00:00,"F3","agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
+2023-09-06,2023,"septembre",6,"Saleccia",17:00:00,"F3","agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
+2023-09-06,2023,"septembre",6,"Torra di Murtella",09:00:00,"F1","peu agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
+2023-09-06,2023,"septembre",6,"Torra di Murtella",12:00:00,"F1","peu agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
+2023-09-06,2023,"septembre",6,"Torra di Murtella",15:00:00,"F3","agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
+2023-09-06,2023,"septembre",6,"Torra di Murtella",17:00:00,"F3","agitee","0-10",28,"NE","SO","Alexandre Raibaldi, Alexandre Crispi",NA
