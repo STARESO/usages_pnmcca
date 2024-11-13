@@ -7,7 +7,7 @@
 #'
 #' =============================================================================
 #' 
-#' OBSERVATOIRE DES USAGES - CHEMINs DES DOSSIERS ET FICHIERS
+#' OBSERVATOIRE DES USAGES - CHEMINS DES DOSSIERS ET FICHIERS
 #'
 #' Description : 
 #' Ce script définit les chemins utilisés dans le projet pour les données brutes, 
@@ -35,14 +35,19 @@ comptage_plage <- "data/raw/comptages_terrain/plage/"
 comptage_terrestre <- "data/raw/comptages_terrain/frequentation_terrestre/"
 comptage_debarquements <- "data/raw/comptages_terrain/debarquements/"
 
+## Survols aériens ----
+survols_plaba <- "data/raw/survols/plaba/"
+survols_plandeau <- "data/raw/survols/plandeau/"
+
 ## Référence noms de variables ----
 comptage_reference <- "data/raw/comptages_terrain/modeles/reference_comptage_terrain_donnees_brutes.xlsx"
+survols_reference <- "data/raw/survols/modeles/reference_survols_donnees_brutes.xlsx"
 
 ## Secteurs ----
 reference_secteurs <- "data/raw/cartographie/Sec_nav_maj_2023_Corrigée/Sec_nav_maj_2023.csv"
 
 
-## Survols aériens ----
+
 
 # Chemins des données traitées ----
 
@@ -56,6 +61,11 @@ processed_activites_loisirs <- "data/processed/us_med_pnmcca_observatoire_compta
 processed_meteo <- "data/processed/us_med_pnmcca_observatoire_comptage_terrain_meteo"
 processed_terrestre <- "data/processed/us_med_pnmcca_observatoire_comptage_terrain_frequentation_terrestre"
 processed_debarquements <- "data/processed/us_med_pnmcca_observatoire_comptage_terrain_debarquements"
+
+## Survols aériens ----
+processed_plaba <- "data/processed/us_med_pnmcca_observatoire_survols_plaba"
+processed_plandeau <- "data/processed/us_med_pnmcca_observatoire_survols_plandeau"
+
 
 # Sorties ----
 

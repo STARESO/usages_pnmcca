@@ -77,14 +77,9 @@ check_column_format <- function(data_sheet,
       # Supprimer les 'm' et les espaces
       gsub(" ", "_", tolower(.))
     )))
-  
+
   # Parcours chaque colonne de la feuille de données
   for (col in names(data_sheet)) {
-    
-    # Ignore les colonnes sans infos
-    if (col %in% c("date", "heure", "secteur")) {
-      next
-    }
     
     # Décomposition de l'en-tête en champ1 et champ2 (même pour les en-têtes non fusionnés)
     header_parts <- split_fused_headers(col)
@@ -127,6 +122,20 @@ check_column_format <- function(data_sheet,
       data_sheet[[col]] <- converted_col
       
       # Conversion du format 'texte'
+    } else if (expected_format == "reel") {
+      
+      converted_col <- suppressWarnings(as.numeric(current_col))
+      non_numeric_values <- which(is.na(converted_col) & !is.na(current_col))
+      
+      if (length(non_numeric_values) > 0) {
+        error_logs$wrong_column_format <- c(error_logs$wrong_column_format, class(current_col))
+        error_logs$expected_column_format <- c(error_logs$expected_column_format, expected_format)
+        error_logs$wrong_column_format_name <- c(error_logs$wrong_column_format_name, col)
+        error_logs$wrong_column_format_sheets <- c(error_logs$wrong_column_format_sheets, sheet_name)
+        error_logs$wrong_column_format_files <- c(error_logs$wrong_column_format_files, file_name)
+        converted_col[non_numeric_values] <- NA  # Remplacer les valeurs invalides
+      }
+      
     } else if (expected_format == "texte") {
       if (!is.character(current_col)) {
         data_sheet[[col]] <- as.character(current_col)
@@ -148,9 +157,19 @@ check_column_format <- function(data_sheet,
     } else if (expected_format == "date") {
       converted_col <- suppressWarnings(as.Date(current_col, format = "%Y-%m-%d"))
       non_date_values <- which(is.na(converted_col) & !is.na(current_col))
+      slash_presence <- sum(grepl("/", current_col)) > 0
       
-      if (length(non_date_values) > 0) {
-        error_logs$wrong_column_format <- c(error_logs$wrong_column_format, class(current_col))
+      expected_format <- "date (AAAA-MM-JJ)"
+      
+      
+      if (length(non_date_values) > 0 | slash_presence) {
+        
+        if (slash_presence) {
+          error_logs$wrong_column_format <- c(error_logs$wrong_column_format, 'date avec présence de "/"')
+        } else {
+          error_logs$wrong_column_format <- c(error_logs$wrong_column_format, class(current_col))
+        }
+        
         error_logs$expected_column_format <- c(error_logs$expected_column_format, expected_format)
         error_logs$wrong_column_format_name <- c(error_logs$wrong_column_format_name, col)
         error_logs$wrong_column_format_sheets <- c(error_logs$wrong_column_format_sheets, sheet_name)
@@ -171,6 +190,13 @@ check_column_format <- function(data_sheet,
           hms::parse_hms(current_col),
           error = function(e) NA
         )
+      } else if (all(grepl("^\\d{2}:\\d{2}:\\d{2}$", current_col, ignore.case = TRUE))) {
+        # Si déjà au format hh:mm:ss (texte), on le convertit en format hms
+        converted_col <- tryCatch(
+          hms::parse_hms(current_col),
+          error = function(e) NA
+        )
+        
       } else {
         # Utilise la fonction de conversion personnalisée pour les temps décimaux
         converted_col <- try(suppressWarnings(convert_decimal_to_hms(current_col)), silent = TRUE)
@@ -180,12 +206,13 @@ check_column_format <- function(data_sheet,
       
       if (length(non_time_values) > 0) {
         error_logs$wrong_column_format <- c(error_logs$wrong_column_format, col)
+        error_logs$wrong_column_format_name <- c(error_logs$wrong_column_format_name, col)
+        error_logs$wrong_column_format_sheets <- c(error_logs$wrong_column_format_sheets, sheet_name)
         error_logs$wrong_column_format_files <- c(error_logs$wrong_column_format_files, file_name)
         converted_col[non_time_values] <- NA  # Remplace les heures invalides par NA
       }
       
       data_sheet[[col]] <- converted_col
-      
     } else {
       # Si le format n'est pas reconnu, consigne une erreur
       error_logs$unknown_format <- c(error_logs$unknown_format, col)

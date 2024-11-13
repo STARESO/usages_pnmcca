@@ -46,6 +46,7 @@ library("lubridate")
 source("R/paths.R")
 
 ## Importation des fonctions personnalisées ----
+source("R/fct_check_column_content.R")
 source("R/fct_column_format.R")
 source("R/fct_compilation_comptage.R")
 source("R/fct_conversions.R")

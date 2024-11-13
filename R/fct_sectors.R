@@ -38,7 +38,7 @@ sector_coherence <- function(sector_name) {
   sector_presence <- sector_name %in% ref_secteurs$Secteur_simple
   
   if (!sector_presence) {
-    closest_index <- amatch(
+    closest_index <- stringdist::amatch(
       sector_name,
       ref_secteurs$Secteur_simple,
       maxDist = 0.5,

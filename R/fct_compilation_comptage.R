@@ -1,5 +1,5 @@
 #' ---
-#' title : "Fonction de compilation principale"
+#' title : "Fonction de compilation des comptages terrain"
 #' author : Aubin Woehrel
 #' date : 2024-09-18
 #' version : 1.0
@@ -32,9 +32,10 @@
 #'   \item{"plaisance"}{Pour les données de plaisance.}
 #'   \item{"meteo"}{Pour les données météorologiques.}
 #'   \item{"activites_loisirs"}{Pour les données d'activités de loisirs.}
+#'   \item{"debarquements"}{Pour les suivis de débarquements au ponton, quai & plage}
 #' }
 #'
-#' @return Un dataframe contenant les données compilées du type de comptage 
+#' @return Un dataframe contenant les données compilées du type de comptage  
 #' spécifié. Toutes les erreurs rencontrées pendant le processus sont 
 #' enregistrées dans un fichier log à l'aide de la fonction \code{mistakes_log}.
 #' 
@@ -95,11 +96,18 @@ compilation_comptage <- function(counting_type) {
   # Initialisation data frame final
   comptage_terrain <- data.frame()
   
+  
+  # Computing total amount of sheets
+  total_sheets <- sum(sapply(file_names, function(file) {
+    file_path <- paste0(path_counting_type, file)
+    length(excel_sheets(file_path)) # This only gets sheet names, not data
+  }))
+  
   # Barre de progression
   n_iter <- length(file_names)
   pb <- progress::progress_bar$new(
-    format = "(:spin) [:bar] :percent [Temps écoulé : :elapsedfull || Temps estimé restant : :eta]",
-    total = n_iter,
+    format = "(:spin) [:bar] :percent [Temps restant : :eta || Temps écoulé : :elapsedfull]",
+    total = total_sheets,
     complete = "=",
     incomplete = "-",
     current = ">",
@@ -111,8 +119,7 @@ compilation_comptage <- function(counting_type) {
   # Boucle sur tous les fichiers excel
   for (file_name in file_names) {
     
-    pb$tick()
-    
+  
     # Vérification de la cohérence du nom du fichier
     if (!file_coherence(file_name, counting_type)) {
       error_logs$wrong_named_files <- c(error_logs$wrong_named_files, file_name)
@@ -134,6 +141,9 @@ compilation_comptage <- function(counting_type) {
     
     # Boucle sur les feuilles-onglets du fichier
     for (sheet in list_of_sheets) {
+      
+      pb$tick()
+      
       if (sheet == "metadata_comptages") {
         # Feuille métadonnées des comptages
         metadata_comptage <- read.xlsx(file_path, sheet = sheet) %>%
@@ -199,17 +209,28 @@ compilation_comptage <- function(counting_type) {
           .[1:2, ]
         
         # Vérification en-têtes et enregistrement erreurs potentielles
-        verif_header <- verify_sheet_header(data_sheet_header, metadata_reference, file_name, sheet, 
-                                            error_logs)
+        verif_header <- verify_sheet_header(
+          data_sheet_header, 
+          metadata_reference, 
+          file_name, 
+          sheet, 
+          error_logs)
+        
         error_logs <- verif_header[[2]] # MAJ Log erreur en-tête
         
         # Feuille suivante si la vérification de l'en-tête échoue
         if (verif_header[[1]]) {
           next
         }
+
+        if ("champ2" %in% names(metadata_reference)) {
+          double_header = TRUE
+        } else {
+          double_header = FALSE
+        }
         
         # Importation données en utilisant la structure d'en-tête double si applicable
-        if ("champ2" %in% names(metadata_reference)) { # En tête double
+        if (double_header) { # En tête double
           data_sheet <- double_header_import(file_path, sheet)
         } else { # En tête simple
           data_sheet <- read.xlsx(file_path, sheet = sheet, sep.names = " ", fillMergedCells = TRUE) %>%
@@ -225,59 +246,64 @@ compilation_comptage <- function(counting_type) {
         data_sheet <- convert_to_na(data_sheet)
         
         # Reformatage et check validité formats de variables sur base des métadonnées référence
-        if ("champ2" %in% names(metadata_reference)) {
-          format_check <- check_column_format(
-            data_sheet, metadata_reference, file_name, sheet, error_logs, is_double_header = TRUE
+        format_check <- check_column_format(
+          data_sheet, 
+          metadata_reference, 
+          file_name, 
+          sheet, 
+          error_logs, 
+          double_header)
+      
+      # Nouveau format des données + log erreurs
+      data_sheet <- format_check$data_sheet
+      error_logs <- format_check$error_logs
+      
+      # Check du contenu des colonnes avec les valeurs des métadonnées de référence
+      error_logs <- check_column_content(
+        data_sheet =  data_sheet, 
+        metadata_reference = metadata_reference,
+        file_name = file_name,
+        sheet_name = sheet, 
+        error_logs = error_logs, 
+        is_double_header = double_header
+      )
+      
+      # Ajout des colonnes date et secteur aux données
+      if (counting_type != "meteo") {
+        data_sheet <- data_sheet %>%
+          mutate(
+            secteur = rep(sheet, nrow(.)),
+            date = rep(date_comptage, nrow(.))
           )
-        } else {
-          format_check <- check_column_format(
-            data_sheet, metadata_reference, file_name, sheet, error_logs, is_double_header = FALSE
-          )
-        }
-        
-        # Nouveau format des données + log erreurs
-        data_sheet <- format_check$data_sheet
-        error_logs <- format_check$error_logs
-        
-        # Check du contenu des colonnes avec les valeurs des métadonnées de référence
-        error_logs <- check_column_content(data_sheet)
-        
-        # Ajout des colonnes date et secteur aux données
-        if (counting_type != "meteo") {
-          data_sheet <- data_sheet %>%
-            mutate(
-              secteur = rep(sheet, nrow(.)),
-              date = rep(date_comptage, nrow(.))
-            )
-        }
-        
-        # Concaténation de la feuille au jeu de données final
-        comptage_terrain <- rbind(comptage_terrain, data_sheet)
-        
+      }
+      
+      # Concaténation de la feuille au jeu de données final
+      comptage_terrain <- rbind(comptage_terrain, data_sheet)
+      
       } # Fin des feuilles autres que metadata_comptages
     }  # Fin boucle feuilles
   }  # Fin boucle fichiers
-  
-  error_logs <<- error_logs
-  
-  # Enregistrement des erreurs dans un fichier log + nombre d'erreurs total
-  mistakes <- mistakes_log(counting_type, error_logs)
-  
-  if (mistakes != 0) {
-    message(
-      paste0(
-        "Il y a ",
-        mistakes,
-        " erreurs rencontrées lors de la compilation.\n",
-        "Veuillez consulter le fichier log pour plus d'informations."
-      )
+
+error_logs <- error_logs
+
+# Enregistrement des erreurs dans un fichier log + nombre d'erreurs total
+mistakes <- mistakes_log(counting_type, error_logs)
+
+if (mistakes != 0) {
+  message(
+    paste0(
+      "Il y a ",
+      mistakes,
+      " erreurs rencontrées lors de la compilation.\n",
+      "Veuillez consulter le fichier log pour plus d'informations."
     )
-  } else {
-    message("Aucune erreur rencontrée lors de la compilation.")
-  }
-  
-  message(paste("Données de comptage", counting_type, "compilées."))
-  
-  # Renvoi du jeu de données final compilé
-  return(comptage_terrain)
+  )
+} else {
+  message("Aucune erreur rencontrée lors de la compilation.")
+}
+
+message(paste("Données de comptage", counting_type, "compilées."))
+
+# Renvoi du jeu de données final compilé
+return(comptage_terrain)
 }

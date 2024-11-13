@@ -11,22 +11,22 @@
 #' 
 #' Description : 
 #' Script contenant toutes les fonctions permettant de lire et nettoyer les
-#' métadonnées des différents types de comptages.  
+#' métadonnées des différents types de comptages ou survols.  
 #' 
 #' =============================================================================
 
 
 #' =============================================================================
 #' 
-#' Lecture et nettoyage des données pour un type de comptage spécifique
+#' Lecture et nettoyage des données pour un type de données spécifique
 #'
 #' Cette fonction lit les métadonnées du fichier de référence pour le type de
 #' comptage donné et applique plusieurs étapes de nettoyage, notamment le
 #' renommage des colonnes, la suppression des accents et la gestion des
-#' modalités. Elle renomme les colonnes en minuscules, supprime les accents et
+#' modalités. Elle renomme les colonnes en minuscules, zupprime les accents et
 #' renomme les colonnes spécifiques si nécessaire.
 #'
-#' @param counting_type Type de comptage 
+#' @param counting_type Type de comptage/survol
 #' 
 #' @return Un dataframe de métadonnées nettoyé avec les colonnes renommées et
 #' prêtes pour une utilisation ultérieure dans le processus de compilation.
@@ -38,8 +38,18 @@
 #' 
 read_metadata <- function(counting_type) {
   
+  # Choix de la bonne référence selon le type de données
+  if (counting_type %in% c("plaba", "plandeau")) {
+    path_metadata <- paths$survols_reference
+  } else if (counting_type %in% 
+             c("plage", "plaisance", "meteo", "activites_loisirs", "debarquements")) {
+    path_metadata <- paths$comptage_reference
+  } else {
+    stop("Le type de comptage n'est pas valide. Veuillez vécouting_typerifier le nom de comptage")
+  }
+  
   metadata <- read.xlsx(
-    xlsxFile = paths$comptage_reference,
+    xlsxFile = path_metadata,
     sheet = counting_type,
     sep.names = "_"
   ) %>%

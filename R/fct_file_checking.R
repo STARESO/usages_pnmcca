@@ -34,11 +34,23 @@
 #' file_coherence("us_med_pnmcca_observatoire_comptage_terrain_plage_2023-08-15.xlsx", "plage")
 #' 
 file_coherence <- function(file_name, counting_type) {
-  file_name_type <- paste0(
-    "us_med_pnmcca_observatoire_comptage_terrain_",
-    counting_type,
-    "_\\d{4}-\\d{2}-\\d{2}\\.xlsx"
-  )
+  
+  
+  if (counting_type %in% c("plaba", "plandeau")) {
+    file_name_type <- paste0(
+      "us_med_pnmcca_observatoire_survols_",
+      counting_type, 
+      "_\\d{4}.xlsx")
+    
+    
+    
+  } else if (counting_type %in% 
+             c("plage", "plaisance", "meteo", "activites_loisirs", "debarquements")) {
+    file_name_type <- paste0(
+      "us_med_pnmcca_observatoire_comptage_terrain_",
+      counting_type, 
+      "_\\d{4}-\\d{2}-\\d{2}\\.xlsx")
+  }
   
   file_name_coherence <- grepl(file_name_type, file_name)
   

@@ -84,8 +84,6 @@ plaisance_sans_taille %>%
   e_bar(Voilier) %>%
   e_bar(Moteur)
 
-
-
 # Create a numeric month order
 t <- plaisance %>%
   group_by(annee, mois, taille) %>%

@@ -77,24 +77,118 @@ post_compilation <- function(compilation_data, counting_type) {
     compilation_data <- compilation_data %>%
       rename(personnes_plage = personnes_sur_la_plage, 
              personnes_eau = `personnes_dans_l'eau`)
-    
   }
   
-  # Colonnes temporelles et réorganisation colonnes
-  compilation_data <- compilation_data %>%
-    mutate(annee = year(date),
-           mois = month(date, label = TRUE, abbr = FALSE),
-           jour = mday(date)) %>%
-    rename_with(
-      .fn = function(x) {
-        stringi::stri_trans_general(x, "Latin-ASCII")
-      },
-      .cols = everything()
-    ) %>%
-    select(date, annee, mois, jour, secteur, everything(), -commentaires, commentaires) %>%
-    mutate(date = as.Date(date)) %>%
-    arrange(date, secteur, horaire)
-  
+  if (counting_type %in% c("plaba", "plandeau")) {
+    compilation_data <- compilation_data %>%
+      rename(date = date_camp) %>%
+      mutate(annee = year(date),
+             mois = month(date, label = TRUE, abbr = FALSE),
+             jour = mday(date)) %>%
+      rename_with(
+        .fn = function(x) {
+          stringi::stri_trans_general(x, "Latin-ASCII")
+        },
+        .cols = everything()
+      ) 
+    
+    # Recatégorisation des activites dans les grandes catégories correspondantes
+    if (counting_type == "plandeau") {
+      compilation_data <- compilation_data %>%
+        mutate(categorie_usage = case_when(
+          act %in% c(
+            "Plaisance a moteur non habitable", 
+            "Plaisance a voile habitable", 
+            "Plaisance a moteur habitable",
+            "Plaisance a voile non habitable"
+            ) ~ 
+            "Plaisance",
+          
+          act %in% c(
+            "Sports motonautiques sur VNM",
+            "Bouee tractee"
+            ) ~ 
+            "Sports motonautiques",
+          
+          act %in% c(
+            "Kayak", 
+            "Stand-Up Paddle", 
+            "Barque", 
+            "Monocoque (optimiste, deriveur)", 
+            "Planche a voile",
+            "Pedalo",
+            "Multicoque (catamaran, trimaran)",
+            "Kite surf (ou planche aerotractee)",
+            "Bodyboard",
+            "Wingfoil",
+            "Activites de baignade avec equipement" # Pas sûr de celui-ci
+            ) ~ 
+            "Activités non motorisees",
+          
+          act %in% c("Peche de loisir embarquee sans precision") ~ 
+            "Pêche de loisirs",
+          
+          act %in% c("Velo tout terrain") ~ 
+            "Activités des plages",
+          
+          act %in% c("Plongee scaphandre") ~ 
+            "Plongée",
+        
+          act %in% c("Transport de passagers - bateau-bus ou bacs", 
+                     "Transport de passagers - ferry",
+                     "Promenade en mer sur bateau moteur") ~ 
+            "Transport des passagers et promenades en mer",
+          
+          act %in% c("Objet temoignant d'une activite de loisir non identifiee") ~
+            "Non identifié",
+          
+          TRUE ~ act
+        ))
+    } else if (counting_type == "plaba") {
+      compilation_data <- compilation_data %>%
+        mutate(categorie_usage = case_when(
+          act %in% c(
+            "PMT/Randonnee subaquatique", 
+            "Baignade", 
+            "Bronzage/repos sur la plage"
+          ) ~ "Activités des plages",
+          TRUE ~ act
+        ))
+    }
+    
+    compilation_data <- compilation_data %>%
+      select(
+        id_acti, 
+        lon_x, 
+        lat_y, 
+        date, 
+        annee, 
+        mois, 
+        jour, 
+        secteur, 
+        nom_acti, 
+        act, 
+        categorie_usage,
+        everything()) %>%
+      mutate(date = as.Date(date))
+    
+  } else {
+    # Colonnes temporelles et réorganisation colonnes
+    compilation_data <- compilation_data %>%
+      mutate(annee = year(date),
+             mois = month(date, label = TRUE, abbr = FALSE),
+             jour = mday(date)) %>%
+      rename_with(
+        .fn = function(x) {
+          stringi::stri_trans_general(x, "Latin-ASCII")
+        },
+        .cols = everything()
+      ) %>%
+      select(date, annee, mois, jour, secteur, everything(), -commentaires, commentaires) %>%
+      mutate(date = as.Date(date)) %>%
+      arrange(date, secteur, horaire)
+  }
+ 
   return(compilation_data)
 }
 
