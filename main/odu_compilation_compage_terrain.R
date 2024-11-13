@@ -104,9 +104,17 @@ saveRDS(compilation_meteo, paste0(paths$processed_meteo, ".rds"))
 saveRDS(compilation_activites, paste0(paths$processed_activites, ".rds"))
 saveRDS(compilation_debarquements, paste0(paths$processed_debarquements, ".rds"))
 
+## Fichiers tsv ----
+write.table(compilation_plaisance, paste0(paths$processed_plaisance, ".tsv"), sep = "\t", row.names = FALSE)
+write.table(compilation_plage, paste0(paths$processed_plage, ".tsv"), sep = "\t", row.names = FALSE)
+write.table(compilation_meteo, paste0(paths$processed_meteo, ".tsv"), sep = "\t", row.names = FALSE)
+write.table(compilation_activites, paste0(paths$processed_activites, ".tsv"), sep = "\t", row.names = FALSE)
+write.table(compilation_debarquements, paste0(paths$processed_debarquements, ".tsv"), sep = "\t", row.names = FALSE)
+
+
 ## Fichiers csv ----
-write.csv(compilation_plaisance, paste0(paths$processed_plaisance, ".csv"), row.names = FALSE)
-write.csv(compilation_plage, paste0(paths$processed_plage, ".csv"), row.names = FALSE)
-write.csv(compilation_meteo, paste0(paths$processed_meteo, ".csv"), row.names = FALSE)
-write.csv(compilation_activites, paste0(paths$processed_activites, ".csv"), row.names = FALSE)
-write.csv(compilation_debarquements, paste0(paths$processed_debarquements, ".csv"), row.names = FALSE)
+# write.csv(compilation_plaisance, paste0(paths$processed_plaisance, ".csv"), row.names = FALSE)
+# write.csv(compilation_plage, paste0(paths$processed_plage, ".csv"), row.names = FALSE)
+# write.csv(compilation_meteo, paste0(paths$processed_meteo, ".csv"), row.names = FALSE)
+# write.csv(compilation_activites, paste0(paths$processed_activites, ".csv"), row.names = FALSE)
+# write.csv(compilation_debarquements, paste0(paths$processed_debarquements, ".csv"), row.names = FALSE)
