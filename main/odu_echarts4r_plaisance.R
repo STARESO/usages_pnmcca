@@ -22,6 +22,7 @@ rm(list = ls())
 ## Importation des bibliothèques ----
 library("echarts4r")
 library("dplyr")
+library("tidyr")
 
 ## Import des chemins ----
 source("R/paths.R")
@@ -63,6 +64,53 @@ plaisance_sans_taille %>%
   e_charts(annee, timeline = TRUE) %>%
   e_bar(total) %>%
   e_tooltip(trigger = "item") 
+
+# Total bateaux timeline mois-secteur
+t1 <- plaisance_sans_taille %>%
+  select(annee, mois, total_type_statut, secteur) %>%
+  group_by(annee, mois, secteur) %>%
+  filter(secteur %in% c("Lotu", "Saleccia")) %>%
+  summarise(total = sum(total_type_statut, na.rm = TRUE)) %>%
+  tidyr::pivot_wider(names_from = secteur, values_from = total) %>%
+  mutate(annee = as.character(annee)) %>%
+  arrange(mois, annee) %>%
+  group_by(annee) %>%
+  e_charts(mois, timeline = TRUE) %>%
+  e_bar(Lotu) %>%
+  e_bar(Saleccia) %>%
+  e_tooltip(trigger = "item") %>%
+  e_title("Nombre total de bateaux de plaisance", "Lotu & Saleccia")
+
+t2 <- plaisance_sans_taille %>%
+  filter(secteur == "Lotu") %>%
+  group_by(annee, mois, type) %>%
+  summarise(total = sum(total_type_statut, na.rm = TRUE)) %>%
+  tidyr::pivot_wider(names_from = type , values_from = total) %>%
+  mutate(annee = as.character(annee)) %>%
+  arrange(mois, annee) %>%
+  group_by(annee) %>%
+  e_charts(mois, timeline = TRUE) %>%
+  e_bar(Moteur) %>%
+  e_bar(Voilier) %>%
+  e_mark_point() %>%
+  e_tooltip(trigger = "item") %>%
+  e_title("Plaisance au Lotu", "Bateaux à Moteurs et Voiliers")
+
+t3 <- plaisance_sans_taille %>%
+  filter(secteur == "Saleccia") %>%
+  group_by(annee, mois, type) %>%
+  summarise(total = sum(total_type_statut, na.rm = TRUE)) %>%
+  tidyr::pivot_wider(names_from = type , values_from = total) %>%
+  mutate(annee = as.character(annee)) %>%
+  arrange(mois, annee) %>%
+  group_by(annee) %>%
+  e_charts(mois, timeline = TRUE) %>%
+  e_bar(Moteur) %>%
+  e_bar(Voilier) %>%
+  e_mark_point() %>%
+  e_tooltip(trigger = "item") %>%
+  e_title("Plaisance à Saleccia", "Bateaux à Moteurs et Voiliers")
+
 
 
 # Disinction voilier/moteur timeline an
