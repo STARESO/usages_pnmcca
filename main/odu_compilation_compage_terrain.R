@@ -57,6 +57,7 @@ source("R/fct_post_compilation.R")
 source("R/fct_read_metadata.R")
 source("R/fct_sectors.R")
 source("R/fct_sheet_header.R")
+source("R/fct_check_observateurs.R")
 
 ## Référence des noms de secteurs ----
 ref_secteurs <- read.csv(file = paths$reference_secteurs, sep = ";") %>%
@@ -70,6 +71,12 @@ ref_secteurs <- read.csv(file = paths$reference_secteurs, sep = ";") %>%
     "Code_INSEE", 
     "Com_Corse"
   )
+
+## Référence des agents de comptage ----
+reference_agents <- read.xlsx(paths$agents_reference, sheet = "Agents") %>%
+  rename_with(~ stringi::stri_trans_general(., "Latin-ASCII"), everything()) %>%
+  rename_with(~ stringr::str_to_lower(.), everything())
+
 
 # Compilation ----
 
@@ -111,10 +118,9 @@ write.table(compilation_meteo, paste0(paths$processed_meteo, ".tsv"), sep = "\t"
 write.table(compilation_activites, paste0(paths$processed_activites, ".tsv"), sep = "\t", row.names = FALSE)
 write.table(compilation_debarquements, paste0(paths$processed_debarquements, ".tsv"), sep = "\t", row.names = FALSE)
 
-
 ## Fichiers csv ----
-# write.csv(compilation_plaisance, paste0(paths$processed_plaisance, ".csv"), row.names = FALSE)
-# write.csv(compilation_plage, paste0(paths$processed_plage, ".csv"), row.names = FALSE)
-# write.csv(compilation_meteo, paste0(paths$processed_meteo, ".csv"), row.names = FALSE)
-# write.csv(compilation_activites, paste0(paths$processed_activites, ".csv"), row.names = FALSE)
-# write.csv(compilation_debarquements, paste0(paths$processed_debarquements, ".csv"), row.names = FALSE)
+write.csv2(compilation_plaisance, paste0(paths$processed_plaisance, ".csv"), row.names = FALSE)
+write.csv2(compilation_plage, paste0(paths$processed_plage, ".csv"), row.names = FALSE)
+write.csv2(compilation_meteo, paste0(paths$processed_meteo, ".csv"), row.names = FALSE)
+write.csv2(compilation_activites, paste0(paths$processed_activites, ".csv"), row.names = FALSE)
+write.csv2(compilation_debarquements, paste0(paths$processed_debarquements, ".csv"), row.names = FALSE)

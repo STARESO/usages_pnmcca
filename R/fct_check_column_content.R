@@ -41,7 +41,7 @@ check_column_content <- function(data_sheet,
       gsub(" ", "_", tolower(.))
     )))
   
-  # mutating metadata_reference if double header
+  # Mutation des métadonnées si double en-tête
   if (is_double_header) {
     metadata_reference <- metadata_reference %>%
       mutate(champ = case_when(
@@ -52,7 +52,7 @@ check_column_content <- function(data_sheet,
   
   # Itérations sur les colonnes de la feuille de données
   for (column_to_check in names(data_sheet)) {
-
+    
     # Type de variable de la colonne
     column_type <- metadata_reference %>%
       filter(champ == column_to_check) %>%
@@ -88,7 +88,6 @@ check_column_content <- function(data_sheet,
         filter(in_reference == FALSE) %>%
         select(-c(in_reference, result)) 
         
-      
       # Logging errors if they exist
       n_errors <- nrow(issues_to_log)
       if (n_errors > 0) {
@@ -98,6 +97,29 @@ check_column_content <- function(data_sheet,
         error_logs$wrong_content_columns <- c(error_logs$wrong_content_columns, rep(str_to_sentence(column_to_check), n_errors))
         error_logs$wrong_content_sheets <- c(error_logs$wrong_content_sheets, rep(sheet_name, n_errors))
         error_logs$wrong_content_files <- c(error_logs$wrong_content_files, rep(file_name, n_errors))
+      }
+      
+    } else if (column_to_check == "observateurs") {
+      
+      issues_to_log <- data_sheet %>%
+        select(observateurs) %>%
+        mutate(
+          result = purrr::map(observateurs, liste_observateur_coherence),
+          in_reference = purrr::map_lgl(result, ~ all(.x$presence, na.rm = TRUE)),
+          suggestion = purrr::map(result, ~ paste(na.omit(.x$closest_match), collapse = ", ")),
+          row_number = row_number()
+        ) %>%
+        filter(in_reference == FALSE) %>%
+        select(-c(in_reference, result))
+      
+      # Logging errors if they exist
+      n_errors <- nrow(issues_to_log)
+      if (n_errors > 0) {
+        error_logs$wrong_observer <- c(error_logs$wrong_content, as.character(issues_to_log$observateurs))
+        error_logs$wrong_observer_suggestion <- c(error_logs$wrong_content_suggestion, issues_to_log$suggestion)
+        error_logs$wrong_observer_line <- c(error_logs$wrong_content_line, issues_to_log$row_number)
+        error_logs$wrong_observer_sheets <- c(error_logs$wrong_content_sheets, rep(sheet_name, n_errors))
+        error_logs$wrong_observer_files <- c(error_logs$wrong_content_files, rep(file_name, n_errors))
       }
     }
 
@@ -162,7 +184,8 @@ check_column_content <- function(data_sheet,
             error_logs$wrong_content_columns <- c(error_logs$wrong_content_columns, rep(str_to_sentence(column_to_check), n_errors))
             error_logs$wrong_content_sheets <- c(error_logs$wrong_content_sheets, rep(sheet_name, n_errors))
             error_logs$wrong_content_files <- c(error_logs$wrong_content_files, rep(file_name, n_errors))
-            }
+          }
+          
         } else if (column_type %in% c("entier", "reel")) {
           
           issues_to_log <- data_sheet %>%

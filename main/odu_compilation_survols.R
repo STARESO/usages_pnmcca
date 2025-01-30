@@ -164,6 +164,6 @@ write.table(compilation_plaba, paste0(paths$processed_plaba, ".tsv"), sep = "\t"
 write.table(compilation_plandeau, paste0(paths$processed_plandeau, ".tsv"), sep = "\t", row.names = FALSE)
 
 ## Fichiers csv ----
-# write.csv(compilation_plaba, paste0(paths$processed_plaba, ".csv"), row.names = FALSE)
-# write.csv(compilation_plandeau, paste0(paths$processed_plandeau, ".csv"), row.names = FALSE)
+write.csv2(compilation_plaba, paste0(paths$processed_plaba, ".csv"), row.names = FALSE)
+write.csv2(compilation_plandeau, paste0(paths$processed_plandeau, ".csv"), row.names = FALSE)
 

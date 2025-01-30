@@ -1,0 +1,271 @@
+"date";"annee";"mois";"jour";"secteur";"horaire";"personnes_plage";"personnes_eau";"pmt";"vaches";"observateurs";"commentaires";"commentaires_secteur"
+2020-07-29;2020;"juillet";29;"Lotu";09:00:00;1;2;NA;0;NA;NA;NA
+2020-07-29;2020;"juillet";29;"Lotu";12:00:00;148;98;NA;0;NA;NA;NA
+2020-07-29;2020;"juillet";29;"Lotu";14:45:00;209;197;NA;0;NA;NA;NA
+2020-07-29;2020;"juillet";29;"Lotu";16:45:00;119;81;NA;0;NA;NA;NA
+2020-07-29;2020;"juillet";29;"Saleccia";09:00:00;27;9;NA;0;NA;NA;NA
+2020-07-29;2020;"juillet";29;"Saleccia";12:00:00;364;440;NA;0;NA;NA;NA
+2020-07-29;2020;"juillet";29;"Saleccia";14:00:00;368;427;NA;0;NA;NA;NA
+2020-07-29;2020;"juillet";29;"Saleccia";16:00:00;387;432;NA;0;NA;NA;NA
+2020-08-13;2020;"aout";13;"Lotu";09:00:00;9;10;NA;0;"Frank, Alex, Aurelie";NA;NA
+2020-08-13;2020;"aout";13;"Lotu";12:00:00;238;186;NA;0;"Frank, Alex, Aurelie";NA;NA
+2020-08-13;2020;"aout";13;"Lotu";14:45:00;316;266;NA;0;"Frank, Alex, Aurelie";NA;NA
+2020-08-13;2020;"aout";13;"Lotu";16:45:00;228;137;NA;0;"Frank, Alex, Aurelie";NA;NA
+2020-08-13;2020;"aout";13;"Saleccia";09:00:00;143;54;NA;0;"Sebastien, Amelie";"2 personnes ont signale des dechers dans les dunes, infraction pietinements dunes et signalement eau verte";NA
+2020-08-13;2020;"aout";13;"Saleccia";12:00:00;639;301;NA;0;"Sebastien, Amelie";NA;NA
+2020-08-13;2020;"aout";13;"Saleccia";14:00:00;649;505;NA;0;"Sebastien, Amelie";NA;NA
+2020-08-13;2020;"aout";13;"Saleccia";16:00:00;576;438;NA;0;"Sebastien, Amelie";NA;NA
+2020-09-09;2020;"septembre";9;"Lotu";09:00:00;0;0;NA;0;NA;NA;NA
+2020-09-09;2020;"septembre";9;"Lotu";12:00:00;133;53;NA;0;NA;NA;NA
+2020-09-09;2020;"septembre";9;"Lotu";14:45:00;189;125;NA;0;NA;NA;NA
+2020-09-09;2020;"septembre";9;"Lotu";16:45:00;141;38;NA;0;NA;NA;NA
+2020-09-09;2020;"septembre";9;"Saleccia";09:00:00;3;1;NA;0;NA;NA;NA
+2020-09-09;2020;"septembre";9;"Saleccia";12:00:00;258;94;NA;0;NA;NA;NA
+2020-09-09;2020;"septembre";9;"Saleccia";14:00:00;380;139;NA;0;NA;NA;NA
+2020-09-09;2020;"septembre";9;"Saleccia";16:00:00;301;102;NA;0;NA;NA;NA
+2021-06-16;2021;"juin";16;"Lotu";09:00:00;11;0;0;15;"Aurelie, Perrine";NA;NA
+2021-06-16;2021;"juin";16;"Lotu";12:00:00;89;21;3;0;"Aurelie, Perrine";"21 personnes dans l'eau (dont 3 PMT)";NA
+2021-06-16;2021;"juin";16;"Lotu";14:45:00;122;28;5;0;"Aurelie, Perrine";"28 personnes dans l'eau (dont 5 PMT)";NA
+2021-06-16;2021;"juin";16;"Lotu";16:45:00;84;39;3;0;"Aurelie, Perrine";"39 personnes dans l'eau (dont 3 PMT)";NA
+2021-06-16;2021;"juin";16;"Saleccia";09:00:00;5;0;0;0;"Axel, Sophie";"RAS";NA
+2021-06-16;2021;"juin";16;"Saleccia";12:00:00;141;73;3;0;"Axel, Sophie";"73 personnes dans l'eau dont 3 PMT";NA
+2021-06-16;2021;"juin";16;"Saleccia";14:00:00;181;81;4;0;"Axel, Sophie";"81 personnes dans l'eau dont 4 PMT";NA
+2021-06-16;2021;"juin";16;"Saleccia";16:00:00;134;69;3;0;"Axel, Sophie";"69 personnes dans l'eau dont 3 PMT";NA
+2021-07-28;2021;"juillet";28;"Lotu";09:00:00;6;13;1;0;NA;NA;NA
+2021-07-28;2021;"juillet";28;"Lotu";12:00:00;329;115;15;0;NA;NA;NA
+2021-07-28;2021;"juillet";28;"Lotu";14:45:00;370;185;31;0;NA;NA;NA
+2021-07-28;2021;"juillet";28;"Lotu";16:45:00;201;112;4;0;NA;NA;NA
+2021-07-28;2021;"juillet";28;"Saleccia";09:00:00;26;13;2;0;NA;NA;NA
+2021-07-28;2021;"juillet";28;"Saleccia";12:00:00;478;248;22;0;NA;NA;NA
+2021-07-28;2021;"juillet";28;"Saleccia";14:00:00;470;379;23;0;NA;NA;NA
+2021-07-28;2021;"juillet";28;"Saleccia";16:00:00;462;420;9;0;NA;NA;NA
+2021-08-18;2021;"aout";18;"Lotu";09:00:00;42;24;0;7;NA;NA;NA
+2021-08-18;2021;"aout";18;"Lotu";12:00:00;501;145;9;0;NA;NA;NA
+2021-08-18;2021;"aout";18;"Lotu";14:45:00;707;205;17;0;NA;NA;NA
+2021-08-18;2021;"aout";18;"Lotu";16:45:00;535;110;12;0;NA;NA;NA
+2021-08-18;2021;"aout";18;"Saleccia";09:00:00;7;0;0;0;NA;NA;NA
+2021-08-18;2021;"aout";18;"Saleccia";12:00:00;504;186;16;0;NA;NA;NA
+2021-08-18;2021;"aout";18;"Saleccia";14:00:00;710;245;12;0;NA;NA;NA
+2021-08-18;2021;"aout";18;"Saleccia";16:00:00;589;182;7;0;NA;NA;NA
+2021-09-02;2021;"septembre";2;"Lotu";09:00:00;0;0;0;3;"Aurelie, Laure-Helene";NA;NA
+2021-09-02;2021;"septembre";2;"Lotu";12:00:00;154;35;4;0;"Aurelie, Laure-Helene";NA;NA
+2021-09-02;2021;"septembre";2;"Lotu";14:45:00;380;30;4;0;"Aurelie, Laure-Helene";NA;NA
+2021-09-02;2021;"septembre";2;"Lotu";16:45:00;190;17;3;0;"Aurelie, Laure-Helene";NA;NA
+2021-09-02;2021;"septembre";2;"Saleccia";09:00:00;0;1;0;0;"Sophie, Sebastien";NA;NA
+2021-09-02;2021;"septembre";2;"Saleccia";12:00:00;260;45;9;2;"Sophie, Sebastien";NA;NA
+2021-09-02;2021;"septembre";2;"Saleccia";14:00:00;235;56;9;0;"Sophie, Sebastien";NA;NA
+2021-09-02;2021;"septembre";2;"Saleccia";16:00:00;121;14;5;0;"Sophie, Sebastien";NA;NA
+2022-06-21;2022;"juin";21;"Lotu";09:00:00;0;1;0;1;NA;NA;NA
+2022-06-21;2022;"juin";21;"Lotu";12:00:00;52;31;1;0;NA;NA;NA
+2022-06-21;2022;"juin";21;"Lotu";14:45:00;53;47;1;0;NA;NA;NA
+2022-06-21;2022;"juin";21;"Lotu";16:45:00;52;20;0;0;NA;NA;NA
+2022-06-21;2022;"juin";21;"Saleccia";09:00:00;9;2;0;0;NA;NA;NA
+2022-06-21;2022;"juin";21;"Saleccia";12:00:00;271;33;10;0;NA;NA;NA
+2022-06-21;2022;"juin";21;"Saleccia";14:00:00;300;78;8;0;NA;NA;NA
+2022-06-21;2022;"juin";21;"Saleccia";16:00:00;110;55;3;0;NA;NA;NA
+2022-07-28;2022;"juillet";28;"Lotu";09:00:00;8;6;0;0;NA;NA;NA
+2022-07-28;2022;"juillet";28;"Lotu";12:00:00;133;63;21;0;NA;NA;NA
+2022-07-28;2022;"juillet";28;"Lotu";14:45:00;179;231;36;3;NA;NA;NA
+2022-07-28;2022;"juillet";28;"Lotu";16:45:00;134;104;15;0;NA;NA;NA
+2022-07-28;2022;"juillet";28;"Saleccia";09:00:00;48;45;7;0;NA;"Bcp de vagues";"Tres peu de locaux observes sur la plage, 90% de touristes  Le chenal : - seul le chenal autorise aux motorises est emprunte - bcp d'embouteillage dans le chenal en periode de pointe - les plaisanciers bloquent le passage parfois et se mettent en danger - les jets ancrent dans le chenal"
+2022-07-28;2022;"juillet";28;"Saleccia";12:00:00;525;224;17;0;NA;"Jet attache a la bouee du chenal";"Tres peu de locaux observes sur la plage, 90% de touristes  Le chenal : - seul le chenal autorise aux motorises est emprunte - bcp d'embouteillage dans le chenal en periode de pointe - les plaisanciers bloquent le passage parfois et se mettent en danger - les jets ancrent dans le chenal"
+2022-07-28;2022;"juillet";28;"Saleccia";14:00:00;643;315;21;0;NA;NA;"Tres peu de locaux observes sur la plage, 90% de touristes  Le chenal : - seul le chenal autorise aux motorises est emprunte - bcp d'embouteillage dans le chenal en periode de pointe - les plaisanciers bloquent le passage parfois et se mettent en danger - les jets ancrent dans le chenal"
+2022-07-28;2022;"juillet";28;"Saleccia";16:00:00;658;344;15;0;NA;NA;"Tres peu de locaux observes sur la plage, 90% de touristes  Le chenal : - seul le chenal autorise aux motorises est emprunte - bcp d'embouteillage dans le chenal en periode de pointe - les plaisanciers bloquent le passage parfois et se mettent en danger - les jets ancrent dans le chenal"
+2022-08-10;2022;"aout";10;"Lotu";09:00:00;7;7;0;0;NA;NA;NA
+2022-08-10;2022;"aout";10;"Lotu";12:00:00;445;225;36;0;NA;NA;NA
+2022-08-10;2022;"aout";10;"Lotu";14:45:00;619;212;25;0;NA;NA;NA
+2022-08-10;2022;"aout";10;"Lotu";16:45:00;546;162;26;0;NA;NA;NA
+2022-08-10;2022;"aout";10;"Saleccia";09:00:00;77;46;10;0;NA;"Arrivee de plusieurs nucs avant le comptage";NA
+2022-08-10;2022;"aout";10;"Saleccia";12:00:00;677;233;41;0;NA;"Bateaux passant dans la zone de baignade. Bateaux dans le chenal non motorise.";NA
+2022-08-10;2022;"aout";10;"Saleccia";14:00:00;941;306;52;0;NA;NA;NA
+2022-08-10;2022;"aout";10;"Saleccia";16:00:00;637;190;30;0;NA;NA;NA
+2022-09-12;2022;"septembre";12;"Lotu";09:00:00;0;0;0;2;NA;NA;NA
+2022-09-12;2022;"septembre";12;"Lotu";12:00:00;186;58;4;0;NA;NA;NA
+2022-09-12;2022;"septembre";12;"Lotu";14:45:00;296;95;9;0;NA;NA;NA
+2022-09-12;2022;"septembre";12;"Lotu";16:45:00;165;32;3;0;NA;NA;NA
+2022-09-12;2022;"septembre";12;"Saleccia";09:00:00;0;0;0;0;NA;NA;NA
+2022-09-12;2022;"septembre";12;"Saleccia";12:00:00;278;115;13;0;NA;NA;NA
+2022-09-12;2022;"septembre";12;"Saleccia";14:00:00;301;84;14;0;NA;NA;NA
+2022-09-12;2022;"septembre";12;"Saleccia";16:00:00;370;99;14;1;NA;NA;NA
+2023-06-23;2023;"juin";23;"Ghignu";09:00:00;2;2;2;1;NA;NA;NA
+2023-06-23;2023;"juin";23;"Ghignu";12:00:00;13;7;2;4;NA;NA;NA
+2023-06-23;2023;"juin";23;"Ghignu";15:00:00;10;6;0;4;NA;NA;NA
+2023-06-23;2023;"juin";23;"Ghignu";17:00:00;6;0;0;3;NA;NA;NA
+2023-06-23;2023;"juin";23;"Lotu";09:00:00;0;0;0;12;"Django de Herder, Axel Priouzeau";NA;NA
+2023-06-23;2023;"juin";23;"Lotu";12:00:00;145;102;29;17;"Django de Herder, Axel Priouzeau";NA;NA
+2023-06-23;2023;"juin";23;"Lotu";14:45:00;307;158;33;0;"Django de Herder, Axel Priouzeau";NA;NA
+2023-06-23;2023;"juin";23;"Lotu";16:45:00;160;59;6;0;"Django de Herder, Axel Priouzeau";NA;NA
+2023-06-23;2023;"juin";23;"Malfalcu";09:00:00;0;0;0;0;NA;NA;NA
+2023-06-23;2023;"juin";23;"Malfalcu";12:00:00;0;0;0;4;NA;NA;NA
+2023-06-23;2023;"juin";23;"Malfalcu";15:00:00;0;0;0;0;NA;NA;NA
+2023-06-23;2023;"juin";23;"Malfalcu";17:00:00;NA;NA;NA;NA;NA;NA;NA
+2023-06-23;2023;"juin";23;"Mezzanu";09:00:00;0;1;0;0;NA;NA;NA
+2023-06-23;2023;"juin";23;"Mezzanu";12:00:00;0;3;0;0;NA;NA;NA
+2023-06-23;2023;"juin";23;"Mezzanu";15:00:00;0;0;0;0;NA;NA;NA
+2023-06-23;2023;"juin";23;"Mezzanu";17:00:00;0;0;0;0;NA;NA;NA
+2023-06-23;2023;"juin";23;"Saleccia";09:00:00;7;2;0;0;"Django de Herder, Axel Priouzeau";NA;NA
+2023-06-23;2023;"juin";23;"Saleccia";12:00:00;167;56;7;0;"Django de Herder, Axel Priouzeau";NA;NA
+2023-06-23;2023;"juin";23;"Saleccia";14:45:00;123;30;2;0;"Django de Herder, Axel Priouzeau";NA;NA
+2023-06-23;2023;"juin";23;"Saleccia";16:45:00;104;12;0;0;"Django de Herder, Axel Priouzeau";NA;NA
+2023-06-23;2023;"juin";23;"U Travu";09:00:00;0;0;0;0;NA;NA;NA
+2023-06-23;2023;"juin";23;"U Travu";12:00:00;2;8;0;0;NA;NA;NA
+2023-06-23;2023;"juin";23;"U Travu";15:00:00;7;0;0;0;NA;NA;NA
+2023-06-23;2023;"juin";23;"U Travu";17:00:00;NA;NA;NA;NA;NA;NA;NA
+2023-07-28;2023;"juillet";28;"Ghignu";09:00:00;0;0;0;0;"Laurent, Julie + saisonniers";"L'ensemble de la baie est etudiee : Ghignu et l'anse juste a cote = Alga putrica";NA
+2023-07-28;2023;"juillet";28;"Ghignu";10:00:00;10;10;0;3;"Laurent, Julie + saisonniers";NA;NA
+2023-07-28;2023;"juillet";28;"Ghignu";11:00:00;13;6;2;1;"Laurent, Julie + saisonniers";NA;NA
+2023-07-28;2023;"juillet";28;"Ghignu";12:00:00;51;18;0;0;"Laurent, Julie + saisonniers";NA;NA
+2023-07-28;2023;"juillet";28;"Ghignu";15:00:00;63;44;3;0;"Laurent, Julie + saisonniers";NA;NA
+2023-07-28;2023;"juillet";28;"Ghignu";17:00:00;45;6;1;3;"Laurent, Julie + saisonniers";NA;NA
+2023-07-28;2023;"juillet";28;"Lotu";09:00:00;13;5;2;7;"Aurelie Essartier, Leila Rahmane";NA;NA
+2023-07-28;2023;"juillet";28;"Lotu";12:00:00;388;136;24;7;"Aurelie Essartier, Leila Rahmane";NA;NA
+2023-07-28;2023;"juillet";28;"Lotu";14:45:00;549;95;22;0;"Aurelie Essartier, Leila Rahmane";NA;NA
+2023-07-28;2023;"juillet";28;"Lotu";16:45:00;266;131;4;0;"Aurelie Essartier, Leila Rahmane";NA;NA
+2023-07-28;2023;"juillet";28;"Malfalcu";09:00:00;0;0;0;0;NA;NA;NA
+2023-07-28;2023;"juillet";28;"Malfalcu";12:00:00;0;0;0;2;NA;"2 bateaux ancres dans la baie:  1 avec 3 pers a bord  1 avec 8 pers a bord";NA
+2023-07-28;2023;"juillet";28;"Malfalcu";15:00:00;2;3;0;0;NA;"1 bateau ancre dans la baie:  1 avec 2 pers a bord";NA
+2023-07-28;2023;"juillet";28;"Malfalcu";17:00:00;2;0;0;0;NA;NA;NA
+2023-07-28;2023;"juillet";28;"Mezzanu";09:00:00;2;10;0;0;"Kevin DCDFL, Axel Priouzeau";NA;NA
+2023-07-28;2023;"juillet";28;"Mezzanu";12:00:00;25;31;4;0;"Kevin DCDFL, Axel Priouzeau";"Bivouac";NA
+2023-07-28;2023;"juillet";28;"Mezzanu";15:00:00;14;7;5;0;"Kevin DCDFL, Axel Priouzeau";"Bivouac";NA
+2023-07-28;2023;"juillet";28;"Mezzanu";17:00:00;10;16;3;0;"Kevin DCDFL, Axel Priouzeau";NA;NA
+2023-07-28;2023;"juillet";28;"Saleccia";09:00:00;123;32;2;0;"Django de Herder, Maeva Labegorre";"Comptage effectue a 9:30";NA
+2023-07-28;2023;"juillet";28;"Saleccia";12:00:00;646;183;26;0;"Django de Herder, Maeva Labegorre";NA;NA
+2023-07-28;2023;"juillet";28;"Saleccia";14:45:00;686;285;23;0;"Django de Herder, Maeva Labegorre";NA;NA
+2023-07-28;2023;"juillet";28;"Saleccia";16:45:00;459;205;19;0;"Django de Herder, Maeva Labegorre";NA;NA
+2023-07-28;2023;"juillet";28;"U Travu";09:00:00;0;0;0;0;NA;"NEANT";NA
+2023-07-28;2023;"juillet";28;"U Travu";12:00:00;23;7;4;0;NA;NA;NA
+2023-07-28;2023;"juillet";28;"U Travu";15:00:00;8;10;3;0;NA;NA;NA
+2023-07-28;2023;"juillet";28;"U Travu";17:00:00;NA;NA;NA;NA;NA;"Non realise, probleme sur Ghignu, on est passe apres 18h devant Trave";NA
+2023-08-10;2023;"aout";10;"Lotu";09:00:00;91;3;4;0;"Django de Herder, Maeva Labegorre";"1 annexe sur la plage";NA
+2023-08-10;2023;"aout";10;"Lotu";12:00:00;547;100;5;0;"Django de Herder, Maeva Labegorre";"Meduses + 2 annexes et 2 canoes sur la plage";NA
+2023-08-10;2023;"aout";10;"Lotu";14:45:00;643;152;36;0;"Django de Herder, Maeva Labegorre";"1 paddle dans l'eau";NA
+2023-08-10;2023;"aout";10;"Lotu";16:45:00;465;118;17;0;"Django de Herder, Maeva Labegorre";"1 jet + 1 annexe dans le chenal. 1 annexe sur la plage";NA
+2023-08-10;2023;"aout";10;"Mezzanu";09:00:00;6;1;0;0;"Kevin DCDFL, Alexandre Raibaldi";"Presence d'une vente chapiteau";NA
+2023-08-10;2023;"aout";10;"Mezzanu";12:00:00;30;0;0;0;"Kevin DCDFL, Alexandre Raibaldi";"Toujours chapiteau";NA
+2023-08-10;2023;"aout";10;"Mezzanu";15:00:00;26;10;0;0;"Kevin DCDFL, Alexandre Raibaldi";"Toujours chapiteau";NA
+2023-08-10;2023;"aout";10;"Mezzanu";17:00:00;55;3;0;0;"Kevin DCDFL, Alexandre Raibaldi";"Chapiteau en cours de demontage";NA
+2023-08-10;2023;"aout";10;"Saleccia";09:00:00;104;24;0;0;"Camille Lemaire, Leila Rahmane";"Groupe de personnes a cheval a l'ouest de la plage";NA
+2023-08-10;2023;"aout";10;"Saleccia";12:00:00;810;180;15;0;"Camille Lemaire, Leila Rahmane";NA;NA
+2023-08-10;2023;"aout";10;"Saleccia";14:45:00;1056;301;23;0;"Camille Lemaire, Leila Rahmane";NA;NA
+2023-08-10;2023;"aout";10;"Saleccia";16:45:00;840;209;20;0;"Camille Lemaire, Leila Rahmane";NA;NA
+2023-09-06;2023;"septembre";6;"Ghignu";09:00:00;2;0;0;0;"F. Sorbara, F. Giorgetti, L. Ceccaldi";NA;NA
+2023-09-06;2023;"septembre";6;"Ghignu";12:00:00;8;0;0;4;"F. Sorbara, F. Giorgetti, L. Ceccaldi";NA;NA
+2023-09-06;2023;"septembre";6;"Ghignu";15:00:00;4;10;0;4;"F. Sorbara, F. Giorgetti, L. Ceccaldi";NA;NA
+2023-09-06;2023;"septembre";6;"Ghignu";17:00:00;0;0;0;0;"F. Sorbara, F. Giorgetti, L. Ceccaldi";NA;NA
+2023-09-06;2023;"septembre";6;"Lotu";09:00:00;1;0;0;0;"Aurelie Essartier, Jade Larose, Alexandre Raibaldi, Alexandre Crispi";"arrivee kayak";NA
+2023-09-06;2023;"septembre";6;"Lotu";12:00:00;143;58;6;0;"Aurelie Essartier, Jade Larose, Alexandre Raibaldi, Alexandre Crispi";NA;NA
+2023-09-06;2023;"septembre";6;"Lotu";14:45:00;399;55;7;0;"Aurelie Essartier, Jade Larose, Alexandre Raibaldi, Alexandre Crispi";NA;NA
+2023-09-06;2023;"septembre";6;"Lotu";16:45:00;307;20;7;0;"Aurelie Essartier, Jade Larose, Alexandre Raibaldi, Alexandre Crispi";NA;NA
+2023-09-06;2023;"septembre";6;"Malfalcu";09:00:00;0;0;0;0;"F. Sorbara, F. Giorgetti, L. Ceccaldi";NA;NA
+2023-09-06;2023;"septembre";6;"Malfalcu";12:00:00;0;0;0;0;"F. Sorbara, F. Giorgetti, L. Ceccaldi";NA;NA
+2023-09-06;2023;"septembre";6;"Malfalcu";15:00:00;2;0;0;4;"F. Sorbara, F. Giorgetti, L. Ceccaldi";NA;NA
+2023-09-06;2023;"septembre";6;"Malfalcu";17:00:00;0;0;0;0;"F. Sorbara, F. Giorgetti, L. Ceccaldi";NA;NA
+2023-09-06;2023;"septembre";6;"Mezzanu";09:00:00;8;3;3;0;"Alexandre Raibaldi, Alexandre Crispi";NA;NA
+2023-09-06;2023;"septembre";6;"Mezzanu";12:00:00;8;3;3;0;"Alexandre Raibaldi, Alexandre Crispi";NA;NA
+2023-09-06;2023;"septembre";6;"Mezzanu";15:00:00;2;1;0;0;"Alexandre Raibaldi, Alexandre Crispi";NA;NA
+2023-09-06;2023;"septembre";6;"Mezzanu";17:00:00;1;0;0;0;"Alexandre Raibaldi, Alexandre Crispi";NA;NA
+2023-09-06;2023;"septembre";6;"Saleccia";09:00:00;8;0;0;0;"Camille Lemaire, Stephane Bordewie, Alexandre Raibaldi, Alexandre Crispi";"Un drone 2 personnes dans dunes";NA
+2023-09-06;2023;"septembre";6;"Saleccia";12:00:00;254;55;19;0;"Camille Lemaire, Stephane Bordewie, Alexandre Raibaldi, Alexandre Crispi";NA;NA
+2023-09-06;2023;"septembre";6;"Saleccia";14:45:00;307;29;3;0;"Camille Lemaire, Stephane Bordewie, Alexandre Raibaldi, Alexandre Crispi";"2 annexes";NA
+2023-09-06;2023;"septembre";6;"Saleccia";16:45:00;189;23;2;0;"Camille Lemaire, Stephane Bordewie, Alexandre Raibaldi, Alexandre Crispi";NA;NA
+2023-09-06;2023;"septembre";6;"U Travu";09:00:00;0;0;0;1;"F. Sorbara, F. Giorgetti, L. Ceccaldi";NA;NA
+2023-09-06;2023;"septembre";6;"U Travu";12:00:00;10;3;1;0;"F. Sorbara, F. Giorgetti, L. Ceccaldi";NA;NA
+2023-09-06;2023;"septembre";6;"U Travu";15:00:00;2;0;0;0;"F. Sorbara, F. Giorgetti, L. Ceccaldi";NA;NA
+2023-09-06;2023;"septembre";6;"U Travu";17:00:00;0;0;0;0;"F. Sorbara, F. Giorgetti, L. Ceccaldi";NA;NA
+2024-06-26;2024;"juin";26;"Ghignu";09:00:00;6;4;2;1;"Laurent Ceccalci, Axel Priouzeau";NA;NA
+2024-06-26;2024;"juin";26;"Ghignu";12:00:00;23;11;NA;1;"Laurent Ceccalci, Axel Priouzeau";NA;NA
+2024-06-26;2024;"juin";26;"Ghignu";14:45:00;30;7;NA;2;"Laurent Ceccalci, Axel Priouzeau";NA;NA
+2024-06-26;2024;"juin";26;"Ghignu";16:45:00;19;5;NA;4;"Laurent Ceccalci, Axel Priouzeau";NA;NA
+2024-06-26;2024;"juin";26;"Lotu";09:00:00;8;1;0;1;"Aurelie Essartier, Dimitri Veyssieres, Emma Demeaux";NA;NA
+2024-06-26;2024;"juin";26;"Lotu";12:00:00;246;38;3;0;"Aurelie Essartier, Dimitri Veyssieres, Emma Demeaux";NA;NA
+2024-06-26;2024;"juin";26;"Lotu";14:45:00;338;50;2;3;"Aurelie Essartier, Dimitri Veyssieres, Emma Demeaux";NA;NA
+2024-06-26;2024;"juin";26;"Lotu";16:45:00;232;50;4;1;"Aurelie Essartier, Dimitri Veyssieres, Emma Demeaux";NA;NA
+2024-06-26;2024;"juin";26;"Malfalcu";09:00:00;2;1;0;0;"Laurent Ceccaldi, Axel Priouzeau";NA;NA
+2024-06-26;2024;"juin";26;"Malfalcu";12:00:00;4;1;1;0;"Laurent Ceccaldi, Axel Priouzeau";NA;NA
+2024-06-26;2024;"juin";26;"Malfalcu";14:45:00;2;0;0;0;"Laurent Ceccaldi, Axel Priouzeau";NA;NA
+2024-06-26;2024;"juin";26;"Malfalcu";16:45:00;2;0;0;0;"Laurent Ceccaldi, Axel Priouzeau";NA;NA
+2024-06-26;2024;"juin";26;"Mezzanu";09:00:00;0;0;0;0;"Alexandre Crispi, Cedric Minicucci";"oubli impression Jade";"oubli impression Jade"
+2024-06-26;2024;"juin";26;"Mezzanu";12:00:00;0;0;0;0;"Alexandre Crispi, Cedric Minicucci";"oubli impression Jade";"oubli impression Jade"
+2024-06-26;2024;"juin";26;"Mezzanu";14:45:00;0;0;0;0;"Alexandre Crispi, Cedric Minicucci";"oubli impression Jade";"oubli impression Jade"
+2024-06-26;2024;"juin";26;"Mezzanu";16:45:00;0;0;0;0;"Alexandre Crispi, Cedric Minicucci";"oubli impression Jade";"oubli impression Jade"
+2024-06-26;2024;"juin";26;"Saleccia";09:00:00;8;0;0;0;"Dominique Cioni, Jade Larose";NA;NA
+2024-06-26;2024;"juin";26;"Saleccia";12:00:00;366;118;12;0;"Dominique Cioni, Jade Larose";NA;NA
+2024-06-26;2024;"juin";26;"Saleccia";14:45:00;476;96;9;0;"Dominique Cioni, Jade Larose";NA;NA
+2024-06-26;2024;"juin";26;"Saleccia";16:45:00;254;42;5;0;"Dominique Cioni, Jade Larose";NA;NA
+2024-06-26;2024;"juin";26;"U Travu";09:00:00;1;3;1;0;"Laurent Ceccaldi, Axel Priouzeau";NA;NA
+2024-06-26;2024;"juin";26;"U Travu";12:00:00;15;6;0;0;"Laurent Ceccaldi, Axel Priouzeau";NA;NA
+2024-06-26;2024;"juin";26;"U Travu";14:45:00;6;3;2;0;"Laurent Ceccaldi, Axel Priouzeau";NA;NA
+2024-06-26;2024;"juin";26;"U Travu";16:45:00;9;2;0;0;"Laurent Ceccaldi, Axel Priouzeau";NA;NA
+2024-07-29;2024;"juillet";29;"Ghignu";09:00:00;12;0;0;1;"Jean-Philippe Chaubon, Luc Bruni";NA;NA
+2024-07-29;2024;"juillet";29;"Ghignu";12:00:00;14;33;1;0;"Jean-Philippe Chaubon, Luc Bruni";NA;NA
+2024-07-29;2024;"juillet";29;"Ghignu";14:45:00;27;35;4;0;"Jean-Philippe Chaubon, Luc Bruni";NA;NA
+2024-07-29;2024;"juillet";29;"Ghignu";16:45:00;31;36;4;0;"Jean-Philippe Chaubon, Luc Bruni";NA;NA
+2024-07-29;2024;"juillet";29;"Lotu";09:00:00;12;26;8;1;"Julie Enjalbert, Aurelie Essartier";"debut du comptage a 9h10, potentiellement deja une navette ayant deja fait une rotation";NA
+2024-07-29;2024;"juillet";29;"Lotu";12:00:00;254;193;15;0;"Julie Enjalbert, Aurelie Essartier";NA;NA
+2024-07-29;2024;"juillet";29;"Lotu";14:45:00;291;211;18;0;"Julie Enjalbert, Aurelie Essartier";NA;NA
+2024-07-29;2024;"juillet";29;"Lotu";16:45:00;243;157;14;0;"Julie Enjalbert, Aurelie Essartier";NA;NA
+2024-07-29;2024;"juillet";29;"Malfalcu";09:00:00;0;0;0;3;"Jean-Philippe Chaubon, Luc Bruni";NA;NA
+2024-07-29;2024;"juillet";29;"Malfalcu";12:00:00;0;4;0;0;"Jean-Philippe Chaubon, Luc Bruni";NA;NA
+2024-07-29;2024;"juillet";29;"Malfalcu";14:45:00;0;0;0;0;"Jean-Philippe Chaubon, Luc Bruni";NA;NA
+2024-07-29;2024;"juillet";29;"Malfalcu";16:45:00;0;0;0;4;"Jean-Philippe Chaubon, Luc Bruni";NA;NA
+2024-07-29;2024;"juillet";29;"Mezzanu";09:00:00;0;0;0;0;"Camille Lemaire, Cedric Minicucci, Axel Priouzeau, Dimitri Veyssieres";NA;NA
+2024-07-29;2024;"juillet";29;"Mezzanu";12:00:00;4;4;0;0;"Camille Lemaire, Cedric Minicucci, Axel Priouzeau, Dimitri Veyssieres";NA;NA
+2024-07-29;2024;"juillet";29;"Mezzanu";14:45:00;5;7;0;0;"Camille Lemaire, Cedric Minicucci, Axel Priouzeau, Dimitri Veyssieres";NA;NA
+2024-07-29;2024;"juillet";29;"Mezzanu";16:45:00;9;12;0;0;"Camille Lemaire, Cedric Minicucci, Axel Priouzeau, Dimitri Veyssieres";NA;NA
+2024-07-29;2024;"juillet";29;"Saleccia";09:00:00;61;25;8;0;"Jade Larose, Francois Giorgetti";"le comptage de 9h a demarre a 9h10 et s'est termine vers 9h30 (2 taxi boat etaient deja passes)";NA
+2024-07-29;2024;"juillet";29;"Saleccia";12:00:00;327;250;30;0;"Jade Larose, Francois Giorgetti";NA;NA
+2024-07-29;2024;"juillet";29;"Saleccia";14:45:00;460;284;27;0;"Jade Larose, Francois Giorgetti";NA;NA
+2024-07-29;2024;"juillet";29;"Saleccia";16:45:00;296;98;0;0;"Jade Larose, Francois Giorgetti";NA;NA
+2024-07-29;2024;"juillet";29;"U Travu";09:00:00;4;0;1;0;"Jean-Philippe Chaubon, Luc Bruni";NA;NA
+2024-07-29;2024;"juillet";29;"U Travu";12:00:00;15;21;2;0;"Jean-Philippe Chaubon, Luc Bruni";NA;NA
+2024-07-29;2024;"juillet";29;"U Travu";14:45:00;12;24;3;0;"Jean-Philippe Chaubon, Luc Bruni";NA;NA
+2024-07-29;2024;"juillet";29;"U Travu";16:45:00;9;18;0;0;"Jean-Philippe Chaubon, Luc Bruni";NA;NA
+2024-08-07;2024;"aout";7;"Ghignu";09:00:00;9;6;0;0;"Luc Bruni, Jean-Philippe Chaubon";NA;NA
+2024-08-07;2024;"aout";7;"Ghignu";12:00:00;30;48;0;0;"Luc Bruni, Jean-Philippe Chaubon";NA;NA
+2024-08-07;2024;"aout";7;"Ghignu";14:45:00;43;93;5;4;"Luc Bruni, Jean-Philippe Chaubon";"4 chenaux (???)";NA
+2024-08-07;2024;"aout";7;"Ghignu";16:45:00;30;54;3;0;"Luc Bruni, Jean-Philippe Chaubon";NA;NA
+2024-08-07;2024;"aout";7;"Lotu";09:00:00;28;27;2;0;"Aurelie Essartier, Pierre Marie Sauli";"arrivee popey 8h55";NA
+2024-08-07;2024;"aout";7;"Lotu";12:00:00;390;212;17;0;"Aurelie Essartier, Pierre Marie Sauli";NA;NA
+2024-08-07;2024;"aout";7;"Lotu";14:45:00;479;350;46;5;"Aurelie Essartier, Pierre Marie Sauli";NA;NA
+2024-08-07;2024;"aout";7;"Lotu";16:45:00;346;208;22;3;"Aurelie Essartier, Pierre Marie Sauli";NA;NA
+2024-08-07;2024;"aout";7;"Malfalcu";09:00:00;0;0;0;0;"Luc Bruni, Jean-Philippe Chaubon";NA;NA
+2024-08-07;2024;"aout";7;"Malfalcu";12:00:00;0;5;1;0;"Luc Bruni, Jean-Philippe Chaubon";NA;NA
+2024-08-07;2024;"aout";7;"Malfalcu";14:45:00;0;4;1;0;"Luc Bruni, Jean-Philippe Chaubon";NA;NA
+2024-08-07;2024;"aout";7;"Malfalcu";16:45:00;0;4;1;0;"Luc Bruni, Jean-Philippe Chaubon";NA;NA
+2024-08-07;2024;"aout";7;"Mezzanu";09:00:00;3;1;4;0;"Cedric Minicucci, Axel Priouzeau, Alexandre Crispi";NA;NA
+2024-08-07;2024;"aout";7;"Mezzanu";12:00:00;9;23;0;0;"Cedric Minicucci, Axel Priouzeau, Alexandre Crispi";NA;NA
+2024-08-07;2024;"aout";7;"Mezzanu";14:45:00;20;20;2;0;"Cedric Minicucci, Axel Priouzeau, Alexandre Crispi";NA;NA
+2024-08-07;2024;"aout";7;"Mezzanu";16:45:00;16;10;0;0;"Cedric Minicucci, Axel Priouzeau, Alexandre Crispi";NA;NA
+2024-08-07;2024;"aout";7;"Saleccia";09:00:00;91;30;0;0;"Jade Larose, Francois Giorgetti";NA;NA
+2024-08-07;2024;"aout";7;"Saleccia";12:00:00;464;141;33;0;"Jade Larose, Francois Giorgetti";NA;NA
+2024-08-07;2024;"aout";7;"Saleccia";14:45:00;494;291;0;0;"Jade Larose, Francois Giorgetti";NA;NA
+2024-08-07;2024;"aout";7;"Saleccia";16:45:00;422;319;0;0;"Jade Larose, Francois Giorgetti";NA;NA
+2024-08-07;2024;"aout";7;"U Travu";09:00:00;0;0;0;0;"Luc Bruni, Jean-Philippe Chaubon";NA;NA
+2024-08-07;2024;"aout";7;"U Travu";12:00:00;21;33;6;0;"Luc Bruni, Jean-Philippe Chaubon";NA;NA
+2024-08-07;2024;"aout";7;"U Travu";14:45:00;27;58;12;0;"Luc Bruni, Jean-Philippe Chaubon";NA;NA
+2024-08-07;2024;"aout";7;"U Travu";16:45:00;28;34;4;0;"Luc Bruni, Jean-Philippe Chaubon";NA;NA
+2024-09-04;2024;"septembre";4;"Ghignu";09:00:00;0;0;0;0;"Laurent Ceccaldi, Frederic Sorbara";NA;NA
+2024-09-04;2024;"septembre";4;"Ghignu";12:00:00;0;0;0;1;"Laurent Ceccaldi, Frederic Sorbara";NA;NA
+2024-09-04;2024;"septembre";4;"Ghignu";14:45:00;12;7;0;4;"Laurent Ceccaldi, Frederic Sorbara";"5 chevaux";NA
+2024-09-04;2024;"septembre";4;"Ghignu";16:45:00;0;0;0;0;"Laurent Ceccaldi, Frederic Sorbara";"non realise";NA
+2024-09-04;2024;"septembre";4;"Lotu";09:00:00;0;2;0;0;"Julie Enjalbert";NA;NA
+2024-09-04;2024;"septembre";4;"Lotu";12:00:00;99;52;4;11;"Julie Enjalbert";NA;NA
+2024-09-04;2024;"septembre";4;"Lotu";14:45:00;232;71;11;0;"Julie Enjalbert";NA;NA
+2024-09-04;2024;"septembre";4;"Lotu";16:45:00;129;41;3;3;"Julie Enjalbert";NA;NA
+2024-09-04;2024;"septembre";4;"Malfalcu";09:00:00;0;0;0;1;"Laurent Ceccaldi, Frederic Sorbara";NA;NA
+2024-09-04;2024;"septembre";4;"Malfalcu";12:00:00;0;0;0;1;"Laurent Ceccaldi, Frederic Sorbara";NA;NA
+2024-09-04;2024;"septembre";4;"Malfalcu";14:45:00;0;0;0;1;"Laurent Ceccaldi, Frederic Sorbara";NA;NA
+2024-09-04;2024;"septembre";4;"Malfalcu";16:45:00;0;0;0;0;"Laurent Ceccaldi, Frederic Sorbara";"non realise";NA
+2024-09-04;2024;"septembre";4;"Mezzanu";09:00:00;0;0;0;0;"Alexandre Crispi, Axel Priouzeau";NA;NA
+2024-09-04;2024;"septembre";4;"Mezzanu";12:00:00;9;0;0;0;"Alexandre Crispi, Axel Priouzeau";NA;NA
+2024-09-04;2024;"septembre";4;"Mezzanu";14:45:00;6;0;0;1;"Alexandre Crispi, Axel Priouzeau";NA;NA
+2024-09-04;2024;"septembre";4;"Mezzanu";16:45:00;2;5;0;0;"Alexandre Crispi, Axel Priouzeau";NA;NA
+2024-09-04;2024;"septembre";4;"Saleccia";09:00:00;8;2;1;0;"Aurelie Essartier, Alban Hagnere, Baptiste Canarelli";NA;"Aurelie ESSARTIER jusqu'a 12h puis roulement avec Baptiste CANARELLI"
+2024-09-04;2024;"septembre";4;"Saleccia";12:00:00;253;81;9;0;"Aurelie Essartier, Alban Hagnere, Baptiste Canarelli";"Orages = les gens commencent a partir juste apres comptage de 12h";"Aurelie ESSARTIER jusqu'a 12h puis roulement avec Baptiste CANARELLI"
+2024-09-04;2024;"septembre";4;"Saleccia";14:45:00;242;66;15;0;"Aurelie Essartier, Alban Hagnere, Baptiste Canarelli";"quelques gouttes";"Aurelie ESSARTIER jusqu'a 12h puis roulement avec Baptiste CANARELLI"
+2024-09-04;2024;"septembre";4;"Saleccia";16:45:00;111;32;3;0;"Aurelie Essartier, Alban Hagnere, Baptiste Canarelli";"eclaircie";"Aurelie ESSARTIER jusqu'a 12h puis roulement avec Baptiste CANARELLI"
+2024-09-04;2024;"septembre";4;"U Travu";09:00:00;0;1;0;0;"Laurent Ceccaldi, Frederic Sorbara";NA;NA
+2024-09-04;2024;"septembre";4;"U Travu";12:00:00;0;5;0;0;"Laurent Ceccaldi, Frederic Sorbara";NA;NA
+2024-09-04;2024;"septembre";4;"U Travu";14:45:00;1;9;0;0;"Laurent Ceccaldi, Frederic Sorbara";NA;NA
+2024-09-04;2024;"septembre";4;"U Travu";16:45:00;0;0;0;0;"Laurent Ceccaldi, Frederic Sorbara";"non realise";NA

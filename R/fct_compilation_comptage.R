@@ -49,7 +49,7 @@
 compilation_comptage <- function(counting_type) {
   
   message(paste("Compilation des données de comptage", counting_type))
-  
+
   # Chemin des données pour le type de comptage spécifié
   path_counting_type <- paths[[paste0("comptage_", counting_type)]]
   
@@ -90,14 +90,19 @@ compilation_comptage <- function(counting_type) {
     wrong_content_suggestion = c(),
     wrong_content_columns = c(),
     wrong_content_sheets = c(),
-    wrong_content_files = c()
+    wrong_content_files = c(),
+    wrong_observer = c(),
+    wrong_observer_suggestion = c(),
+    wrong_observer_line = c(),
+    wrong_observer_sector = c(),
+    wrong_observer_files = c()
   )
   
   # Initialisation data frame final
   comptage_terrain <- data.frame()
   
   
-  # Computing total amount of sheets
+  # Calcul du nombre total de feuilles
   total_sheets <- sum(sapply(file_names, function(file) {
     file_path <- paste0(path_counting_type, file)
     length(excel_sheets(file_path)) # This only gets sheet names, not data
@@ -268,12 +273,32 @@ compilation_comptage <- function(counting_type) {
         is_double_header = double_header
       )
       
-      # Ajout des colonnes date et secteur aux données
       if (counting_type != "meteo") {
+        
+        # Ajout des colonnes date, secteur, observateurs et commentaires secteurs aux données
+        observateurs <- metadata_comptage %>% 
+          filter(Secteur == sheet) %>% 
+          pull(Observateurs)
+        
+        print(observateurs)
+        
+        error_logs <- log_wrong_observers(
+          liste_agents = observateurs,
+          sheet_name = sheet,
+          file_name = file_name,
+          counting_type = counting_type,
+          error_logs = error_logs)
+        
+        commentaires_secteur <- metadata_comptage %>%
+          filter(Secteur == sheet) %>%
+          pull(Commentaires)
+        
         data_sheet <- data_sheet %>%
           mutate(
             secteur = rep(sheet, nrow(.)),
-            date = rep(date_comptage, nrow(.))
+            date = rep(date_comptage, nrow(.)),
+            observateurs = rep(observateurs, nrow(.)),
+            commentaires_secteur = rep(commentaires_secteur, nrow(.))
           )
       }
       
@@ -283,8 +308,8 @@ compilation_comptage <- function(counting_type) {
       } # Fin des feuilles autres que metadata_comptages
     }  # Fin boucle feuilles
   }  # Fin boucle fichiers
-
-error_logs <- error_logs
+  
+error_logs <<- error_logs
 
 # Enregistrement des erreurs dans un fichier log + nombre d'erreurs total
 mistakes <- mistakes_log(counting_type, error_logs)

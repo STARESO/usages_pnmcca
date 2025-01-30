@@ -42,11 +42,10 @@ survols_plandeau <- "data/raw/survols/plandeau/"
 ## Référence noms de variables ----
 comptage_reference <- "data/raw/comptages_terrain/modeles/reference_comptage_terrain_donnees_brutes.xlsx"
 survols_reference <- "data/raw/survols/modeles/reference_survols_donnees_brutes.xlsx"
+agents_reference <- "data/raw/comptages_terrain/modeles/reference_agents_comptage.xlsx"
 
 ## Secteurs ----
 reference_secteurs <- "data/raw/cartographie/Sec_nav_maj_2023_Corrigée/Sec_nav_maj_2023.csv"
-
-
 
 
 # Chemins des données traitées ----

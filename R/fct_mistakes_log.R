@@ -77,7 +77,8 @@ mistakes_log <- function(counting_type, error_logs) {
       "wrong_variable_names_files",
       "unknown_format",
       "wrong_column_format",
-      "wrong_content"
+      "wrong_content",
+      "wrong_observer"
     )], length)
   )
   
@@ -100,14 +101,14 @@ mistakes_log <- function(counting_type, error_logs) {
   } else {
     write(paste0("\n"), log_file, append = TRUE)
   }
- 
+  
   
   # Fichiers mal nommés ----
   write(paste0(
     "---------------------------------------------------------------- \n",
     "Fichiers mal nommés :\n",
     "---------------------------------------------------------------- \n"
-    ), log_file, append = TRUE)
+  ), log_file, append = TRUE)
   
   if (length(error_logs$wrong_named_files) > 0) {
     write(
@@ -384,7 +385,7 @@ mistakes_log <- function(counting_type, error_logs) {
     "Noms de types de variables non reconnus : \n",
     "---------------------------------------------------------------- \n"
   ), log_file, append = TRUE)
-
+  
   
   if (length(error_logs$unknown_format) > 0) {
     write(
@@ -557,6 +558,72 @@ mistakes_log <- function(counting_type, error_logs) {
     
   } else {
     write("Tous les contenus sont corrects.\n", log_file, append = TRUE)
+  }
+  
+  # Erreur de noms d'observateurs ----
+  write(paste0(
+    "---------------------------------------------------------------- \n",
+    "Noms d'observateurs erronés : \n",
+    "---------------------------------------------------------------- \n"
+  ), log_file, append = TRUE)
+  
+  if (length(error_logs$wrong_observer) > 0) {
+    
+    write(
+      paste0(
+        "Les noms de certains agents sont erronés ou ne sont pas présents dans la base de données ",
+        "de référence. Veuillez soit corriger les erreurs, compléter les noms manquants ",
+        "ou rajouter les agents dans la liste de référence, située au chemin : \n",
+        paths$agents_reference,
+        "\n Les noms erronés et la suggestion la plus proche sont indiqués de la manière :\n",
+        "nom erroné --> suggestion la plus proche\n",
+        "Si le nom n'est pas présent dans la référence, ne pas prendre la suggestion en compte."
+      ),
+      log_file,
+      append = TRUE
+    )
+    
+    for (concerned_file in unique(error_logs$wrong_observer_files)) {
+      write(paste0(" > Pour le fichier ", concerned_file, ":\n"), log_file, append = TRUE)
+      
+      if (counting_type != "meteo") {
+        
+        for (concerned_sector in unique(error_logs$wrong_observer_sector[
+          error_logs$wrong_observer_files == concerned_file])) {
+          
+          write(paste0("\t Pour le secteur ", concerned_sector, ":\n"), log_file, append = TRUE)
+          
+          
+          concerned_observers <- error_logs$wrong_observer[
+            error_logs$wrong_observer_files == concerned_file &
+              error_logs$wrong_observer_sector == concerned_sector 
+          ]
+          
+          concerned_suggestions <- error_logs$wrong_observer_suggestion[
+            error_logs$wrong_observer_files == concerned_file &
+              error_logs$wrong_observer_sector == concerned_sector 
+          ]
+            
+          for (i in seq_along(concerned_observers)) {
+            if (!is.na(concerned_observers[i])) {
+              
+              write(
+                paste0("\t\t\t", concerned_observers[i], " --> ", concerned_suggestions[i], "\n"),
+                log_file,
+                append = TRUE
+              )
+              
+            }
+          }
+          
+        }
+      }
+    }
+    
+    write("", log_file, append = TRUE)
+    
+  } else {
+    write("Tous les noms d'agents sont corrects.\n", log_file, append = TRUE)
   }
   
   # Fin du journal

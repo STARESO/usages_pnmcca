@@ -48,7 +48,13 @@ post_compilation <- function(compilation_data, counting_type) {
                           values_to = "nombre") %>%
       tidyr::separate_wider_delim(col = category,
                                   delim = "__",
-                                  names = c("statut", "taille"))
+                                  names = c("statut", "taille")) %>%
+      
+      # Transformation notation taille
+      mutate(taille = str_replace_all(
+        taille,
+        c("<L<" = "_", "L<" = "", "L>" = "")
+      ))
     
     total_compilation <- compilation_data %>%
       filter(taille == "total") %>%
@@ -58,7 +64,8 @@ post_compilation <- function(compilation_data, counting_type) {
     compilation_data <- compilation_data %>%
       filter(taille != "total") %>%
       inner_join(total_compilation, ., 
-                 by = join_by(horaire, type, commentaires, secteur, date, statut)) %>%
+                 by = join_by(horaire, type, commentaires, commentaires_secteur,
+                              observateurs, secteur, date, statut)) %>%
       select(everything(), -total_type_statut, total_type_statut)
     
     # Double en-tête comptage activités de loisirs : distinction type et usage 
@@ -184,10 +191,22 @@ post_compilation <- function(compilation_data, counting_type) {
         },
         .cols = everything()
       ) %>%
-      select(date, annee, mois, jour, secteur, everything(), -commentaires, commentaires) %>%
+      select(date, annee, mois, jour, secteur, everything(), observateurs, -commentaires, 
+             commentaires) %>%
       mutate(date = as.Date(date)) %>%
       arrange(date, secteur, horaire)
+    
+    if (counting_type != "meteo") {
+      compilation_data <- compilation_data %>%
+        relocate(commentaires, commentaires_secteur, .after = last_col())
+    }
   }
+  
+  compilation_data <- compilation_data %>%
+    mutate(across(where(is.character) | where(is.factor), ~ stri_trans_general(., "Latin-ASCII"))) %>%
+    mutate(across(where(is.character) | where(is.factor), ~ str_replace_all(., "&#10;", " "))) %>%
+    mutate(across(where(is.character) | where(is.factor), ~ str_replace_all(., ";", ",")))
+    
  
   return(compilation_data)
 }
