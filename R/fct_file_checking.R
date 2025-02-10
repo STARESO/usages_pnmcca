@@ -50,6 +50,9 @@ file_coherence <- function(file_name, counting_type) {
       "us_med_pnmcca_observatoire_comptage_terrain_",
       counting_type, 
       "_\\d{4}-\\d{2}-\\d{2}\\.xlsx")
+    
+  } else if (counting_type == "telemetre") {
+    file_name_type <- "us_med_pnmcca_observatoire_comptage_terrain_telemetre.xlsx"
   }
   
   file_name_coherence <- grepl(file_name_type, file_name)

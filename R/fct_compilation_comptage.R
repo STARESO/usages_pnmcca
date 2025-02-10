@@ -133,7 +133,7 @@ compilation_comptage <- function(counting_type) {
     
     # Extraction date nom fichier
     date_comptage <- str_extract_all(file_name, "\\d{4}-\\d{2}-\\d{2}")[[1]]
-    if (is.na(date_comptage[1])) {
+    if (is.na(date_comptage[1]) & counting_type != "telemetre") {
       error_logs$wrong_named_dates <- c(error_logs$wrong_named_dates, file_name)
       next
     }
@@ -179,6 +179,14 @@ compilation_comptage <- function(counting_type) {
           if (sheet != "Meteo") { # Check du nom de la feuille
             error_logs$wrong_named_sheets <- c(error_logs$wrong_named_sheets, sheet)
             error_logs$suggested_names_sheets <- c(error_logs$suggested_names_sheets, "Meteo")
+            error_logs$wrong_named_sheets_files <- c(error_logs$wrong_named_sheets_files, file_name)
+            next
+          }
+          
+        } else if (counting_type == "telemetre") {
+          if (sheet != "Telemetre") { # Check du nom de la feuille
+            error_logs$wrong_named_sheets <- c(error_logs$wrong_named_sheets, sheet)
+            error_logs$suggested_names_sheets <- c(error_logs$suggested_names_sheets, "Telemetre")
             error_logs$wrong_named_sheets_files <- c(error_logs$wrong_named_sheets_files, file_name)
             next
           }
@@ -273,15 +281,13 @@ compilation_comptage <- function(counting_type) {
         is_double_header = double_header
       )
       
-      if (counting_type != "meteo") {
+      if (!counting_type %in% c("meteo", "telemetre")) {
         
         # Ajout des colonnes date, secteur, observateurs et commentaires secteurs aux données
         observateurs <- metadata_comptage %>% 
           filter(Secteur == sheet) %>% 
           pull(Observateurs)
-        
-        print(observateurs)
-        
+    
         error_logs <- log_wrong_observers(
           liste_agents = observateurs,
           sheet_name = sheet,

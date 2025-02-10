@@ -42,10 +42,10 @@ read_metadata <- function(counting_type) {
   if (counting_type %in% c("plaba", "plandeau")) {
     path_metadata <- paths$survols_reference
   } else if (counting_type %in% 
-             c("plage", "plaisance", "meteo", "activites_loisirs", "debarquements")) {
+             c("plage", "plaisance", "meteo", "activites_loisirs", "debarquements", "telemetre")) {
     path_metadata <- paths$comptage_reference
   } else {
-    stop("Le type de comptage n'est pas valide. Veuillez vécouting_typerifier le nom de comptage")
+    stop("Le type de comptage n'est pas valide. Veuillez vérifier le nom de comptage")
   }
   
   metadata <- read.xlsx(

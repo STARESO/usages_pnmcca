@@ -58,6 +58,8 @@ source("R/fct_read_metadata.R")
 source("R/fct_sectors.R")
 source("R/fct_sheet_header.R")
 source("R/fct_check_observateurs.R")
+source("R/fct_fusion_plaisance.R")
+source("R/fct_compilation_horizontale.R")
 
 ## Référence des noms de secteurs ----
 ref_secteurs <- read.csv(file = paths$reference_secteurs, sep = ";") %>%
@@ -77,22 +79,36 @@ reference_agents <- read.xlsx(paths$agents_reference, sheet = "Agents") %>%
   rename_with(~ stringi::stri_trans_general(., "Latin-ASCII"), everything()) %>%
   rename_with(~ stringr::str_to_lower(.), everything())
 
-
 # Compilation ----
 
 ## Compilation principale ----
 compilation_plage <- compilation_comptage("plage")
-compilation_plaisance <- compilation_comptage("plaisance")
 compilation_meteo <- compilation_comptage("meteo")
 compilation_activites <- compilation_comptage("activites_loisirs")
 compilation_debarquements <- compilation_comptage("debarquements")
 
+compilation_telemetre <- compilation_comptage("telemetre")
+compilation_plaisance <- compilation_comptage("plaisance")
+
 ## Post compilation vers format final ----
 compilation_plage <- post_compilation(compilation_plage, counting_type = "plage")
-compilation_plaisance <- post_compilation(compilation_plaisance, counting_type = "plaisance")
 compilation_meteo <- post_compilation(compilation_meteo, counting_type = "meteo")
 compilation_activites <- post_compilation(compilation_activites, counting_type = "activites_loisirs")
 compilation_debarquements <- post_compilation(compilation_debarquements, counting_type = "debarquements")
+
+compilation_telemetre <- post_compilation(compilation_telemetre, counting_type = "telemetre")
+compilation_plaisance <- post_compilation(compilation_plaisance, counting_type = "plaisance")
+
+# Correction des données plaisance en prenant en compte les données telemetre
+compilation_plaisance_corrected <- fusion_plaisance(compilation_plaisance, compilation_telemetre)
+
+# Obtention d'une pseudo-BDMer
+compilation_comptages <- compilation_horizontale(
+  data_meteo = compilation_meteo,
+  data_plaisance = compilation_plaisance_corrected,
+  data_activites = compilation_activites,
+  data_plage = compilation_plage
+)
 
 # Check général des compilations ----
 skimr::skim(compilation_plage)
@@ -100,27 +116,31 @@ skimr::skim(compilation_plaisance)
 skimr::skim(compilation_meteo)
 skimr::skim(compilation_activites)
 skimr::skim(compilation_debarquements)
-
+skimr::skim(compilation_comptages)
 
 # Sauvegarde des données traitées ----
 
 ## Fichiers rds ----
-saveRDS(compilation_plaisance, paste0(paths$processed_plaisance, ".rds"))
+saveRDS(compilation_plaisance_corrected, paste0(paths$processed_plaisance, ".rds"))
 saveRDS(compilation_plage, paste0(paths$processed_plage, ".rds"))
 saveRDS(compilation_meteo, paste0(paths$processed_meteo, ".rds"))
 saveRDS(compilation_activites, paste0(paths$processed_activites, ".rds"))
 saveRDS(compilation_debarquements, paste0(paths$processed_debarquements, ".rds"))
+saveRDS(compilation_comptages, paste0(paths$processed_comptages, ".rds"))
 
 ## Fichiers tsv ----
-write.table(compilation_plaisance, paste0(paths$processed_plaisance, ".tsv"), sep = "\t", row.names = FALSE)
+write.table(compilation_plaisance_corrected, paste0(paths$processed_plaisance, ".tsv"), sep = "\t", row.names = FALSE)
 write.table(compilation_plage, paste0(paths$processed_plage, ".tsv"), sep = "\t", row.names = FALSE)
 write.table(compilation_meteo, paste0(paths$processed_meteo, ".tsv"), sep = "\t", row.names = FALSE)
 write.table(compilation_activites, paste0(paths$processed_activites, ".tsv"), sep = "\t", row.names = FALSE)
 write.table(compilation_debarquements, paste0(paths$processed_debarquements, ".tsv"), sep = "\t", row.names = FALSE)
+write.table(compilation_comptages, paste0(paths$processed_comptages, ".tsv"), sep = "\t", row.names = FALSE)
 
 ## Fichiers csv ----
-write.csv2(compilation_plaisance, paste0(paths$processed_plaisance, ".csv"), row.names = FALSE)
+write.csv2(compilation_plaisance_corrected, paste0(paths$processed_plaisance, ".csv"), row.names = FALSE)
 write.csv2(compilation_plage, paste0(paths$processed_plage, ".csv"), row.names = FALSE)
 write.csv2(compilation_meteo, paste0(paths$processed_meteo, ".csv"), row.names = FALSE)
 write.csv2(compilation_activites, paste0(paths$processed_activites, ".csv"), row.names = FALSE)
 write.csv2(compilation_debarquements, paste0(paths$processed_debarquements, ".csv"), row.names = FALSE)
+write.csv2(compilation_comptages, paste0(paths$processed_comptages, ".csv"), row.names = FALSE)
+

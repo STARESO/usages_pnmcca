@@ -109,13 +109,13 @@ post_compilation <- function(compilation_data, counting_type) {
             "Plaisance a moteur habitable",
             "Plaisance a voile non habitable"
             ) ~ 
-            "Plaisance",
+            "plaisance",
           
           act %in% c(
             "Sports motonautiques sur VNM",
             "Bouee tractee"
             ) ~ 
-            "Sports motonautiques",
+            "sports_motonautiques",
           
           act %in% c(
             "Kayak", 
@@ -130,27 +130,28 @@ post_compilation <- function(compilation_data, counting_type) {
             "Wingfoil",
             "Activites de baignade avec equipement" # Pas sûr de celui-ci
             ) ~ 
-            "Activités non motorisees",
+            "activites_non_motorisees",
           
           act %in% c("Peche de loisir embarquee sans precision") ~ 
-            "Pêche de loisirs",
+            "peche_de_loisirs",
           
           act %in% c("Velo tout terrain") ~ 
-            "Activités des plages",
+            "activites_des_plages",
           
           act %in% c("Plongee scaphandre") ~ 
-            "Plongée",
+            "plongee",
         
           act %in% c("Transport de passagers - bateau-bus ou bacs", 
                      "Transport de passagers - ferry",
                      "Promenade en mer sur bateau moteur") ~ 
-            "Transport des passagers et promenades en mer",
+            "transport_des_passagers_et_promenades_en_mer",
           
           act %in% c("Objet temoignant d'une activite de loisir non identifiee") ~
-            "Non identifié",
+            "non_identifie",
           
           TRUE ~ act
         ))
+      
     } else if (counting_type == "plaba") {
       compilation_data <- compilation_data %>%
         mutate(categorie_usage = case_when(
@@ -158,7 +159,7 @@ post_compilation <- function(compilation_data, counting_type) {
             "PMT/Randonnee subaquatique", 
             "Baignade", 
             "Bronzage/repos sur la plage"
-          ) ~ "Activités des plages",
+          ) ~ "activites_des_plages",
           TRUE ~ act
         ))
     }
@@ -196,7 +197,7 @@ post_compilation <- function(compilation_data, counting_type) {
       mutate(date = as.Date(date)) %>%
       arrange(date, secteur, horaire)
     
-    if (counting_type != "meteo") {
+    if (!counting_type %in% c("meteo", "telemetre")) {
       compilation_data <- compilation_data %>%
         relocate(commentaires, commentaires_secteur, .after = last_col())
     }

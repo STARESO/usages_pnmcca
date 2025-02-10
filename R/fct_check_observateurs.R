@@ -23,7 +23,7 @@
 #' Cette fonction vérifie si le nom d'un agent donné fait parti de la liste des 
 #' observateurs, afin de vérifier toute coquille ou absence de compteur.
 observateur_coherence <- function(agent) {
-
+  
   agent_presence <- agent %in% reference_agents$observateur
   
   if (!agent_presence) {
@@ -51,6 +51,8 @@ observateur_coherence <- function(agent) {
 #' 
 #' Cette fonction itère observateur_coherence sur une liste d'agents donnée.
 liste_observateur_coherence <- function(liste_agents) {
+  
+  liste_agents <- as.character(liste_agents)
   
   if (is.na(liste_agents)) {
     return(list(
@@ -84,8 +86,24 @@ liste_observateur_coherence <- function(liste_agents) {
 #' Cette fonction log les erreurs de noms d'agents
 log_wrong_observers <- function(liste_agents, sheet_name, file_name, counting_type, error_logs) {
   
+  
+  
   if (counting_type == "meteo") {
-    # error_logs$wrong_observer_line <- c(error_logs$wrong_observer_line, wrong_indices)  # Line = position in the list
+    
+    for (i in 1:nrow(liste_agents)) {
+      results <- liste_observateur_coherence(liste_agents[i, ])
+      
+      wrong_indices <- which(!results$presence)
+      
+      # If there are incorrect observers, log them
+      if (length(wrong_indices) > 0) {
+        error_logs$wrong_observer <- c(error_logs$wrong_observer, results$agents[wrong_indices])
+        error_logs$wrong_observer_suggestion <- c(error_logs$wrong_observer_suggestion, results$closest_match[wrong_indices])
+        error_logs$wrong_observer_line <- c(error_logs$wrong_observer_line, rep(i, length(wrong_indices)))
+        error_logs$wrong_observer_files <- c(error_logs$wrong_observer_files, rep(file_name, length(wrong_indices)))
+      }
+    }
+    
   } else {
     
     # Apply liste_observateur_coherence to the list of observers
@@ -102,6 +120,6 @@ log_wrong_observers <- function(liste_agents, sheet_name, file_name, counting_ty
       error_logs$wrong_observer_files <- c(error_logs$wrong_observer_files, rep(file_name, length(wrong_indices)))
     }
   }
- 
+  
   return(error_logs)
 }

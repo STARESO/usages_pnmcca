@@ -36,10 +36,10 @@
 #' 
 mistakes_log <- function(counting_type, error_logs) {
   
-  
   accepted_counting <- c("plage", "plaisance", "meteo", "activites_loisirs", "debarquements")
   # Initialisation ----
   # Type de comptage
+  counting_type_simple <- counting_type
   counting_type <- paste0("comptage_terrain_", counting_type)
   
   # Emplacement du nouveau fichier log
@@ -131,8 +131,8 @@ mistakes_log <- function(counting_type, error_logs) {
     write("Tous les fichiers sont correctement nommés.\n", log_file, append = TRUE)
   }
   
-  
-  if (counting_type %in% accepted_counting) {
+
+  if (counting_type_simple %in% accepted_counting) {
     
     # Nombre d'onglets incohérents ----
     write(paste0(
@@ -577,7 +577,7 @@ mistakes_log <- function(counting_type, error_logs) {
         paths$agents_reference,
         "\n Les noms erronés et la suggestion la plus proche sont indiqués de la manière :\n",
         "nom erroné --> suggestion la plus proche\n",
-        "Si le nom n'est pas présent dans la référence, ne pas prendre la suggestion en compte."
+        "Si le nom n'est pas présent dans la référence, ne pas prendre la suggestion en compte.\n"
       ),
       log_file,
       append = TRUE
@@ -585,8 +585,40 @@ mistakes_log <- function(counting_type, error_logs) {
     
     for (concerned_file in unique(error_logs$wrong_observer_files)) {
       write(paste0(" > Pour le fichier ", concerned_file, ":\n"), log_file, append = TRUE)
-      
-      if (counting_type != "meteo") {
+    
+      if (counting_type == "comptage_terrain_meteo") {
+        
+        for (concerned_line in unique(error_logs$wrong_observer_line[
+          error_logs$wrong_observer_files == concerned_file])) {
+          
+          write(paste0("\t Pour la ligne ", concerned_line, ":\n"), log_file, append = TRUE)
+          
+          
+          concerned_observers <- error_logs$wrong_observer[
+            error_logs$wrong_observer_files == concerned_file &
+              error_logs$wrong_observer_line == concerned_line 
+          ]
+          
+          concerned_suggestions <- error_logs$wrong_observer_suggestion[
+            error_logs$wrong_observer_files == concerned_file &
+              error_logs$wrong_observer_line == concerned_line 
+          ]
+          
+          for (i in seq_along(concerned_observers)) {
+            if (!is.na(concerned_observers[i])) {
+              
+              write(
+                paste0("\t\t\t", concerned_observers[i], " --> ", concerned_suggestions[i], "\n"),
+                log_file,
+                append = TRUE
+              )
+              
+            }
+          }
+          
+        }
+        
+      } else {
         
         for (concerned_sector in unique(error_logs$wrong_observer_sector[
           error_logs$wrong_observer_files == concerned_file])) {
@@ -603,7 +635,7 @@ mistakes_log <- function(counting_type, error_logs) {
             error_logs$wrong_observer_files == concerned_file &
               error_logs$wrong_observer_sector == concerned_sector 
           ]
-            
+          
           for (i in seq_along(concerned_observers)) {
             if (!is.na(concerned_observers[i])) {
               
@@ -617,6 +649,7 @@ mistakes_log <- function(counting_type, error_logs) {
           }
           
         }
+        
       }
     }
     

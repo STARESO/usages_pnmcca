@@ -101,26 +101,15 @@ check_column_content <- function(data_sheet,
       
     } else if (column_to_check == "observateurs") {
       
-      issues_to_log <- data_sheet %>%
-        select(observateurs) %>%
-        mutate(
-          result = purrr::map(observateurs, liste_observateur_coherence),
-          in_reference = purrr::map_lgl(result, ~ all(.x$presence, na.rm = TRUE)),
-          suggestion = purrr::map(result, ~ paste(na.omit(.x$closest_match), collapse = ", ")),
-          row_number = row_number()
-        ) %>%
-        filter(in_reference == FALSE) %>%
-        select(-c(in_reference, result))
+      liste_agents <- data_sheet %>%
+        select(observateurs)
       
-      # Logging errors if they exist
-      n_errors <- nrow(issues_to_log)
-      if (n_errors > 0) {
-        error_logs$wrong_observer <- c(error_logs$wrong_content, as.character(issues_to_log$observateurs))
-        error_logs$wrong_observer_suggestion <- c(error_logs$wrong_content_suggestion, issues_to_log$suggestion)
-        error_logs$wrong_observer_line <- c(error_logs$wrong_content_line, issues_to_log$row_number)
-        error_logs$wrong_observer_sheets <- c(error_logs$wrong_content_sheets, rep(sheet_name, n_errors))
-        error_logs$wrong_observer_files <- c(error_logs$wrong_content_files, rep(file_name, n_errors))
-      }
+      error_logs <- log_wrong_observers(
+        liste_agents = liste_agents,
+        sheet_name = sheet_name,
+        file_name = file_name, 
+        counting_type = "meteo",
+        error_logs = error_logs)
     }
 
     # Récupération des modalités de la variable uniquement si 

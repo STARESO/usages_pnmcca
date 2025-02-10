@@ -34,6 +34,7 @@ comptage_meteo <- "data/raw/comptages_terrain/meteo/"
 comptage_plage <- "data/raw/comptages_terrain/plage/"
 comptage_terrestre <- "data/raw/comptages_terrain/frequentation_terrestre/"
 comptage_debarquements <- "data/raw/comptages_terrain/debarquements/"
+comptage_telemetre <- "data/raw/comptages_terrain/telemetre/"
 
 ## Survols aériens ----
 survols_plaba <- "data/raw/survols/plaba/"
@@ -60,11 +61,12 @@ processed_activites_loisirs <- "data/processed/us_med_pnmcca_observatoire_compta
 processed_meteo <- "data/processed/us_med_pnmcca_observatoire_comptage_terrain_meteo"
 processed_terrestre <- "data/processed/us_med_pnmcca_observatoire_comptage_terrain_frequentation_terrestre"
 processed_debarquements <- "data/processed/us_med_pnmcca_observatoire_comptage_terrain_debarquements"
+processed_telemetre <- "data/processed/us_med_pnmcca_observatoire_comptage_terrain_telemetre"
+processed_comptages <- "data/processed/us_med_pnmcca_observatoire_comptage_terrain_compilation"
 
 ## Survols aériens ----
 processed_plaba <- "data/processed/us_med_pnmcca_observatoire_survols_plaba"
 processed_plandeau <- "data/processed/us_med_pnmcca_observatoire_survols_plandeau"
-
 
 # Sorties ----
 
