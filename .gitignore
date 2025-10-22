@@ -4,6 +4,5 @@
 .Ruserdata
 logs/
 Fichiers mal nommés
-/data/
-/data
+data/
 *.csv
