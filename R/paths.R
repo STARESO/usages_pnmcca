@@ -75,7 +75,7 @@ verification_logs <- "logs/"
 
 # Finaliser l'export des chemins pour le sourcing ----
 
-# Obtenir toutes les variables commençant par "path" et les mettre dans une liste.
+# Obtention de toutes les variables de l'environnement global de ce scrit et stockage liste.
 # Les chemins peuvent être accédés via paths$le_nom_du_chemin
 paths_names <- ls(envir = .GlobalEnv)
 paths <- mget(paths_names, envir = .GlobalEnv)
