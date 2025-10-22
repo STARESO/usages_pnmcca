@@ -36,13 +36,11 @@
 file_coherence <- function(file_name, counting_type) {
   
   
-  if (counting_type %in% c("plaba", "plandeau")) {
+  if (counting_type %in% c("plaba", "usages")) {
     file_name_type <- paste0(
       "us_med_pnmcca_observatoire_survols_",
       counting_type, 
       "_\\d{4}.xlsx")
-    
-    
     
   } else if (counting_type %in% 
              c("plage", "plaisance", "meteo", "activites_loisirs", "debarquements")) {

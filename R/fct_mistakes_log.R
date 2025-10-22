@@ -35,7 +35,7 @@
 #' mistakes_log("plaisance", error_logs)
 #' 
 mistakes_log <- function(counting_type, error_logs) {
-  
+
   accepted_counting <- c("plage", "plaisance", "meteo", "activites_loisirs", "debarquements")
   # Initialisation ----
   # Type de comptage
@@ -479,13 +479,19 @@ mistakes_log <- function(counting_type, error_logs) {
   
   if (length(error_logs$wrong_content) > 0) {
     
+    if (counting_type_simple %in% c("usages", "plaba")) {
+      reference_path <- paths$survols_reference    
+    } else if (couting_type_simple %in% accepted_counting) {
+      reference_path <- paths$comptage_reference
+    }
+    
     write(
       paste0(
         "Certaines colonnes contiennent des éléments qui ne coincident pas avec les informations ",
         "de la base de données de référence. \nCes élements peuvent être de type texte ou numérique.", 
         " Si vous considérez que les éléments indiqués comme étant erronés sont justes, \nveuillez les ", 
         "ajouter dans la base de données de référence, située au chemin : \n", 
-        paths$comptage_reference, 
+        reference_path,
         "\n\nVeuillez sinon corriger les erreurs suivantes dans les fichiers bruts :\n"
       ),
       log_file,

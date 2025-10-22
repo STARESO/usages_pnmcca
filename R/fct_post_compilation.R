@@ -86,9 +86,9 @@ post_compilation <- function(compilation_data, counting_type) {
              personnes_eau = `personnes_dans_l'eau`)
   }
   
-  if (counting_type %in% c("plaba", "plandeau")) {
+  if (counting_type %in% c("plaba", "usages")) {
     compilation_data <- compilation_data %>%
-      rename(date = date_camp) %>%
+      rename(date = date_surv) %>%
       mutate(annee = year(date),
              mois = month(date, label = TRUE, abbr = FALSE),
              jour = mday(date)) %>%
@@ -100,7 +100,7 @@ post_compilation <- function(compilation_data, counting_type) {
       ) 
     
     # Recatégorisation des activites dans les grandes catégories correspondantes
-    if (counting_type == "plandeau") {
+    if (counting_type == "usages") {
       compilation_data <- compilation_data %>%
         mutate(categorie_usage = case_when(
           act %in% c(

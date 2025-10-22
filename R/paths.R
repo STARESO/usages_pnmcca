@@ -38,7 +38,7 @@ comptage_telemetre <- "data/raw/comptages_terrain/telemetre/"
 
 ## Survols aériens ----
 survols_plaba <- "data/raw/survols/plaba/"
-survols_plandeau <- "data/raw/survols/plandeau/"
+survols_usages <- "data/raw/survols/usages/"
 
 ## Référence noms de variables ----
 comptage_reference <- "data/raw/comptages_terrain/modeles/reference_comptage_terrain_donnees_brutes.xlsx"
@@ -66,7 +66,7 @@ processed_comptages <- "data/processed/us_med_pnmcca_observatoire_comptage_terra
 
 ## Survols aériens ----
 processed_plaba <- "data/processed/us_med_pnmcca_observatoire_survols_plaba"
-processed_plandeau <- "data/processed/us_med_pnmcca_observatoire_survols_plandeau"
+processed_usages <- "data/processed/us_med_pnmcca_observatoire_survols_usages"
 
 # Sorties ----
 

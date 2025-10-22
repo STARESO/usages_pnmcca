@@ -82,6 +82,4 @@ Les fichiers finaux traités et compilés sont situés dans le dossier `data/pro
 
 Auteur : Aubin Woehrel
 
-Dernière modification : 2024-09-19
-
 License : Code non partageable en dehors des contractuels STARESO et PNMCCA

@@ -39,7 +39,7 @@
 read_metadata <- function(counting_type) {
   
   # Choix de la bonne référence selon le type de données
-  if (counting_type %in% c("plaba", "plandeau")) {
+  if (counting_type %in% c("plaba", "usages")) {
     path_metadata <- paths$survols_reference
   } else if (counting_type %in% 
              c("plage", "plaisance", "meteo", "activites_loisirs", "debarquements", "telemetre")) {
