@@ -1,9 +1,0 @@
-type	nombre_de_jeux	total_rows	campagnes	campagne_secteurs	total_variables
-activites_loisirs	15	5295	15	88	17
-debarquements	15	3070	15	31	7
-frequentation_terrestre	0	NA	NA	NA	0
-meteo	20	420	20	105	11
-plage	19	270	19	67	6
-plaisance	18	11730	18	97	21
-plaba	1	10464	2	170	39
-plandeau	2	8865	6	302	41
