@@ -2,23 +2,22 @@
 #' title : "Compilation survols"
 #' author : Aubin Woehrel
 #' date : 2024-10-25
-#' version : 1.0
 #' ---
 #'
 #' =============================================================================
-#' 
-#' OBSERVATOIRE DES USAGES - COMPILATION DES DONNEES DE SURVOLS 
-#' 
-#' Description : 
-#' Ce script gère la compilation et la vérification des données de survols de 
-#' type "plaba" (plage et baignade) et usages (tout ce qui est sur le plan 
+#'
+#' OBSERVATOIRE DES USAGES - COMPILATION DES DONNEES DE SURVOLS
+#'
+#' Description :
+#' Ce script gère la compilation et la vérification des données de survols de
+#' type "plaba" (plage et baignade) et usages (tout ce qui est sur le plan
 #' d'eau) afin d'obtenir un format cohérent pour les analyses et représentations
-#' graphiques. Le script utilise une variété de fonctions personnalisées pour 
-#' assurer le bon fonctionnement du traitement. Ces fonctions sont localisées 
-#' dans le dossier "R/" du projet. Le procédé global de fonctionnement est 
-#' décrit dans le README du projet, à lire notamment pour les emplacements de 
+#' graphiques. Le script utilise une variété de fonctions personnalisées pour
+#' assurer le bon fonctionnement du traitement. Ces fonctions sont localisées
+#' dans le dossier "R/" du projet. Le procédé global de fonctionnement est
+#' décrit dans le README du projet, à lire notamment pour les emplacements de
 #' fichiers d'entrée et de sortie.
-#' 
+#'
 #' =============================================================================
 
 # Initialisation ----
@@ -62,18 +61,18 @@ source("R/fct_sheet_header.R")
 ref_secteurs <- read.csv(file = paths$reference_secteurs, sep = ";") %>%
   dplyr::mutate(Secteur_simple = stringi::stri_trans_general(Secteur, "Latin-ASCII")) %>%
   dplyr::select(
-    "id", 
+    "id",
     "Secteur",
-    "Secteur_simple", 
-    "Code_sec", 
-    "Communes", 
-    "Code_INSEE", 
+    "Secteur_simple",
+    "Code_sec",
+    "Communes",
+    "Code_INSEE",
     "Com_Corse"
   )
 
 # Compilation ----
 
-## Compilation principale plaba ---- 
+## Compilation principale plaba ----
 compilation_plaba <- compilation_survols("plaba")
 compilation_plaba <- post_compilation(compilation_plaba, counting_type = "plaba")
 
@@ -166,4 +165,3 @@ write.table(compilation_plandeau, paste0(paths$processed_plandeau, ".tsv"), sep 
 ## Fichiers csv ----
 write.csv2(compilation_plaba, paste0(paths$processed_plaba, ".csv"), row.names = FALSE)
 write.csv2(compilation_plandeau, paste0(paths$processed_plandeau, ".csv"), row.names = FALSE)
-

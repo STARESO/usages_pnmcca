@@ -2,19 +2,18 @@
 #' title : "Bilan des données"
 #' author : Aubin Woehrel
 #' date : 2024-09-17
-#' version : 1.0
 #' ---
 #'
 #' =============================================================================
-#' 
+#'
 #' OBSERVATOIRE DES USAGES - BILAN DES DONNEES
-#' 
-#' Description : 
-#' Script permettant de compter le nombre de jeux de données sources, le nombre 
+#'
+#' Description :
+#' Script permettant de compter le nombre de jeux de données sources, le nombre
 #' de bases de données créées et des stats de nombre de variables et lignes
-#' 
+#'
 #' Note : A implémenter dans le futur directement dans l'appli Osservatoriu
-#' 
+#'
 #' =============================================================================
 
 
@@ -27,6 +26,7 @@ rm(list = ls())
 library("echarts4r")
 library("dplyr")
 library("tidyr")
+library("readxl")
 
 ## Import des chemins ----
 source("R/paths.R")
@@ -35,10 +35,11 @@ source("R/paths.R")
 plaisance <- readRDS(paste0(paths$processed_plaisance, ".rds"))
 
 
-
 # Type d'activités
-types_comptages <-  c("activites_loisirs", "debarquements", "frequentation_terrestre", 
-                      "meteo", "plage", "plaisance")
+types_comptages <- c(
+  "activites_loisirs", "debarquements", "frequentation_terrestre",
+  "meteo", "plage", "plaisance"
+)
 types_survols <- c("plaba", "plandeau")
 
 
@@ -46,7 +47,7 @@ types_survols <- c("plaba", "plandeau")
 nombre_jeux_comptage <- c()
 for (type_comptage in types_comptages) {
   file_names <- list.files(paste0("data/raw/comptages_terrain/", type_comptage)) %>%
-    .[!grepl("~", .)]  # Suppression des fichiers temporaires
+    .[!grepl("~", .)] # Suppression des fichiers temporaires
   nombre_jeux_comptage <- c(nombre_jeux_comptage, length(file_names))
 }
 
@@ -54,7 +55,7 @@ for (type_comptage in types_comptages) {
 nombre_jeux_survols <- c()
 for (type_survol in types_survols) {
   file_names <- list.files(paste0("data/raw/survols/", type_survol)) %>%
-    .[!grepl("~", .)]  # Suppression des fichiers temporaires
+    .[!grepl("~", .)] # Suppression des fichiers temporaires
   nombre_jeux_survols <- c(nombre_jeux_survols, length(file_names))
 }
 
@@ -66,9 +67,9 @@ bilan_jeux <- tibble(
 
 
 # Extraction du nombre de lignes
-# Nombre d'entités 
+# Nombre d'entités
 file_names <- list.files("data/processed") %>%
-  .[!grepl("~", .)] %>% # Suppression des fichiers temporaires 
+  .[!grepl("~", .)] %>% # Suppression des fichiers temporaires
   .[grepl("rds", .)]
 
 
@@ -85,14 +86,15 @@ extract_type <- function(file_name) {
 
 # Calculate rows, campagnes, and campagne_secteurs
 file_info <- lapply(file_names, function(file) {
-  data <- readRDS(paste0("data/processed/", file))  # Read the RDS file
+  data <- readRDS(paste0("data/processed/", file)) # Read the RDS file
   list(
     type = extract_type(file),
     rows = nrow(data),
-    campagnes = length(unique(data$date)),  # Unique dates
-    campagne_secteurs = n_distinct(data %>% select(date, secteur))  # Unique combinations of date and secteur
+    campagnes = length(unique(data$date)), # Unique dates
+    campagne_secteurs = n_distinct(data %>% select(date, secteur)) # Unique combinations of date and secteur
   )
-}) %>% bind_rows()
+}) %>%
+  bind_rows()
 
 # Aggregate data by type
 total_rows_and_campagnes <- file_info %>%
@@ -121,18 +123,18 @@ metadata_paths <- list(
 calculate_total_variables <- function(file_path, types) {
   # List all sheets in the metadata file
   sheets <- excel_sheets(file_path)
-  
+
   # Filter sheets corresponding to the specified types
   sheets_to_process <- sheets[sheets %in% types]
-  
+
   total_variables <- c()
-  
+
   for (sheet in sheets_to_process) {
     # Read the sheet and count rows
     data <- read_excel(file_path, sheet = sheet)
     total_variables <- c(total_variables, nrow(data))
   }
-  
+
   # Return total variables for each type
   tibble(
     type = sheets_to_process,
@@ -161,5 +163,3 @@ bilan_jeux <- bilan_jeux %>%
 # Export bilan_jeux as an RDS file
 readr::write_tsv(bilan_jeux, "data/processed/bilan_jeux.tsv")
 saveRDS(bilan_jeux, "data/processed/bilan_jeux.rds")
-
-

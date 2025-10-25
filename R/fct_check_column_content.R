@@ -25,9 +25,9 @@ check_column_content <- function(data_sheet,
                                  metadata_reference,
                                  file_name,
                                  sheet_name,
-                                 error_logs, 
+                                 error_logs,
                                  is_double_header = FALSE) {
-  
+
   # Modification des métadonnées de référence, mais seulement pour les colonnes champ
   metadata_reference <- metadata_reference %>%
     mutate(across(
@@ -40,7 +40,7 @@ check_column_content <- function(data_sheet,
       # Supprimer les 'm' et les espaces
       gsub(" ", "_", tolower(.))
     )))
-  
+
   # Mutation des métadonnées si double en-tête
   if (is_double_header) {
     metadata_reference <- metadata_reference %>%
@@ -49,34 +49,34 @@ check_column_content <- function(data_sheet,
         TRUE ~ champ1
       ))
   }
-  
+
   # Itérations sur les colonnes de la feuille de données
   for (column_to_check in names(data_sheet)) {
-    
+
     # Type de variable de la colonne
     column_type <- metadata_reference %>%
       filter(champ == column_to_check) %>%
       pull(format)
-    
+
     # Column modalites presence
     column_modalites_presence <- metadata_reference %>%
       filter(champ == column_to_check) %>%
       pull(modalites) %>%
       as.character()
-    
+
     column_shunt <- metadata_reference %>%
       filter(champ == column_to_check) %>%
       select(shunt) %>%
       mutate(shunt = case_when(
         shunt == "Oui" ~ TRUE,
         shunt == "Non" ~ FALSE
-      )) %>% 
+      )) %>%
       pull(shunt)
-    
+
     # Dans le cas d'une colonne de type secteur, la fonction secteur cohérence est itérée sur 
     # toutes les lignes
     if (column_to_check == "secteur") {
-      
+
       issues_to_log <- data_sheet %>%
         select(secteur) %>%
         mutate(
@@ -86,8 +86,8 @@ check_column_content <- function(data_sheet,
           row_number = row_number()
         ) %>%
         filter(in_reference == FALSE) %>%
-        select(-c(in_reference, result)) 
-        
+        select(-c(in_reference, result))
+
       # Logging errors if they exist
       n_errors <- nrow(issues_to_log)
       if (n_errors > 0) {
@@ -98,12 +98,12 @@ check_column_content <- function(data_sheet,
         error_logs$wrong_content_sheets <- c(error_logs$wrong_content_sheets, rep(sheet_name, n_errors))
         error_logs$wrong_content_files <- c(error_logs$wrong_content_files, rep(file_name, n_errors))
       }
-      
+
     } else if (column_to_check == "observateurs") {
-      
+
       liste_agents <- data_sheet %>%
         select(observateurs)
-      
+
       error_logs <- log_wrong_observers(
         liste_agents = liste_agents,
         sheet_name = sheet_name,
@@ -112,25 +112,25 @@ check_column_content <- function(data_sheet,
         error_logs = error_logs)
     }
 
-    # Récupération des modalités de la variable uniquement si 
-    # référence existantes ou valides (absence de "/", aucun élément (NA) ou 
+    # Récupération des modalités de la variable uniquement si
+    # référence existantes ou valides (absence de "/", aucun élément (NA) ou
     # pattern #shunt pour les descriptions spécifiques qui ne sont pas les modalités elle même)
     if (!((column_modalites_presence == "/") | is.na(column_modalites_presence) | column_shunt)) {
-      
+
       # Dans le cas d'une variable qualitative ou texte
       if (column_type == "texte" | grepl("qualitative", column_type)) {
-        
+
         column_modalites <- metadata_reference %>%
           filter(champ == column_to_check) %>%
           pull(modalites) %>%
           str_split(" ; ") %>%
           unlist()
-        
+
         column_modalites <- c(column_modalites, NA)
-      
+
         # En cas de variable numérique entière ou décimale
       } else if (column_type %in% c("entier", "reel")) {
-        
+
         column_modalites <- metadata_reference %>%
           filter(champ == column_to_check) %>%
           pull(modalites) %>%
@@ -139,17 +139,17 @@ check_column_content <- function(data_sheet,
           unlist() %>%
           .[c(1, length(.))] %>%
           as.numeric()
-          
+
       } else {
-        column_modalites = "/"
+        column_modalites <- "/"
       }
-      
+
       # Si des modalités ou des intervalles numériques existent dans la référence
       if (all(column_modalites != "/", na.rm = TRUE)) {
-        
+
         # Dans le cas d'une variable textuelle
         if (column_type == "texte" | grepl("qualitative", column_type)) {
-          
+
           # Datatable of mistakes
           issues_to_log <- data_sheet %>%
             select(variable = all_of(column_to_check)) %>%
@@ -163,7 +163,7 @@ check_column_content <- function(data_sheet,
               maxDist = 0.5,
               method = "jw"
             )])
-          
+
           # Logging errors if they exist
           n_errors <- nrow(issues_to_log)
           if (n_errors > 0) {
@@ -174,9 +174,9 @@ check_column_content <- function(data_sheet,
             error_logs$wrong_content_sheets <- c(error_logs$wrong_content_sheets, rep(sheet_name, n_errors))
             error_logs$wrong_content_files <- c(error_logs$wrong_content_files, rep(file_name, n_errors))
           }
-          
+
         } else if (column_type %in% c("entier", "reel")) {
-          
+
           issues_to_log <- data_sheet %>%
             select(variable = all_of(column_to_check)) %>%
             mutate(in_reference = column_modalites[1] <= variable & variable <= column_modalites[2],
@@ -184,7 +184,7 @@ check_column_content <- function(data_sheet,
             filter(in_reference == FALSE) %>%
             select(-in_reference) %>%
             mutate(suggestion = paste(column_modalites[1], "<= x <=", column_modalites[2]))
-          
+
           # Logging errors if they exist
           n_errors <- nrow(issues_to_log)
           if (n_errors > 0) {
@@ -195,13 +195,12 @@ check_column_content <- function(data_sheet,
             error_logs$wrong_content_sheets <- c(error_logs$wrong_content_sheets, rep(sheet_name, n_errors))
             error_logs$wrong_content_files <- c(error_logs$wrong_content_files, rep(file_name, n_errors))
           }
-          
-          # logging mistakes 
+
+          # logging mistakes
         }
       }
     }
   }
-  
+
   return(error_logs)
 }
-

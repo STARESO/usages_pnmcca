@@ -2,23 +2,22 @@
 #' title : "Compilation terrain"
 #' author : Aubin Woehrel
 #' date : 2024-09-17
-#' version : 1.0
 #' ---
 #'
 #' =============================================================================
-#' 
+#'
 #' OBSERVATOIRE DES USAGES - COMPILATION DES FICHES DE COMPTAGE TERRAIN
-#' 
-#' Description : 
-#' Ce script gère la compilation et la vérification des données de 
-#' comptage terrain de divers types tels que les comptages "plage", "plaisance", 
-#' "météo" et "activités loisirs". Les données sont traitées et stockées dans un 
-#' format cohérent pour les analyses. Le script utilise une variété de fonctions 
-#' personnalisées pour assurer le bon fonctionnement. Ces fonctions sont 
-#' localisées dans le dossier "R/" du projet. 
-#' Le procédé global de fonctionnement est décrit dans le README du projet, 
+#'
+#' Description :
+#' Ce script gère la compilation et la vérification des données de
+#' comptage terrain de divers types tels que les comptages "plage", "plaisance",
+#' "météo" et "activités loisirs". Les données sont traitées et stockées dans un
+#' format cohérent pour les analyses. Le script utilise une variété de fonctions
+#' personnalisées pour assurer le bon fonctionnement. Ces fonctions sont
+#' localisées dans le dossier "R/" du projet.
+#' Le procédé global de fonctionnement est décrit dans le README du projet,
 #' à lire notamment pour les emplacements de fichiers d'entrée et de sortie.
-#' 
+#'
 #' =============================================================================
 
 # Initialisation ----
@@ -65,12 +64,12 @@ source("R/fct_compilation_horizontale.R")
 ref_secteurs <- read.csv(file = paths$reference_secteurs, sep = ";") %>%
   dplyr::mutate(Secteur_simple = stringi::stri_trans_general(Secteur, "Latin-ASCII")) %>%
   dplyr::select(
-    "id", 
+    "id",
     "Secteur",
-    "Secteur_simple", 
-    "Code_sec", 
-    "Communes", 
-    "Code_INSEE", 
+    "Secteur_simple",
+    "Code_sec",
+    "Communes",
+    "Code_INSEE",
     "Com_Corse"
   )
 
@@ -143,4 +142,3 @@ write.csv2(compilation_meteo, paste0(paths$processed_meteo, ".csv"), row.names =
 write.csv2(compilation_activites, paste0(paths$processed_activites, ".csv"), row.names = FALSE)
 write.csv2(compilation_debarquements, paste0(paths$processed_debarquements, ".csv"), row.names = FALSE)
 write.csv2(compilation_comptages, paste0(paths$processed_comptages, ".csv"), row.names = FALSE)
-
